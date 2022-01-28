@@ -1,6 +1,6 @@
 ---
 name:Monica Miller
-avatar: /static/images/Phoebe.png
+avatar: /static/images/Phoebe.jpg
 email: monicadd4@gmail.com
 twitter: https://twitter.com/Moni4489
 linkedin: https://github.com/Monica39
