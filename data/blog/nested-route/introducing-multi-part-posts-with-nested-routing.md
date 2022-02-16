@@ -1,5 +1,5 @@
 ---
-title: Introducing Multi-part Posts with Nested Routing
+title: Authored by Next.js - Introducing Multi-part Posts with Nested Routing
 date: '2021-05-02'
 tags: ['multi-author', 'next-js', 'feature']
 draft: false

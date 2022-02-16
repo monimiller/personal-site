@@ -8,12 +8,10 @@ const projectsData = [
     href: 'https://www.google.com',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'First Place ASME Winner 2019',
+    description: `Some of my dear friends and I placed first in the American Society of Mechanical Engineers (ASME) National Manufacturing Science and Engineering Conference in 2019. We programmed our Arduino in GRBL!`,
+    imgSrc: '/static/images/SeniorDesign.png',
+    href: 'https://news.utdallas.edu/students-teaching/utdesign-asme-champs-2019/',
   },
 ]
 
