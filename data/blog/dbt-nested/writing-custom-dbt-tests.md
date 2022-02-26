@@ -9,7 +9,7 @@ images: []
 
 Hi, y'all!
 
-As pledged last week to the world wide web, I have created some custom tests for the dbt Jaffle Shop tutorial available [here](https://docs.getdbt.com/tutorial/setting-up). For my next internet promise, I will talk about the pitfalls and sticking points I fell into while following the tutorial documentation in another article, so stay tuned for that upcoming post. For now, let's expand upon the available testing capabilities provided by dbt, specifically the benefits of creating custom tests for a set of dbt models.
+As I pledged last week to the world wide web, I have created some custom tests for the dbt Jaffle Shop tutorial available [here](https://docs.getdbt.com/tutorial/setting-up). For my next internet promise, I will talk about the pitfalls and sticking points I fell into while following the tutorial documentation in another article, so stay tuned for that upcoming post. For now, let's expand upon the available testing capabilities provided by dbt, specifically the benefits of creating custom tests for a set of dbt models.
 
 **Two Types of Custom Testing:**
 

@@ -1,11 +1,9 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Crypto Adventures',
+    description: `Some more of my dear friends and I went to ETHDenver2022 and won a bounty for TABLELAND(TEXTILE). Check out our repo!`,
+    imgSrc: '/static/images/EthDenverBounty.png',
+    href: 'https://github.com/Crypto-Adventures',
   },
   {
     title: 'First Place ASME Winner 2019',
