@@ -7,17 +7,9 @@ summary: Sharing one of the COOLEST features dbt cloud has implemented within th
 images: []
 ---
 
-NOTES::::
-dbt Cloud v1.1.44 (February 2nd, 2022)
-https://blog.getdbt.com/on-dags-hierarchies-and-ides/#:~:text=With%20the%20DAG%2Din%2Dthe%2DIDE%2C%20analytics%20engineers,is%20normal%20for%20software%20engineers.
-
 dbt Cloud v1.1.33 (August 18, 2021)
 
 dbt Cloud v1.1.37 (October 13, 2021)
-
-can you imagine a relational analytics tool that allows you to build queries sequentially, yet you have abosulteny no way of double checking the queries plug in with each other and nondescript error messages when they dont?
-
-yeah me neither, and thank goodness we don't have to because of the Dat aLIneager!!
 
 https://analyticsengineers.club/whats-a-dag/
 
@@ -33,13 +25,34 @@ Are anyone else's palms starting to sweat???
 
 ## Some Good News
 
-Everyone, take a big breath because dbt Cloud has
+Never fear, because dbt Cloud has come to our rescue. Starting in **dbt Cloud v1.1.33** (August 18, 2021), a Directed Analytic Graph (DAG) has been added to the Integrated Development Environment (IDE) to help developers visualize the relationships between all the models in their projects.
 
-## Release Note Highlights
+WHAT IS A DAG? WHY IS IT BENEFICIAL?
+
+DAG & DBT INTEGRATION!
+
+you are using any dbt version in dbt Cloud after **dbt Cloud v1.1.33** (August 18, 2021 - notes for checking/upgrading your verion [here](https://docs.getdbt.com/docs/dbt-cloud/cloud-configuring-dbt-cloud/cloud-upgrading-dbt-versions#:~:text=You%20can%20see%20which%20dbt,%2C%20dbt%2Dutils%20version%200.7.))
+
+## Release Note Specifics and Resources
+
+RELEASE NOTE STUFF WITH EACH VERSION THAT IMPROVES THE DAG!
+
+- dbt Cloud v1.1.44 (February 2nd, 2022)
+  https://blog.getdbt.com/on-dags-hierarchies-and-ides/#:~:text=With%20the%20DAG%2Din%2Dthe%2DIDE%2C%20analytics%20engineers,is%20normal%20for%20software%20engineers.
+
+- dbt Cloud v1.1.33 (August 18, 2021)
+
+- dbt Cloud v1.1.37 (October 13, 2021)
+
+LInk to checking version/upgrading
+
+How to use the DAG
+
+What is a dag info
 
 ## Spotlight of the Week!
 
-As a part of this writing journey, every week I hope to amplify one of my favorite things: women making their mark in tech. As we know, _Empowered Women Empower Women_. I am trying to do my part by highlighting women I look up to, organizations I support, and general knowledge that I find interesting that pertains to this topic. This week I want to talk about the community [Elpha](https://elpha.com/). Elpha is a space for women to engage with other women professionally. I personally have used Elpha to browse the many job applications available on the website, read posts that share advice on various workplace scenarios, and gain awareness for opportunities I potentially may have missed had I not signed up for this **AWESOME** resource.
+As we know, _Empowered Women Empower Women_. I plan to live out this mantra by amplifying one of my favorite things: women making their mark in tech. My goal each week is to highlight women I look up to, organizations I support, and general knowledge that I find interesting that pertains to this topic. This week I want to talk about the community [Elpha](https://elpha.com/). Elpha is a space for women to engage with other women professionally. I personally have used Elpha to browse the many job applications available on the website, read posts that share advice on various workplace scenarios, and gain awareness for opportunities I potentially may have missed had I not signed up for this **AWESOME** resource.
 
 Here is a fantastic [article](https://techcrunch.com/2019/11/06/elpha/) talking about the history of Elpha with the two co-founders, Cadran Cowansage and Kuan Luo. I was introduced to Elpha through the _YC Job Series: Women Eng in Startups_ and I related to Cadran discussing firsthand the varying moments in her career where she had wished for a bigger network to lean on. Cadran creatively solved this problem not only for herself but for all of us as well! I highly encourage signing up, and if you would like to learn more about Elpha, visit their [FAQ](https://elpha.com/faq).
 

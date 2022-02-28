@@ -95,7 +95,7 @@ models:
 
 ## Introducing....Spotlight of the Week!
 
-As I continue this writing journey, I hope to use this space to amplify one of my favorite things: women making their mark in tech. As we know, _Empowered Women Empower Women_. While I may not always feel empowered, I am trying to do my part by highlighting women I look up to, organizations I support, and general knowledge that I find interesting that pertains to this topic. So, starting with week one, I wanted to share two articles written by [Jess Iandorio](https://jessiandiorio.medium.com/) that have already given me personally some action items to take into the office, and some advice I discussed with other women coworkers this week.
+As we know, _Empowered Women Empower Women_. I plan to live out this mantra by amplifying one of my favorite things: women making their mark in tech. My goal each week is to highlight women I look up to, organizations I support, and general knowledge that I find interesting that pertains to this topic. So, starting with week one, I wanted to share two articles written by [Jess Iandorio](https://jessiandiorio.medium.com/) that have already given me personally some action items to take into the office, and some advice I discussed with other women coworkers this week.
 
 1. [The Real Reason Women Aren't Getting Ahead in Tech: "She's Not Strategic"](https://jessiandiorio.medium.com/the-real-reason-women-arent-getting-ahead-in-tech-she-s-not-strategic-5ba98ad91f77?)
 2. [She's Not Strategic, the sequel: Women are over-mentored and under-sponsored](https://jessiandiorio.medium.com/shes-not-strategic-the-sequel-women-are-over-mentored-and-under-sponsored-8323ea6fb16e)
