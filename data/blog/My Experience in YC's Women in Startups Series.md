@@ -1,9 +1,9 @@
 ---
-title: *YC Job Series: Women Eng in Startups* Review
+title: YC Job Series Women Eng in Startups Review
 date: '2022-02-05'
 tags: ['YC', 'Startup Culture', 'Women in Tech']
 draft: true
-summary: Sharing my experience attending the Y Combinator Job Series highlighting Women Engineering in Startups. 
+summary: Sharing my experience attending the Y Combinator Job Series highlighting Women Engineering in Startups.
 images: []
 ---
 
