@@ -1,6 +1,6 @@
 ---
 title: MOM! There's a DAG in the IDE!
-date: '2022-02-27'
+date: '2022-03-01'
 tags: ['dbt Cloud', 'dbt', 'release notes', 'DAG', 'data lineage', 'IDE']
 draft: false
 summary: Sharing one of the COOLEST features dbt cloud has implemented within the IDE.
@@ -9,7 +9,7 @@ images: []
 
 _Picture the following scenario._ \
 \
-You are new to dbt. After a week and a half of late nights with you and your keyboard, you submit your first written workflow for code review on a Friday morning and breath a deep sigh of relief after a job well done. You then decide, **_since you are now consider yourself a dbt master_**, to review a peer's code while you wait. Assigning your name to a workflow you assume will be easy to review and allow you to coast into your weekend, you then open up the most complicated set of code ever developed containing 8 different models that each reference each other in what could be true code-ception. **THE HORROR**. You can't easily understand the relationships between the models your teammate has devised since one filesS holds over 400 lines of join logic, but another model is only used to convert the datatype of one singular column.
+You are new to dbt. After a week and a half of late nights with you and your keyboard, you submit your first written workflow for code review on a Friday morning and breath a deep sigh of relief after a job well done. You then decide, **_since you are now consider yourself a dbt master_**, to review a peer's code while you wait. Assigning your name to a workflow you assume will be easy to review and allow you to coast into your weekend, you then open up the most complicated set of code ever developed containing 8 different models that each reference each other in what could be true code-ception. **THE HORROR**. You can't easily understand the relationships between the models your teammate has devised since one files holds over 400 lines of join logic, but another model is only used to convert the datatype of one singular column.
 
 You start asking yourself questions. Where does this source come from? How did the table get referenced in this model? Why are we converting another datatype after leaving the staging table? Did said teammate _even test_ this logic?!
 

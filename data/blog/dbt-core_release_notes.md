@@ -1,6 +1,6 @@
 ---
 title: dbt-core release notes
-date: '2022-02-27'
+date: '2022-02-28'
 tags: ['dbt', 'release notes', 'DAG', 'data lineage']
 draft: true
 summary: Sharing one of the COOLEST features dbt cloud has implemented within the IDE.

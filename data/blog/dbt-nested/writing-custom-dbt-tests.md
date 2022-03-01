@@ -1,6 +1,6 @@
 ---
 title: Creating Your Own dbt Tests for the Problematic Data Engineer
-date: '2022-02-26'
+date: '2022-02-27'
 tags: ['dbt', 'data', 'testing', 'dbt tutorials']
 draft: false
 summary: Sharing my experience with singular and generic testing I created for the dbt Jaffle Shop tutorial.
@@ -18,11 +18,11 @@ As I pledged last week to the world wide web, I have created some custom tests f
 
 The link [here](https://docs.getdbt.com/docs/building-a-dbt-project/tests) goes into even more detail of the differences between the two. I used my singular tests specifically written for the customer model in the tutorial, while the generic test I wrote was utilized for testing all three of the models. If you haven't done the tutorial but want to keep reading, a link to my gitlab code is [here](https://github.com/Monica39/dbt_tutorial) and the database metadata is [here](https://www.getdbt.com/getting-started-tutorial/#!/model/model.jaffle_shop.stg_orders#details). The two folders to highlight in the github repo are models (where the sql code lives) and tests (where the tests live).
 
-As I started coding, writing the singular tests seemed to come more naturally to me. In the past, my data validation has been specifically created for each table's use case, instead of leaning into the reusability that is provided by generic tests. However, after writing a very basic generic test I was able to utilize in three different models, I am starting to understand the power provided by the reusability of these tests. I hope to shift my brain so that I can utilize these testing capabilities more as I strive to be a better _test-driven-developer_ I also want to comment that setting up the generic test was easier than I first expected with the most effort required was to create a new directory in the testing folder `tests/generic/test_is_positive.sql`. More information on setting up your dbt project to handle generic testing can be found [here](https://docs.getdbt.com/docs/guides/writing-custom-generic-tests).
+As I started coding, writing the singular tests seemed to come more naturally to me. In the past, my data validation tests have been specifically created for each table's use case, instead of leaning into the reusability that is provided by generic tests. However, after writing a very basic generic test that I was able to run against three different models, I am starting to understand the power provided by the reusability of these tests. I hope to shift my brain so I can utilize these testing capabilities more as I strive to be a better _test-driven-developer_. I also want to comment that setting up the generic test was easier than I first expected and the most effort required was to create a new directory in the testing folder `tests/generic/test_is_positive.sql`. More information on setting up your dbt project to handle generic testing can be found [here](https://docs.getdbt.com/docs/guides/writing-custom-generic-tests).
 
 ### Singular Testing Examples for the Jaffle Shop Tutorial
 
-1. Since the customer table can have both potential and active customers, this test validates that no order date is recorded for a customer in the customer table when the number_of_orders is equal to zero. This is a prime example of a singular test since is serves a specific purpose of validating the data in the customer table is accurately reflecting a customer's activity.
+1. Since the customer table can have both potential and active customers, this test validates that no order date is recorded for a customer in the customer table when the number_of_orders is equal to zero. This is a prime example of a singular test since it serves the specific purpose of validating the data in the customer table is accurately reflecting a customer's activity.
 
 ```sql
 select
@@ -37,7 +37,7 @@ and customer_id in
     where first_order_date is not NULL or most_recent_order_date is not NULL)
 ```
 
-2. The second singular test created was another date validation query to ensure that customer activity was properly logged in the source data by checking the most recent order date occurs either on or after the first order date. Again, this singular test could not by new models I create, but it does serve a specific purpose for this one.
+2. The second singular test I created was another date validation query to ensure that customer activity was properly logged in the source data. This was done by checking that the most recent order date occurs either on or after the first order date. Again, this singular test could not be used by new models I create, but it does serve a specific purpose for this one.
 
 ```sql
 select
@@ -49,7 +49,7 @@ where first_order_date > most_recent_order_date
 
 ### Generic Testing Examples for the Jaffle Shop Tutorial
 
-1. Using the is_even [example](https://docs.getdbt.com/docs/guides/writing-custom-generic-tests), I created a **very** basic generic test to validate that all the customer_id and order_id in each model output a positive value.
+1. Using the is_even [example](https://docs.getdbt.com/docs/guides/writing-custom-generic-tests), I created a **very** basic generic test to validate that the customer_id and order_id in each model output a positive value.
 
 `dbt_tutorial/tests/generic/test_is_positive.sql`
 
