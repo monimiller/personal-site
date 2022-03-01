@@ -1,18 +1,18 @@
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
+  title: 'Advice from a Problematic Data Engineer',
   author: 'Monica Miller',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: 'A Problematic Data Engineer who is passionate about women in technology.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://monimiller.com',
+  siteRepo: 'https://github.com/Monica39/my-portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/Phoebe.png',
-  socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  linkedin: 'https://www.linkedin.com',
+  socialBanner: '/static/images/Phoebe.png',
+  email: 'monidd4@gmail.com',
+  github: 'https://github.com/Monica39',
+  twitter: 'https://twitter.com/Moni4489',
+  linkedin: 'https://www.linkedin.com/in/monica-miller-b598a3154',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics, umami or googleAnalytics

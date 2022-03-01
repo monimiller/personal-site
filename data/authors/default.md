@@ -1,7 +1,7 @@
 ---
 name: Monica Miller
 avatar: /static/images/Monica.jpg
-email: monicadd4@gmail.com
+email: monidd4@gmail.com
 twitter: https://twitter.com/Moni4489
 linkedin: https://www.linkedin.com/in/monica-miller-b598a3154
 github: https://github.com/Monica39
