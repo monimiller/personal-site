@@ -19,7 +19,7 @@ Here is a fantastic [article](https://techcrunch.com/2019/11/06/elpha/) talking 
 
 ### Some Favorite Elpha Resources
 
-- [Elpha Salary Database](https://elpha.com/salary-database). Pretty self-explanatory, but an amazing resource for market rates.
+- [Elpha Salary Database](https://elpha.com/salary-database). An amazing resource for current market rates.
 - [Salary Negotiations](https://elpha.com/resources/salary-negotiation-tips). Discussing the thing we all despise.
 - [Job Quitting](https://elpha.com/resources/how-to-quit-your-job-just-started). A scary topic that is handled eloquently in this article.
 
