@@ -67,11 +67,7 @@ If you are looking for more information about the dbt DAG, this is a good place 
 
 ## Spotlight of the Week!
 
-As we know, _Empowered Women Empower Women_. I plan to live out this mantra by amplifying one of my favorite things: women making their mark in tech. My goal each week is to highlight women I look up to, organizations I support, and general knowledge that I find interesting that pertains to this topic.
-
-This week I want to talk about the community [Elpha](https://elpha.com/). Elpha is a space for women to engage with other women professionally. I personally have used Elpha to browse the many job applications available on the website, read posts that share advice on various workplace scenarios, and gain awareness for opportunities I potentially may have missed had I not signed up for this **AWESOME** resource.
-
-Here is a fantastic [article](https://techcrunch.com/2019/11/06/elpha/) talking about the history of Elpha with the two co-founders, Cadran Cowansage and Kuan Luo. I was introduced to Elpha through the [_YC Job Series: Women Eng in Startups_](https://www.ycombinator.com/blog/yc-jobs-series-women-eng-in-startups) and I related to Cadran discussing firsthand the varying moments in her career where she had wished for a bigger network to lean on. Cadran creatively solved this problem not only for herself but for all of us as well! I highly encourage signing up, and if you would like to learn more about Elpha, visit their [FAQ](https://elpha.com/faq).
+As we know, _Empowered Women Empower Women_. I plan to live out this mantra by amplifying one of my favorite things: women making their mark in tech. My goal each week is to highlight women I look up to, organizations I support, and general knowledge that I find interesting that pertains to this topic. This week, check out my blog post about [Elpha](../SOTW_Elpha.md).
 
 Thanks for reading! Please shoot me an email with questions, comments, or information I didn't know about yet!
 \
