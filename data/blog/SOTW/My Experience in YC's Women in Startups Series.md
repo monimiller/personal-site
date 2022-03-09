@@ -17,25 +17,25 @@ As we know, _Empowered Women Empower Women_. I plan to live out this mantra by a
 
 ## YC Job Series Women Eng in Startups
 
-This week, let's talk about my experience attending the [YC Job Series for Women Eng in Startups in 2021](https://www.workatastartup.com/events/yc-women-eng-in-startups-2021) sponsored by both YC and [Elpha](SOTW_Elpha). I attended this cohort last fall, and there were lots of amazing **BOSS WOMEN** I was introduced to and fangirled hard over. Even if you have absolutely no desire to join a startup, I still highly recommend looking out for future cohorts and signing up in order to hear career (& life) advice from some amazing individuals.
+This week, let's talk about my experience attending the [YC Job Series for Women Eng in Startups in 2021](https://www.workatastartup.com/events/yc-women-eng-in-startups-2021) sponsored by both YC and [Elpha](SOTW_Elpha). I attended this cohort last fall, and there were so many amazing **BOSS WOMEN** I was introduced to and now act as an official fangirl of. Even if you have absolutely no desire to join a startup, I still highly recommend looking out for future cohorts and signing up in order to hear career (& life) advice from some brilliant individuals.
 
 ### Structure:
 
-When I attended the cohort, it was a weekly commitment of two hours for four weeks. Truthfully, I thought this time block would drag on like one of my college night courses. I was wrong. Every session was engaging enough that I didn't notice the time investment. Truthfully, I would have stayed another hour in the breakout rooms to hear those women share their experiences. The first hour was a proctored talk with keynote guests, and the second hour involved breakout room discussions which led to open and honest conversation. Because the
+When I attended the cohort, it was a weekly commitment of two hours for four weeks and I thought this time block would drag on like one of my college night courses. Color me impressed because every session was engaging enough that I genuinely seemed surprised when we hit the two hour mark. Truthfully, I would have stayed even longer in the breakout rooms listening to the women share their firsthand experiences. The first hour was a proctored talk with keynote guests, and the second hour involved breakout room discussions which led to lots of open and honest conversation surrounding any question in mind.
 
 ### Favorite Topics of Discussion:
 
 - Conversations about compensation and bridging the pay gap
-- Advice about navigating maternity policies
+- Advice about navigating maternity leave
 - How to identify if a job change is right for you
-- Tips from Recruiters
-- Shared experiences from current developers
+- Tips from recruiters on how to stand out
+- Personal experiences from current developers, managers, and founders
 - Overcoming the gender disparity in the workplace
 - How to work, mom, and wife at the same time
 
 ### Shoutouts to My Favorite Speakers:
 
-If you need more reasons to sign up, here's a look into the kind of awesome women that were involved in this program
+If you need more reasons to sign up for future cohorts, here's a look into some of awesome women that were involved in this program.
 
 - [Cadran Cowansage](https://www.linkedin.com/in/cadrancowansage/) - CEO and Founder of Elpha
 - [Carolyn Mooney](https://www.linkedin.com/in/carolyn-m-mooney/) - CEO at Nextmv
