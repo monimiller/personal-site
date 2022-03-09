@@ -16,5 +16,5 @@ I have a cockapoo named Phoebe, a husband named Edmund, and the three of us all 
 For fun, I'd love to play two truths and a lie with you! Go to my first blog post ever!! to see the answer.
 
 - I played soccer in college and actually hold a conference record and a couple of school records.
-- I am deaf in my left ear and for a select period of time I wore a hearing aid to school.
+- I am deaf in my left ear and for a select period of time I wore a hearing aid to grade school.
 - I have the same middle name as my mom because she wanted me to have names related to both of my parents (Middle/Mom, Last/Dad).
