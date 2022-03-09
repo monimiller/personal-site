@@ -41,6 +41,9 @@ If you need more reasons to sign up for future cohorts, here's a look into some 
 - [Carolyn Mooney](https://www.linkedin.com/in/carolyn-m-mooney/) - CEO at Nextmv
 - [Danyao Wang](https://www.linkedin.com/in/danyaowang/) - Sr. Staff Engineer at Faire
 - [Shruthi Murthy](https://www.linkedin.com/in/shruthi-murthy-abb731/) - Head of Engineering at Modern Treasury
+  \
+
+#### A big thanks to the coordinators at YC and all the women who contributed to this awesome program. Y'all are rockstars.
 
 Thanks for reading! Please shoot me an email with questions, comments, or information I didn't know about yet!
 \
