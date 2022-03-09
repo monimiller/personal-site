@@ -67,7 +67,7 @@ If you are looking for more information about the dbt DAG, this is a good place 
 
 ## Spotlight of the Week!
 
-As we know, _Empowered Women Empower Women_. I plan to live out this mantra by amplifying one of my favorite things: women making their mark in tech. My goal each week is to highlight women I look up to, organizations I support, and general knowledge that I find interesting that pertains to this topic. This week, check out my blog post about [Elpha](../SOTW_Elpha.md).
+As we know, _Empowered Women Empower Women_. I plan to live out this mantra by amplifying one of my favorite things: women making their mark in tech. My goal each week is to highlight women I look up to, organizations I support, and general knowledge that I find interesting that pertains to this topic. This week, check out my blog post about [Elpha](../SOTW_Elpha).
 
 Thanks for reading! Please shoot me an email with questions, comments, or information I didn't know about yet!
 \
