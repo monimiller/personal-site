@@ -87,7 +87,7 @@ Up to date!
 
 **Helpful Resources**
 
-- [Install dbt using pip](https://docs.getdbt.com/dbt-cli/install/pip) NOTE: For helpful hints, use the code snippit above and checkout the tab _Does my operating system have prerequisites?_
+- [Install dbt using pip](https://docs.getdbt.com/dbt-cli/install/pip) NOTE: For helpful hints, use the code snippit above and checkout the tab - _Does my operating system have prerequisites?_
 - [dbt CLI: create project](https://docs.getdbt.com/tutorial/create-a-project-dbt-cli)
 - [dbt Command reference](https://docs.getdbt.com/reference/dbt-commands)
 
