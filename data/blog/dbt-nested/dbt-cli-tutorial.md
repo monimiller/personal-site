@@ -2,14 +2,14 @@
 title: 'Choose Your Fighter: dbt Tutorial Edition'
 date: '2022-03-08'
 tags: ['dbt', 'data', 'dbt Cloud', 'dbt CLI', 'dbt tutorials', 'dbt setup']
-draft: true
+draft: false
 summary: Pits I fell into when completing the dbt Jaffle Shop tutorial and how to avoid them.
 images: ['/public/static/images/Phoebe.jpg']
 ---
 
 There is nothing I **despise** more than medium level decision making. Big decisions - no problem! _Pro and Con lists to the Rescue!_ Small decisions? Easy - I go with my gut and accept the difference between option A and option B is essentially negligible (ex: pizza is still an excellent dinner choice, no matter where you order it from).
 
-But, Medium decisions. Decisions that you may not have all the knowledge available at the time and run the risk of rework if you pivot. Those freak me out. What template should I use for my blog post when all my options integrate with VS Code and have great support communities? That took my four weeks of trial and error, just to end up with what I started on, six attempts later. **Medium decision making failure**.
+But, Medium decisions. Decisions that you may not have all the knowledge available at the time and run the risk of rework if you pivot. Those freak me out. What template should I use for my blog post when all my options integrate with VS Code and have great support communities? That took my four weeks of trial and error, just to end up where I started. **Medium decision making failure**.
 
 So, the purpose of this post is to try consolidate all the information available so that those new to dbt can make an informed medium decision about your dbt environment of choice between dbt _Cloud User Interface_ and the dbt _Command Line Interface_. Here's my hot takes on setting up both environments below, as well as some other instructions that would be beneficial during initial setup.
 
@@ -48,72 +48,53 @@ Once completed, your key will now have a status of 'active' and a green checkmar
 
 ### dbt Cloud
 
-While I must confess I had set up many work environments using dbt cloud already, the [Cloud Setup](https://docs.getdbt.com/tutorial/create-a-project-dbt-cloud) tutorial covers almost all of the information needed for a full end to end setup. The integration with bigquery was almost flawless with the easy JSON file upload then auto-populating all of the connection information.
+While I must confess I had set up many work environments using dbt cloud already, the [Cloud Setup](https://docs.getdbt.com/tutorial/create-a-project-dbt-cloud) tutorial covers almost all of the information needed for a full end to end setup. The integration with bigquery was almost flawless since the simple JSON file upload auto-populates all of the connection information.
 
-As far as web UI's go, the dbt Cloud UI is easy to navigate and fast enough to use. The biggest downfall with this method, is the free trial only lasts 14 days.
+**Additional Instructions _Not_ Mentioned in the Tutorial:**
 
-Additional Instructions:
--need schema to be dbt_monica or whatever your schema is in big query. easy to upload the downloaded file, except that part ; test the connection before moving on
+- While the connection information is autopopulated, the personal developer credentials are not. Luckily, this can be done in the original setup and tested using the **Test** button in the top right.
+<div class="not-prose">
+<details class="bg-slate-500 dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg ">
+  <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
+    Add your BigQuery schema name in the Developer Credentials *Dataset* section. 
+  </summary>
+  <img src="/static/images/developer_credentials.png" class="center"/> 
+</details>
+</div>
+
+- Once you have successfully tested this connection, both the database connection and your personal credentials are set up correctly. If you need to change this information for any reason, you will need to edit both the **Personal Development Credentials** and the **Connection Information**.
+
+As far as web UI's go, the dbt Cloud UI is easy enough to learn quickly. There are some idiosyncrasies in the setup and credential structure which allows for multiple ways to get to the end result. The biggest downfall with this method, is the free trial only lasts 14 days and personally, I think the UI is slow. I struggled to wait for refreshing, basically whenever dbt felt there was a need to refresh, which occurred more than I would have liked. However, the integration and setup was super easy. For anyone who wants just a taste of the
 
 ### CLI Help for the Python Challenged
 
-Here are some of the commands I ran and the bugs I noticed when I created my virtual environment wrong. I also struggled with the documentation, as it felt like a scavenger hunt to figure out what command setup to run next. So here's the abridged version to avoid the headache I faced.
+If you are looking for something a little longer term, the CLI environment is probably a better bet. Here are some of the commands I ran and the bugs I noticed when I created my virtual environment wrong. I also struggled with the documentation, as it felt like a scavenger hunt to figure out what command setup to run next. So I'm sharing the abridged version to avoid the headache I faced. I was setting this up on a linux environment.
+
+PS: Olaf is the name of my Omen computer, because I am obsessed with alliteration and Frozen.
 
 ```sh
 mmiller@olaf:~$ sudo apt install python3.9-venv
 mmiller@olaf:~$ python3 -m venv dbt-env
 mmiller@olaf:~$ source dbt-env/bin/activate
 mmiller@olaf:~$ pip install dbt-bigquery
-
-(dbt-env) mmiller@olaf:~$ dbt --version
+mmiller@olaf:~$ dbt --version
 installed version: 1.0.3
    latest version: 1.0.3
 
 Up to date!
-mmiller@olaf:~$ dbt init dbt-tutorial
-
-
-  - bigquery: 1.0.0 - Up to date!
-(dbt-env) mmiller@olaf:~$ dbt init dbt-tutorial
-02:56:41  Running with dbt=1.0.3
-02:56:41  Creating dbt configuration folder at /home/mmiller/.dbt
-dbt-tutorial is not a valid project name.
-Enter a name for your project (letters, digits, underscore):
-Enter a name for your project (letters, digits, underscore): dbt_tutorial
-Which database would you like to use?
-[1] bigquery
-
-(Don't see the one you want? https://docs.getdbt.com/docs/available-adapters)
-
-Enter a number: 1
-[1] oauth
-[2] service_account
-Desired authentication method option (enter a number): 2
-keyfile (/path/to/bigquery/keyfile.json): ^C03:05:44  Encountered an error:
-
-(dbt-env) mmiller@olaf:~$
-(dbt-env) mmiller@olaf:~$ cd dbt_tutorial
-(dbt-env) mmiller@olaf:~/dbt_tutorial$ ls
-
-(dbt-env) mmiller@olaf:~/dbt_tutorial$ dbt run
+(dbt-env) mmiller@olaf:~$ dbt init dbt_tutorial
 ```
+
+**Helpful Resources**
+
+- [Install dbt using pip](https://docs.getdbt.com/dbt-cli/install/pip) NOTE: For helpful hints, use the code snippit above and checkout the tab _Does my operating system have prerequisites?_
+- [dbt CLI: create project](https://docs.getdbt.com/tutorial/create-a-project-dbt-cli)
+- [dbt Command reference](https://docs.getdbt.com/reference/dbt-commands)
 
 ### Final Thoughts
 
-i would select the choice based on the longevity of the commitment. if you are demoing something small, and just want to give it a try (low investment, low return) do dbt cloud. Easier setup. Only downfall is the 14 day limit.
+If you have 30 minutes to invest in setup and are comfortable using a text editor, I would pick the dbt CLI any day. Even if you have never used anything like this but know basic unix, I would still recommend giving this a try. Bottom line, I would select my final choice based on the longevity of the commitment. Not looking for something long term? Use dbt Cloud's 14 day trial and easy-peasy setup. Plan on using dbt for anything past a basic demo or familiarization? Try the CLI. It will be worth it.
 
 ## Spotlight of the Week!
 
 This week, check out my blog post about [YC 's Women in Startups Series](SWOT/../../SOTW/My_Experience_in%20_YCs_Women_in_Startups_Series.md).
-
-## Tech Humor
-
-My husband read over my shoulder as I was drafting this up and sent me this meme because he saw "Cloud" in the article. So, please enjoy this unrelated cloud joke that made me giggle.
-<img src="https://i.pinimg.com/originals/c0/dc/85/c0dc853d9a2045a38e54f35fc917dc64.png" width="200" height="200"/>
-
-![Cloud Joke](https://i.pinimg.com/originals/c0/dc/85/c0dc853d9a2045a38e54f35fc917dc64.png =200x20) [^1]
-[^1]: Image pulled from [here](https://www.pinterest.com/pin/462463455459709875/visual-search/?x=10&y=10&w=544&h=544&cropSource=6&imageSignature=c0dc853d9a2045a38e54f35fc917dc64).
-
-Thanks for reading! Please shoot me an email with questions, comments, or information I didn't know about yet!
-\
--Monica
