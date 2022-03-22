@@ -64,7 +64,7 @@ While I must confess I had set up many work environments using dbt cloud already
 
 - Once you have successfully tested this connection, both the database connection and your personal credentials are set up correctly. If you need to change this information for any reason, you will need to edit both the **Personal Development Credentials** and the **Connection Information**.
 
-As far as web UI's go, the dbt Cloud UI is easy enough to learn quickly. There are some idiosyncrasies in the setup and credential structure which allows for multiple ways to get to the end result. The biggest downfall with this method, is the free trial only lasts 14 days and personally, I think the UI is slow. I struggled to wait for refreshing, basically whenever dbt felt there was a need to refresh, which occurred more than I would have liked. However, the integration and setup was super easy. For anyone who wants just a taste of the
+As far as web UI's go, the dbt Cloud UI is easy enough to learn quickly. There are some idiosyncrasies in the setup and credential structure which allows for multiple ways to get to the end result. The biggest downfall with this method, is the free trial only lasts 14 days and personally, I think the UI is slow. I struggled to wait for refreshing, basically whenever dbt felt there was a need to refresh, which occurred more than I would have liked. However, the integration and setup was super easy. For anyone who wants just a taste of the power that is dbt, this is the move.
 
 ### CLI Help for the Python Challenged
 
