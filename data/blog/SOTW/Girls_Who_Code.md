@@ -1,6 +1,6 @@
 ---
 title: Spotlight of the Week - Girls Who Code
-date: '2022-02-28'
+date: '2022-04-04'
 tags: ['Career Growth', 'Women in Tech', 'Spotlight of the Week']
 draft: false
 summary: Sharing some great resources about Elpha.
