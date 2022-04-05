@@ -13,7 +13,7 @@ As we know, _Empowered Women Empower Women_. I plan to live out this mantra by a
 
 ## Girls Who Code
 
-Happy 10th Birthday to Girls Who Code! I came across Reshma's LinkedIn post and again was mesmerized by the awesome women involved with this mission.
+Happy 10th Birthday to _Girls Who Code_! I came across Reshma's LinkedIn post and again was mesmerized by the awesome women involved with this mission.
 
 <p align="center"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6914701488933990400" height="836" width="504" frameBorder="0" allowFullScreen title="Embedded post"></iframe></p>
 
