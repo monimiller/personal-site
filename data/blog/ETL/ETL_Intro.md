@@ -2,7 +2,7 @@
 title: 'ETL for Everyone!'
 date: '2022-04-10'
 tags: ['data', 'ETL', 'data warehousing']
-draft: true
+draft: false
 summary: Addressing the basic data movement concepts.
 images: ['/public/static/images/Phoebe.jpg']
 ---
@@ -39,7 +39,7 @@ Many businesses have multiple inputs of different kinds as their source systems.
 
 Here we see a basic example of ETL assisting with Data Warehouse implementation.
 
-![DW Image](/static/images/DW_Image.png) [^1]
+![DW Image](/static/images/DW_Image.png) [^1].
 [^1]: Original image source can be found [here](https://www.educba.com/data-warehouse-implementation/).
 
 So what happens when these sources come in different formats and are all trying to be loaded to the same target? For example, let's talk about customer data. Let's say each part of the enterprise stores information with a unique identifier of the customer's name and birthdate. Each department keeps the same data in a varying format from the other.
