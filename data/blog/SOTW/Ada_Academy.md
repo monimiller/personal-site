@@ -38,4 +38,7 @@ Here's a synopsis of the [volunteer opportunities](https://adadevelopersacademy.
 4. If you are looking for something flexible, help review applications or interview applicants as an admissions volunteer. The time frame for this opportunity is 1-3 months in either September-November or March-May.
 5. Participate as a mock interviewer if you have the technical background and experience interviewing technically. This is 4 hours/session during October-November or April-May.
 
-Not able to lend your time? Act as a silent supporter and [Donate!](https://adadevelopersacademy.org/donate/) I have chosen this route during certain periods in my own life as I like to remind myself that giving can be classified as 'time', 'talent', or 'treasure'.
+Not able to lend your time? Act as a silent supporter and
+[Donate!](https://adadevelopersacademy.org/donate/) I have chosen this route
+during certain periods in my own life as I like to remind myself that giving can
+be classified as 'time', 'talent', or 'treasure'.
