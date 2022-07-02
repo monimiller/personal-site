@@ -18,8 +18,10 @@ jobs:
             then
               echo "File ${changed_file} matched post."
               echo "::set-output name=post${i}::${changed_file}"
-              echo "::set-output name=post-slug${i}::$(echo ${changed_file} | cut -d'/' -f2- | cut -f 1 -d '.')"
-              echo ${changed_file} | cut -d'/' -f2- | cut -f 1 -d '.'
+              SLUG=$(echo ${changed_file} | cut -d'/' -f2- | cut -f 1 -d '.')
+              echo "slug"
+              echo $SLUG
+              echo "::set-output name=post-slug${i}::$SLUG"
               ((i=i+1))
             fi
           done
