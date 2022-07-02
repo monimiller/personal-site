@@ -9,7 +9,7 @@ const UmamiScript = () => {
         async
         defer
         data-website-id={siteMetadata.analytics.umamiWebsiteId}
-        src="https://umami.monimiller.com/umami.js" // Replace with your umami instance
+        src="https://tourmaline-dieffenbachia-bffe57.netlify.app/umami.js" // Replace with your umami instance
       />
     </>
   )
