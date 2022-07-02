@@ -21,7 +21,7 @@ jobs:
               SLUG=$(echo ${changed_file} | cut -d'/' -f2- | cut -f 1 -d '.')
               echo "::debug::Set the post-slug${i} variable"
               echo "::debug::Slug: $SLUG"
-              echo "::set-output name=post-slug${i}::$SLUG"
+              echo "::set-output name=postslug${i}::$SLUG"
               ((i=i+1))
             fi
           done
@@ -32,4 +32,4 @@ jobs:
           access_token: ${{ secrets.MEDIUM_ACCESS_TOKEN }}
           markdown_file: ${{ steps.posts.outputs.post0 }}
           base_url: https://monimiller.com
-          post_url: https://monimiller.com/${{ steps.post.outputs.post-slug0 }}
+          post_url: ${{ steps.post.outputs.postslug0 }}
