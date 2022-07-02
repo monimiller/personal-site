@@ -21,7 +21,7 @@ jobs:
               SLUG=$(echo ${changed_file} | cut -d'/' -f2- | cut -f 1 -d '.')
               echo "::debug::Set the post-slug${i} variable"
               echo "::debug::Slug: $SLUG"
-              echo "::set-output name=postslug${i}::${{ env.SLUG }}"
+              echo "::set-output name=postslug${i}::${SLUG}"
               ((i=i+1))
             fi
           done
