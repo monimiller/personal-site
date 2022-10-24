@@ -6,7 +6,7 @@ draft: false
 summary: 'A summary of the greatest conference to ever do data'
 ---
 
-Let me declare my position before writing this. I started using dbt professionally and personally about a year ago, and have considered myself a big fan of the project and the community ever since. I’m probably what you would call a community lurker, following all the data influencers and doing my best to keep up to date with the #memes-and-off-topic-chatter channel offering slack reactions where I see fit. Therefore, I feel like I have the ability to provide a more unbiased opinion about my experience at Coalesce over those that rank higher in the stratosphere. So, here it goes.
+Let me declare my position before writing this. I started using dbt professionally and personally about a year ago, and have considered myself a big fan of the project and the community ever since. I’m probably what you would call a [community lurker](https://orbit.love/blog/lets-expand-the-community-builders-dictionary), following all the data influencers and doing my best to keep up to date with the #memes-and-off-topic-chatter channel offering slack reactions where I see fit. Therefore, I feel like I have the ability to provide a more unbiased opinion about my experience at Coalesce over those that rank higher in the stratosphere. So, here it goes.
 
 ## no data just vibes
 
@@ -24,7 +24,7 @@ talk just so I could change my outfit to blend in.
 <img src="/static/images/coalesce_day1.png" class="object-contain object-center
 max-w-[50%] h-auto"/>
 
-I’m not sure why, but I was nervous. Maybe it be imposter syndrome, in-group/out-group mentality, or just a fear of not being able to connect with others, I didn’t know if I would feel a sense of belonging. I just assumed everyone there was way more technical and funny than I was and that without both of those two positive traits that no one would talk to me. Data college was only for those who were accepted into the elite university. I totally get that I’m projecting here, but I did feel forced to overcome this feeling once I arrived. I then slapped on my (she/her) button - amazing work having buttons where people could write in their pronouns of choice - and started the week.
+I’m not sure why, but I was nervous. Maybe it be imposter syndrome, in-group/out-group mentality, or just a fear of not being able to connect with others, I didn’t know if I would feel a sense of belonging. I just assumed everyone there was way more technical and funny than I was and that without both of those two positive traits that no one would talk to me. [Data college](https://benn.substack.com/p/all-in-one-place) was only for those who were accepted into the elite university. I totally get that I’m projecting here, but I did feel forced to overcome this feeling once I arrived. I then slapped on my (she/her) button - amazing work having buttons where people could write in their pronouns of choice - and started the week.
 
 ## The People
 
@@ -33,7 +33,7 @@ reason for the success of the dbt community is the people. The people who gave
 authentic and engaging talks, the people who started genuine conversations
 within each breakout room, and the people who championed this culture and let it
 bleed out into every aspect of this event. I dare you to not be inspired by
-Erika, or Phoenix, any of the other amazing people who delivered us heartwarming
+[Erika](https://twitter.com/erikapullum/status/1583163485373931520), or [Phoenix](https://twitter.com/MilLacy), any of the other amazing people who delivered us heartwarming
 stories and engaging content. I’m not sure what the final breakdown was, but I
 was excited to walk into rooms where the demographic of “white male” was only a
 slight majority as opposed to an overwhelming majority. It was the first thing I
@@ -57,4 +57,4 @@ universe thought it would be funny to push me out of my comfort zone.
 <iframe src="https://www.youtube.com/embed/gFJGU2eJu24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="object-center
 max-w-full h-auto"></iframe>
 
-Also, I bought a data baddie hat so I guess you could say that I’ve officially graduated from lurker to participant.
+Also, I bought a [data baddie](https://twitter.com/databaddie) hat so I guess you could say that I’ve officially graduated from lurker to participant.
