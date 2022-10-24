@@ -10,7 +10,18 @@ Let me declare my position before writing this. I started using dbt professional
 
 ## no data just vibes
 
-It was not obvious to me that the hipster data vibes I spent 45 minutes explaining to a colleague at dinner would transcend the internet and actually be evident at the live event. Well played organizers, you accomplished the mission. The vibes from arrival to the closing party were an immaculate representation of all that encompasses the dbt community. As an observer, I watched the barber in the lobby give fresh cuts to the infiltration of black rimmed vintage glasses wearers head to toe in neutral toned aesthetics. I’ve never been to a tech conference with more talented dressers, so much so that when I arrived from the airport in my t-shirt, jeans, and sneakers, I went up to my room and skipped a talk just so I could change my outfit to blend in.
+It was not obvious to me that the hipster data vibes I spent 45 minutes
+explaining to a colleague at dinner would transcend the internet and actually be
+evident at the live event. Well played organizers, you accomplished the mission.
+The vibes from arrival to the closing party were an immaculate representation of
+all that encompasses the dbt community. As an observer, I watched the barber in
+the lobby give fresh cuts to the infiltration of black rimmed vintage glasses
+wearers head to toe in neutral toned aesthetics. I’ve never been to a tech
+conference with more talented dressers, so much so that when I arrived from the
+airport in my t-shirt, jeans, and sneakers, I went up to my room and skipped a
+talk just so I could change my outfit to blend in.
+
+<center><img src="/static/images/coalesce_day1.png" width="415" height="225"/></center>
 
 I’m not sure why, but I was nervous. Maybe it be imposter syndrome, in-group/out-group mentality, or just a fear of not being able to connect with others, I didn’t know if I would feel a sense of belonging. I just assumed everyone there was way more technical and funny than I was and that without both of those two positive traits that no one would talk to me. Data college was only for those who were accepted into the elite university. I totally get that I’m projecting here, but I did feel forced to overcome this feeling once I arrived. I then slapped on my (she/her) button - amazing work having buttons where people could write in their pronouns of choice - and started the week.
 
@@ -37,8 +48,11 @@ So, while I never actually understood the data nets joke, I did immediately feel
 
 I left New Orleans feeling renewed, both personally and professionally. I can’t commend dbt Labs enough for their amazing event which over-delivered on even my highest expectations. I still can’t get over how kind everyone at this event was, and I just had the absolute blast I had chatting with people all week. The conference really reinforced what I already thought the community aimed to be: inclusive and inspiring.
 
-NOLA also delivered. Good food and good conversation, what more could you ask for? Good music. Which of course, also delivered. Here’s a video of me getting asked on-stage during the afterparty because my vibes transcended and the universe thought it would be funny to push me out of my comfort zone.
+NOLA also delivered. Good food and good conversation, what more could you ask
+for? Good music. Which of course, also delivered. Here’s a video of me getting
+asked on-stage during the afterparty because my vibes transcended and the
+universe thought it would be funny to push me out of my comfort zone.
 
-https://youtu.be/gFJGU2eJu24
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gFJGU2eJu24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Also, I bought a data baddie hat so I guess you could say that I’ve officially graduated from lurker to participant.
