@@ -12,7 +12,7 @@ const ContentSecurityPolicy = `
   media-src 'none';
   connect-src *;
   font-src 'self' fonts.gstatic.com cdn.jsdelivr.net;
-  frame-src giscus.app www.linkedin.com
+  frame-src giscus.app www.linkedin.com www.youtube.com
 `
 
 const securityHeaders = [
