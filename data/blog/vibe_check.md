@@ -21,7 +21,8 @@ conference with more talented dressers, so much so that when I arrived from the
 airport in my t-shirt, jeans, and sneakers, I went up to my room and skipped a
 talk just so I could change my outfit to blend in.
 
-<center><img src="/static/images/coalesce_day1.png" width="415" height="225"/></center>
+<img src="/static/images/coalesce_day1.png" class="object-contain object-center
+max-w-[50%] h-auto"/>
 
 I’m not sure why, but I was nervous. Maybe it be imposter syndrome, in-group/out-group mentality, or just a fear of not being able to connect with others, I didn’t know if I would feel a sense of belonging. I just assumed everyone there was way more technical and funny than I was and that without both of those two positive traits that no one would talk to me. Data college was only for those who were accepted into the elite university. I totally get that I’m projecting here, but I did feel forced to overcome this feeling once I arrived. I then slapped on my (she/her) button - amazing work having buttons where people could write in their pronouns of choice - and started the week.
 
@@ -53,6 +54,7 @@ for? Good music. Which of course, also delivered. Here’s a video of me getting
 asked on-stage during the afterparty because my vibes transcended and the
 universe thought it would be funny to push me out of my comfort zone.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gFJGU2eJu24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/gFJGU2eJu24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="object-center
+max-w-full h-auto"></iframe>
 
 Also, I bought a data baddie hat so I guess you could say that I’ve officially graduated from lurker to participant.
