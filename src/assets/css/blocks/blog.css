@@ -13,3 +13,26 @@
   width: 100%;
   height: auto;
 }
+
+/* https://github.com/11ty/eleventy-base-blog/blob/1c669486aaab1cc0decadc3733b644a12db16fdf/public/css/index.css#L223 */
+.post-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+/* Tags list */
+.post-metadata {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post-metadata time {
+  margin-right: 1em;
+}

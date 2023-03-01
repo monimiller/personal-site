@@ -12,7 +12,15 @@ preloads:
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
 
+    <ul class="post-metadata">
     {% set definedDate = date %} {% include "partials/date.njk" %}
+        {%- for tag in tags %}
+            <!-- TODO Filter out posts tag more elegantly -->
+            {% if 'posts' not in tag %}
+                <li><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %} {% endif %}</li>
+            {% endif %}
+        {%- endfor %}
+    </ul>
 
     {{ content | safe }}
   </div>
