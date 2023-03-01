@@ -1,12 +1,16 @@
 module.exports = {
   top: [
     {
-      text: 'Speaking',
-      url: '/speaking/'
-    },
-    {
       text: 'About',
       url: '/about/'
+    },
+    {
+      text: 'Articles',
+      url: '/articles/'
+    },
+    {
+      text: 'Speaking',
+      url: '/speaking/'
     },
     {
       text: 'Blog',
