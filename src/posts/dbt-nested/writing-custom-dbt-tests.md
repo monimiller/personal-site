@@ -24,6 +24,8 @@ As I started coding, writing the singular tests seemed to come more naturally to
 
 1. Since the customer table can have both potential and active customers, this test validates that no order date is recorded for a customer in the customer table when the number_of_orders is equal to zero. This is a prime example of a singular test since it serves the specific purpose of validating the data in the customer table is accurately reflecting a customer's activity.
 
+{% raw %}
+
 ```sql
 select
 customer_id,
@@ -37,7 +39,11 @@ and customer_id in
     where first_order_date is not NULL or most_recent_order_date is not NULL)
 ```
 
+{% endraw %}
+
 2. The second singular test I created was another date validation query to ensure that customer activity was properly logged in the source data. This was done by checking that the most recent order date occurs either on or after the first order date. Again, this singular test could not be used by new models I create, but it does serve a specific purpose for this one.
+
+{% raw %}
 
 ```sql
 select
@@ -47,11 +53,15 @@ from {{ ref('customers' )}}
 where first_order_date > most_recent_order_date
 ```
 
+{% endraw %}
+
 ### Generic Testing Examples for the Jaffle Shop Tutorial
 
 1. Using the is_even [example](https://docs.getdbt.com/docs/guides/writing-custom-generic-tests), I created a **very** basic generic test to validate that the customer_id and order_id in each model output a positive value.
 
 `dbt_tutorial/tests/generic/test_is_positive.sql`
+
+{% raw %}
 
 ```sql
 {% test is_positive(model, column_name) %}
@@ -79,6 +89,8 @@ from validation_errors
 
 {% endtest %}
 ```
+
+{% endraw %}
 
 Utilizing this generic test required adding the intended model and column name test to my `dbt_tutorial/models/schema.yml`. While I used this for all three models, I have just shown the snip of the is_positive test being applied to the customers model and the customer_id field.
 
