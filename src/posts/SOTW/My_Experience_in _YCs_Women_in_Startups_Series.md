@@ -1,9 +1,9 @@
 ---
 title: Spotlight of the Week - YC Job Series Women Eng in Startups
-date: '2022-03-05'
+description: Sharing my experience attending the Y Combinator Job Series highlighting Women Engineering in Startups.
+date: 2022-03-05
 tags: ['YC', 'Startup Culture', 'Women in Tech', 'Spotlight of the Week']
 draft: false
-summary: Sharing my experience attending the Y Combinator Job Series highlighting Women Engineering in Startups.
 images: []
 ---
 

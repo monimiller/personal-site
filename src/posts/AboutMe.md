@@ -1,9 +1,9 @@
 ---
 title: My First Blog Post
-date: '2022-01-31'
+description: My first blog post in the hopes that you will learn a little more about me and I will get familiar with the project.
+date: 2022-01-31
 tags: ['blogging?', 'blogging!']
 draft: false
-summary: My first blog post in the hopes that you will learn a little more about me and I will get familiar with the project.
 images: []
 ---
 

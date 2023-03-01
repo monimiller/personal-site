@@ -1,9 +1,9 @@
 ---
 title: 'Choose Your Fighter: dbt Tutorial Edition'
-date: '2022-03-08'
+description: Pits I fell into when completing the dbt Jaffle Shop tutorial and how to avoid them.
+date: 2022-03-08
 tags: ['dbt', 'data', 'dbt Cloud', 'dbt CLI', 'dbt tutorials', 'dbt setup']
 draft: false
-summary: Pits I fell into when completing the dbt Jaffle Shop tutorial and how to avoid them.
 images: ['/public/static/images/Phoebe.jpg']
 ---
 

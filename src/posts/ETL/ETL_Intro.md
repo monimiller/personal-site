@@ -1,9 +1,9 @@
 ---
 title: 'ETL for Everyone!'
-date: '2022-04-10'
+description: Addressing the basic data movement concepts.
+date: 2022-04-10
 tags: ['data', 'ETL', 'data warehousing']
 draft: false
-summary: Addressing the basic data movement concepts.
 images: ['/public/static/images/Phoebe.jpg']
 ---
 

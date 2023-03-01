@@ -1,9 +1,9 @@
 ---
 title: '42: the Solution to Data Analysts Everywhere'
-date: '2022-04-16'
+description: Introducing Trino, Starburst, and Starburst Galaxy - the REAL answer to Life, the Universe and Everything.
+date: 2022-04-16
 tags: ['data', 'ETL', 'data anlytics', 'data engineering', 'Modern Data Stack']
 draft: true
-summary: Introducing Trino, Starburst, and Starburst Galaxy - the REAL answer to Life, the Universe and Everything.
 images: ['/public/static/images/Phoebe.jpg']
 ---
 

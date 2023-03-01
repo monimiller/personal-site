@@ -1,9 +1,9 @@
 ---
 title: MOM! There's a DAG in the IDE!
-date: '2022-03-01'
+description: Sharing one of the COOLEST features dbt cloud has implemented within the IDE.
+date: 2022-03-01
 tags: ['dbt Cloud', 'dbt', 'release notes', 'DAG', 'data lineage', 'IDE']
 draft: false
-summary: Sharing one of the COOLEST features dbt cloud has implemented within the IDE.
 images: []
 ---
 
