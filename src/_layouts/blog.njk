@@ -23,6 +23,7 @@ layout: base
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
       </h2>
       {% set definedDate = post.date %} {% include "partials/date.njk" %}
+      <!-- TODO Add tags the whole for and filter works for now, but it's not pretty here-->
       <p>{{ post.data.description }}</p>
     </li>
 
