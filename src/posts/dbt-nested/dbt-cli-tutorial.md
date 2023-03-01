@@ -24,21 +24,27 @@ After going through the three step process to create the service account, and hi
   <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
     Create Service Account Credentials
   </summary>
-  <img src="/static/images/credentials_2.jpg" class="center"/> 
+  <div class="center">
+    {% imagePlaceholder "./src/assets/images/post-pics/credentials_2.jpg", "Create Service Account Credentials" %}
+  </div>
 </details>
 
 <details class="bg-slate-500 dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg ">
   <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
     Edit Service Account
   </summary>
-  <img src="/static/images/pointer.jpg" class="center"/> 
+  <div class="center">
+    {% imagePlaceholder "./src/assets/images/post-pics/pointer.jpg", "Edit Service Account", "" %}
+  </div>
 </details>
 
 <details class="bg-slate-500 dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg ">
   <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
     Create New JSON Key
   </summary>
-  <img src="/static/images/createnewkey.jpg" class="center"/> 
+  <div class="center">
+    {% imagePlaceholder "./src/assets/images/post-pics/createnewkey.jpg", "Edit Service Account", "" %}
+  </div>
 </details>
 </div>
 
@@ -53,14 +59,16 @@ While I must confess I had set up many work environments using dbt cloud already
 **Additional Instructions _Not_ Mentioned in the Tutorial:**
 
 - While the connection information is autopopulated, the personal developer credentials are not. Luckily, this can be done in the original setup and tested using the **Test** button in the top right.
-<div class="not-prose">
-<details class="bg-slate-500 dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg ">
-  <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
-    Add your BigQuery schema name in the Developer Credentials *Dataset* section. 
-  </summary>
-  <img src="/static/images/developer_credentials.png" class="center"/> 
-</details>
-</div>
+  <div class="not-prose">
+  <details class="bg-slate-500 dark:open:bg-slate-900 open:ring-1 open:ring-black/5 dark:open:ring-white/10 open:shadow-lg p-6 rounded-lg ">
+    <summary class="text-sm leading-6 text-slate-900 dark:text-white font-semibold select-none">
+      Add your BigQuery schema name in the Developer Credentials *Dataset* section.
+    </summary>
+  <div class="center">
+    {% imagePlaceholder "./src/assets/images/post-pics/developer_credentials.png", "Edit Service Account", "" %}
+  </div>
+  </details>
+  </div>
 
 - Once you have successfully tested this connection, both the database connection and your personal credentials are set up correctly. If you need to change this information for any reason, you will need to edit both the **Personal Development Credentials** and the **Connection Information**.
 
@@ -97,4 +105,5 @@ If you have 30 minutes to invest in setup and are comfortable using a text edito
 
 ## Spotlight of the Week!
 
-This week, check out my blog post about [YC 's Women in Startups Series](SWOT/../../SOTW/My_Experience_in%20_YCs_Women_in_Startups_Series.md).
+<!-- FIXME Broken link -->
+This week, check out my blog post about [YC 's Women in Startups Series](../SOTW/My_Experience_in%20_YCs_Women_in_Startups_Series.md).

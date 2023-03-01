@@ -5,4 +5,4 @@ description: A page dedicated to my dog
 layout: page
 ---
 
-<!-- TODO -->
+{% imagePlaceholder "./src/assets/images/post-pics/Phoebe.jpg", "Cockapoo puppy", "" %}
