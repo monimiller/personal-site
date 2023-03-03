@@ -1,0 +1,19 @@
+{
+  "emmet.includeLanguages": {
+    "nunjucks": "html"
+  },
+  "[markdown]": {
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "bounded",
+    // Turned off to prevent Emmet when writing code fenced blocks
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "[nunjucks]": {
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "bounded"
+  }
+}
