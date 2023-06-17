@@ -14,3 +14,4 @@ Starburst Galaxy Introduction to Autoscaling
 {% youtube '_cnfW-VmcmQ', 'Starburst Galaxy Introduction to Autoscaling' %}
 
 <!-- TODO Add all the talks -->
+<!-- https://www.wictphiladelphia.org/schedule/tech-it-out-technology-today-limitless-impact -->
