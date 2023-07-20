@@ -15,3 +15,5 @@ Starburst Galaxy Introduction to Autoscaling
 
 <!-- TODO Add all the talks -->
 <!-- https://www.wictphiladelphia.org/schedule/tech-it-out-technology-today-limitless-impact -->
+
+<!-- TODO July 19th 2023 gave a webinar? -->
