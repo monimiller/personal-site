@@ -1,7 +1,7 @@
 ---
 title: Monica vs the Machine - Women's World Cup 2023 Analysis
 description: Pitting myself versus a CatBoost algorithm to see who wins.
-date: 2022-07-20
+date: 2023-07-20
 tags: ['data-analysis', 'python']
 draft: false
 images: []
@@ -11,7 +11,7 @@ images: []
 
 Once upon a time there was a girl who played soccer. She played so much soccer
 that after years and years of playing, she now has a couple of D3 records to her
-name. While I am now a 
+name. While I am now a
 fully retired, washed up fan who strictly spectates - I still love the game, and I still love
 watching anytime that I can. It doesn't hurt that I live in the United States,
 where we have arguably the best women's soccer program in the world, so of
@@ -36,7 +36,7 @@ opinions of my family, friends, dog, or employer.
 
 My initial inspiration was born out of me trying to find new data for one of
 my example projects with Starburst. I started researching, and I found a men's
-world cup 
+world cup
 analysis performed by [Gustavo Santos](https://gustavorsantos.medium.com/predicting-results-and-goals-with-machine-learning-599e99d6e3e0). Gustavo created a tremendous project
 that I highly recommend checking out. I was able to essentially streamline my
 own analysis from his prior work, so I want to say a major thank you to him. I
@@ -95,7 +95,7 @@ bracket.
 ### The Predicted Bracket
 
 {% imagePlaceholder
-"./src/assets/images/post-pics/catboost-playoff-predictions.png", "CatBoost
+"./public/static/images/catboost-playoff-predictions.png", "CatBoost
 Playoff Predictions", "CatBoost Playoff Predictions" %}
 
 ## The Result
@@ -103,7 +103,7 @@ Playoff Predictions", "CatBoost Playoff Predictions" %}
 I am extremely interested to see these results because the algorithm and I both
 predicted very similar results in the group stage. Our analysis starts to differ
 as we move into the round of 16, and that's because I'm a human who made all my
-decisions after the application of my own biases.  I mean a third world cup in a
+decisions after the application of my own biases. I mean a third world cup in a
 row win, in this field of competition? I'd be ecstatic as a USWNT fan, but I'm not sure the
 odds are ever in our favor. This is where I
 hope the algorithm is right, and I am wrong. I would love to see the three-peat happen.
@@ -111,15 +111,13 @@ hope the algorithm is right, and I am wrong. I would love to see the three-peat 
 I wish I would have had more time to research the other teams for my own
 predictions, but I didn't, I only know what I know. I am sensing that Australia
 and Spain are both hot, so hoping those two countries have a successful result
-as well. 
+as well.
 
 ### Monica's bracket
 
 {% imagePlaceholder
-"./src/assets/images/post-pics/monica-playoff-predictions.png", "Monica's
+"./public/static/images/monica-playoff-predictions.png", "Monica's
 Playoff Predictions", "Monica's Playoff Predictions" %}
-
-
 
 I will check back throughout the tournament to see who's winning - Me or the
 Algorithm. I will also be posting my results on [LinkedIn](https://www.linkedin.com/in/monica-miller-/) so feel free to follow along there as well.

@@ -1,6 +1,6 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Advice from a Problematic Data Engineer',
+  siteName: 'data girl in a data world',
   siteDescription:
     'A Problematic Data Engineer who is passionate about women in technology.',
   siteType: 'Person', // schema
@@ -20,7 +20,7 @@ module.exports = {
   },
   blog: {
     // this is for the rss feed
-    name: 'Advice from a Problematic Data Engineer',
+    name: 'data girl in a data world',
     description:
       'A Problematic Data Engineer who is passionate about women in technology.'
   },
