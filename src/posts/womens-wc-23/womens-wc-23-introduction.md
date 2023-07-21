@@ -1,5 +1,5 @@
 ---
-title: Monica vs the Machine - Women's World Cup 2023 Analysis
+title: Monica vs the Machine - Women's 2023 World Cup Analysis
 description: Pitting myself versus a CatBoost algorithm to see who wins.
 date: 2023-07-20
 tags: ['data-analysis', 'python']
