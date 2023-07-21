@@ -37,7 +37,7 @@ opinions of my family, friends, dog, or employer.
 My initial inspiration was born out of me trying to find new data for one of
 my example projects with Starburst. I started researching, and I found a men's
 world cup 
-analysis performed by [Gustavo Santos](). Gustavo created a tremendous project
+analysis performed by [Gustavo Santos](https://gustavorsantos.medium.com/predicting-results-and-goals-with-machine-learning-599e99d6e3e0). Gustavo created a tremendous project
 that I highly recommend checking out. I was able to essentially streamline my
 own analysis from his prior work, so I want to say a major thank you to him. I
 also want to give credit where credit is due - I really learned so much from his
@@ -49,11 +49,13 @@ community. My husband always reminds me of the importance of reproducibility
 within our field, so I hope that this project will be a good example of that
 concept as well.
 
-I 
+I plan to write a four part article series around this - The Introduction, The
+Data Wrangling, The Analysis, and The Result. This is the first part of that
+series, and I will link to the other parts as I publish them.
 
 ## The Data Wrangling
 
-Every project starts with the data wrangling. I found [this]() Kaggle dataset,
+Every project starts with the data wrangling. I found [this](https://www.kaggle.com/datasets/martj42/womens-international-football-results?select=results.csv) Kaggle dataset,
 which was a great starting point. It records the outcome history of women's
 international football matches since before the historic 1991 World Cup, which
 to most is when women's soccer actually began. I did some initial data exploration, and then
@@ -67,17 +69,57 @@ the countries, the reality is that most of the best countries in the world are
 in the tournament. I thought that leaving the other countries in would skew the
 data too much, and I wanted to keep the analysis as clean as possible. I also
 needed to update the dataset, since it did not reflect all the results of
-international matches within the last year.  I was talking to a friend  
-  I will dive
-into an analysis of the data in my second post, but for now I wanted to the
-basic premise 
+international matches within the last year. You can't be in data without having
+to do some sort of manual reconciliation at some point. I feel like many of us
+in this field
+have the Marie Kondo attitude and kinda secretly love the mess that is data.
+Nevertheless, I persisted, and I was able to get the data into a format that I
+could then utilize for my analysis. I have included the wrangled data only in my
+project, but I am happy to share the entire datasets and process with anyone who is interested.
 
 ## The Analysis
-I used the CatBoost algorithm for my predictive analysis. The train model notebook is where I ran the analysis to create my model. Much of this was me simplifying Gustavo's previous work and tailoring it to my needs. I also weighted every match equally, so instead of the home team being weighted differently than the away team, those outcomes were statistically equally probable.
 
-My run predictions notebook is where I then used the trained model to produce probabilities for all the results. These results can be found in the model generated predictions folder.
+I will dive into an analysis of the data in my second post, but for now I wanted
+to share the basic premise. I used the CatBoost algorithm to create my predictive
+analysis. The [train model notebook](https://github.com/monimiller/womens_wc_23/blob/main/notebooks/train_model.ipynb) is where I ran the analysis to create my
+model. Much of this was me simplifying Gustavo's previous work and tailoring it
+to my needs, but I did end up making some significant logic changes, like weighting every match equally. Instead of the home team
+being weighted differently than the away team, those outcomes were statistically
+equally probable. My run predictions notebook is where I then used the trained
+model to produce probabilities for all the results. If you are looking to
+recreate the analysis with the same model, all you need to do is run the second
+notebook. Based on the group play predictions,
+I then ran through all the playoff games and built out the full predictive
+bracket.
 
-Based on the group play predictions, I then ran through all the playoff games and built out the full bracket.
+### The Predicted Bracket
+
+{% imagePlaceholder
+"./src/assets/images/post-pics/catboost-playoff-predictions.png", "CatBoost
+Playoff Predictions", "CatBoost Playoff Predictions" %}
 
 ## The Result
-Just like I make most decisions, all my predictions were based on my gut. I didn't really do as much research as I would have liked, and really just solely put all my biases out there. You can find my predictions in the Monica's predictions folder. I have all my group winners, and then also have published my personal bracket. I will check back throughout the tournament to see who's winning - Me or the Algorithm.
+
+I am extremely interested to see these results because the algorithm and I both
+predicted very similar results in the group stage. Our analysis starts to differ
+as we move into the round of 16, and that's because I'm a human who made all my
+decisions after the application of my own biases.  I mean a third world cup in a
+row win, in this field of competition? I'd be ecstatic as a USWNT fan, but I'm not sure the
+odds are ever in our favor. This is where I
+hope the algorithm is right, and I am wrong. I would love to see the three-peat happen.
+
+I wish I would have had more time to research the other teams for my own
+predictions, but I didn't, I only know what I know. I am sensing that Australia
+and Spain are both hot, so hoping those two countries have a successful result
+as well. 
+
+### Monica's bracket
+
+{% imagePlaceholder
+"./src/assets/images/post-pics/monica-playoff-predictions.png", "Monica's
+Playoff Predictions", "Monica's Playoff Predictions" %}
+
+
+
+I will check back throughout the tournament to see who's winning - Me or the
+Algorithm. I will also be posting my results on [LinkedIn](https://www.linkedin.com/in/monica-miller-/) so feel free to follow along there as well.
