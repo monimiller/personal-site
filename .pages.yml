@@ -1,4 +1,4 @@
-images: 
+media: 
     input: src/assets/images/post-pics
     output: assets/images
 content:
