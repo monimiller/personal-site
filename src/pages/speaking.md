@@ -14,6 +14,8 @@ youtube: true
 
 ## Videos
 
+{% youtube 'r7KdcXS_27I', 'Exploring Data lakehouses' %}
+
 Starburst Galaxy Introduction to Autoscaling
 {% youtube '_cnfW-VmcmQ', 'Starburst Galaxy Introduction to Autoscaling' %}
 
