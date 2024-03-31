@@ -63,22 +63,25 @@ const {
 <meta name="theme-color" content="#ffffff" />
 
 <!-- other -->
-<meta name="generator" content={Astro.generator} />
+<meta name="generator" content="{Astro.generator}" />
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 <Seo
-  type={type}
-  title={title}
-  description={description}
-  image={image}
-  authors={authors}
-  postFrontmatter={postFrontmatter}
-  noindex={noindex}
+  type="{type}"
+  title="{title}"
+  description="{description}"
+  image="{image}"
+  authors="{authors}"
+  postFrontmatter="{postFrontmatter}"
+  noindex="{noindex}"
 />
 
 <!-- no fallback as I saw issues with firefox fallback -->
 {siteData.useViewTransitions && <ViewTransitions fallback="none" />}
+
+<!-- Analytics -->
 <script
-    data-goatcounter="https://monimiller.goatcounter.com/count"
-    async
-    src="//gc.zgo.at/count.js"></script>
+  data-goatcounter="https://monimiller.goatcounter.com/count"
+  async
+  src="//gc.zgo.at/count.js"
+></script>
