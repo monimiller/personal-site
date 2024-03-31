@@ -10,7 +10,7 @@ import { Image } from "astro:assets";
 // components
 import Button from "@components/Button/Button.astro";
 
-import heroImage from "@assets/images/business-owner-min.png";
+import heroImage from "@assets/images/green-screen.jpg";
 import award1 from "@images/awards/award-yelp.png";
 import award2 from "@images/awards/award-homeadvisor.png";
 import award3 from "@images/awards/award-angieslist.png";
@@ -36,9 +36,9 @@ import award3 from "@images/awards/award-angieslist.png";
                 class="text-4xl font-medium leading-tight lg:text-5xl lg:leading-tight"
                 data-aos="fade-up"
             >
-                Quality work you deserve from the people you
+                Just a Data Girl in a Data
                 <span class="relative whitespace-nowrap">
-                    trust.
+                    World.
                     <span>
                         <Icon
                             name="freehand-zig-underline"
@@ -49,18 +49,18 @@ import award3 from "@images/awards/award-angieslist.png";
                 </span>
             </h1>
             <p class="description mt-6" data-aos="fade-up">
-                A theme for small business needs. Playful, colorful and fully
-                customizable.
+                <!-- TODO -->
+                Playful, colorful and fully customizable.
             </p>
             <div class="mt-6 flex gap-4">
-                <Button
+                <button
                     variant="primary"
                     href="/contact/"
                     data-aos="fade-up"
                     data-aos-delay=".9"
                 >
                     Get a FREE quote
-                </Button>
+                </button>
             </div>
 
             <!-- awards example, uncomment to see -->
@@ -90,13 +90,14 @@ import award3 from "@images/awards/award-angieslist.png";
         </div>
         <!-- hero image -->
         <div class="mx-auto max-w-lg md:max-w-full">
-            <Image
-                src={heroImage}
+            <image
+                src="{heroImage}"
                 class="rounded-xl"
-                alt="small business owner"
+                alt="Two girls in Black tee shirts, jeans and white sneakers in front of a greenscreen"
                 loading="eager"
-                width={600}
-                densities={[1.5, 2]}
+                width="{600}"
+                densities="{[1.5,"
+                2]}
                 data-aos="fade-in"
                 data-aos-delay=".2"
             />
