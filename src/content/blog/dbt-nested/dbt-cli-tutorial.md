@@ -2,9 +2,9 @@
 title: 'Choose Your Fighter: dbt Tutorial Edition'
 description: Pits I fell into when completing the dbt Jaffle Shop tutorial and how to avoid them.
 date: 2022-03-08
-tags: ['dbt', 'data', 'dbt Cloud', 'dbt CLI', 'dbt tutorials', 'dbt setup']
+categories: ['dbt', 'data', 'dbt Cloud', 'dbt CLI', 'dbt tutorials', 'dbt setup']
 draft: false
-images: ['/public/static/images/Phoebe.jpg']
+# images: ['/public/static/images/Phoebe.jpg']
 ---
 
 There is nothing I **despise** more than medium level decision making. Big decisions - no problem! _Pro and Con lists to the Rescue!_ Small decisions? Easy - I go with my gut and accept the difference between option A and option B is essentially negligible (ex: pizza is still an excellent dinner choice, no matter where you order it from).
@@ -106,4 +106,5 @@ If you have 30 minutes to invest in setup and are comfortable using a text edito
 ## Spotlight of the Week!
 
 <!-- FIXME Broken link -->
+
 This week, check out my blog post about [YC 's Women in Startups Series](../SOTW/My_Experience_in%20_YCs_Women_in_Startups_Series.md).

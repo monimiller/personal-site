@@ -1,10 +1,9 @@
 ---
 title: Spotlight of the Week - Girls Who Code
 description: Celebrating GWC's 10 Year Anniversary with Volunteer Opportunities.
-date: 2022-04-04
-tags: ['Career Growth', 'Women in Tech', 'Spotlight of the Week']
+pubDate: '2022-04-04'
+categories: ['Career Growth', 'Women in Tech', 'Spotlight of the Week']
 draft: false
-images: []
 ---
 
 ### What is Spotlight of the Week?

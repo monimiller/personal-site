@@ -1,8 +1,8 @@
 ---
 title: Built In dbt Tests for the Problematic Data Engineer
 description: Sharing some of the helpful built-in dbt generic tests I have implemented in my workflows.
-date: 2022-02-15
-tags: ['dbt', 'data', 'testing']
+pubDate: 2022-02-15
+categories: ['dbt', 'data', 'testing']
 draft: false
 images: []
 ---

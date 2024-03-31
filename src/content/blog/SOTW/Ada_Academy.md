@@ -1,11 +1,10 @@
 ---
 title: Spotlight of the Week - Ada Academy
 description: Learning about Ada Academy's mission and giving opportunities.
-date: 2022-04-16
-tags:
+pubDate: '2022-04-16'
+categories:
   ['Career Growth', 'Women in Tech', 'Spotlight of the Week', 'Non-Profit Organizations']
 draft: false
-images: []
 ---
 
 ### What is Spotlight of the Week?
