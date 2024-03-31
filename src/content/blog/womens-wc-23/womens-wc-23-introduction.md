@@ -5,8 +5,7 @@ pubDate: "2023-07-20"
 authors: ["monica-miller"]
 categories: ["data-analysis", "python"]
 draft: false
-# TODO: Add hero image
-heroImage: "../example-1/orange-blobs-1.jpg"
+heroImage: "./monica-playoff-predictions.png"
 ---
 
 ## Once upon a time
@@ -31,7 +30,7 @@ I will dive into an analysis of the data in my second post, but for now I wanted
 
 ### The Predicted Bracket
 
-![CatBoost Playoff Predictions]("./public/static/images/catboost-playoff-predictions.png", "CatBoost Playoff Predictions", "CatBoost Playoff Predictions")
+![CatBoost Playoff Predictions](./catboost-playoff-predictions.png)
 
 ## The Result
 
@@ -41,8 +40,6 @@ I wish I would have had more time to research the other teams for my own predict
 
 ### Monica's bracket
 
-{% imagePlaceholder
-"./public/static/images/monica-playoff-predictions.png", "Monica's
-Playoff Predictions", "Monica's Playoff Predictions" %}
+![Monica's Playoff Predictions](monica-playoff-predictions.png)
 
-I will check back throughout the tournament to see who's winning - Me or the Algorithm. I will also be posting my results on [LinkedIn](https://www.linkedin.com/in/monica-miller-/) so feel free to follow along there as well.
+I will check back throughout the tournament to see who's winning - Me or the Algorithm. I will also be posting my results on [LinkedIn](https://www.linkedin.com/in/monimiller/) so feel free to follow along there as well.
