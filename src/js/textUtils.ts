@@ -20,6 +20,9 @@ export function slugify(text: string): string {
  */
 export function humanize(text: string): string {
   const slugifiedText = slugify(text);
+  if (slugifiedText == "dbt") {
+    return slugifiedText;
+  }
   return (
     slugifiedText
       .replace(/-/g, " ") // replace "-" with space
@@ -29,6 +32,14 @@ export function humanize(text: string): string {
         /\w\S*/g,
         (w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase(),
       )
+      // HACK Hardcoded exceptions
+      .replace("Dbt", "dbt")
+      .replace("Cli", "CLI")
+      .replace("Api", "API")
+      .replace("Yc", "YC")
+      .replace("Dag", "DAG")
+      .replace("Sql", "SQL")
+      .replace("Etl", "ETL")
   );
 }
 
