@@ -24,28 +24,26 @@ export type navItem = navLinkItem | navDropdownItem;
 // note: 1 level of dropdown is supported
 const navConfig: navItem[] = [
   {
-    text: "Overview",
-    link: "/overview/",
+    text: "Talks",
+    link: "/talks/",
+    // TODO
+    // dropdown: [
+    //   {
+    //     text: "Exterior Painting",
+    //     link: "/services/exterior-painting/",
+    //   },
+    //   {
+    //     text: "Interior Painting",
+    //     link: "/services/interior-painting/",
+    //   },
+    //   {
+    //     text: "Deck and Fence",
+    //     link: "/services/deck-and-fence-staining/",
+    //   },
+    // ],
   },
   {
-    text: "Services",
-    dropdown: [
-      {
-        text: "Exterior Painting",
-        link: "/services/exterior-painting/",
-      },
-      {
-        text: "Interior Painting",
-        link: "/services/interior-painting/",
-      },
-      {
-        text: "Deck and Fence",
-        link: "/services/deck-and-fence-staining/",
-      },
-    ],
-  },
-  {
-    text: "Why Us",
+    text: "About me",
     link: "/about/",
   },
   {

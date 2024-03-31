@@ -25,10 +25,10 @@ export interface SiteDataProps {
 
 // Update this file with your site specific information
 const siteData: SiteDataProps = {
-  name: "Stellar",
+  name: "Monica Miller",
   // Your website's title and description (meta fields)
-  title:
-    "Stellar - a playful small business theme crafted with Astro and Tailwind CSS",
+  title: "Monica Miller - Data Girl in a Data World",
+  // TODO Add a description
   description:
     "Create a fun website for your small business clients with our beautiful website theme designed using Astro and Tailwind CSS. Perfect for freelancers, developers, startups, and personal use.",
   useViewTransitions: true,
@@ -39,20 +39,21 @@ const siteData: SiteDataProps = {
     address1: "1234 Main Street",
     address2: "New York, NY 10001",
     phone: "(123) 456-7890",
-    email: "creator@cosmicthemes.com",
+    email: "hello@monimiller.com",
   },
 
   // Your information for blog post purposes
   author: {
-    name: "Cosmic Themes",
-    email: "creator@cosmicthemes.com",
-    twitter: "Cosmic_Themes",
+    name: "Monica Miller",
+    email: "hello@monimiller.com",
+    twitter: "Moni4489",
   },
 
   // default image for meta tags if the page doesn't have an image already
   defaultImage: {
+    // TODO
     src: "/images/cosmic-themes-logo.jpg",
-    alt: "Stellar logo",
+    alt: "Phoebe logo",
   },
 };
 
