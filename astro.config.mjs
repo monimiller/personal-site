@@ -10,7 +10,7 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://stellar.cosmicthemes.com",
+  site: "https://monimiller.com",
   output: "hybrid",
   adapter: netlify({
     imageCDN: false,
@@ -21,7 +21,7 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       // Shiki Themes: https://github.com/shikijs/shiki/blob/main/docs/themes.md
-      theme: "dracula",
+      theme: "rose-pine-dawn",
       wrap: true,
     },
   },
