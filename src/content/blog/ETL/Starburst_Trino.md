@@ -5,6 +5,9 @@ pubDate: "2022-04-16"
 categories:
   ["data", "ETL", "data anlytics", "data engineering", "Modern Data Stack"]
 draft: true
+authors: ["monica-miller"]
+# TODO: Add hero image
+heroImage: "../example-1/orange-blobs-1.jpg"
 # heroImage: ['/public/static/images/Phoebe.jpg']
 ---
 

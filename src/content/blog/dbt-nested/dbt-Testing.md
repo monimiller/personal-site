@@ -4,7 +4,9 @@ description: Sharing some of the helpful built-in dbt generic tests I have imple
 pubDate: 2022-02-15
 categories: ["dbt", "data", "testing"]
 draft: false
-images: []
+authors: ["monica-miller"]
+# TODO: Add hero image
+heroImage: "../example-1/orange-blobs-1.jpg"
 ---
 
 Hi, y'all!

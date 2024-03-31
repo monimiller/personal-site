@@ -4,7 +4,9 @@ description: Sharing one of the COOLEST features dbt cloud has implemented withi
 pubDate: 2022-03-01
 categories: ["dbt Cloud", "dbt", "release notes", "DAG", "data lineage", "IDE"]
 draft: false
-images: []
+authors: ["monica-miller"]
+# TODO: Add hero image
+heroImage: "../example-1/orange-blobs-1.jpg"
 ---
 
 _Picture the following scenario._ \

@@ -2,8 +2,11 @@
 title: Spotlight of the Week - YC Job Series Women Eng in Startups
 description: Sharing my experience attending the Y Combinator Job Series highlighting Women Engineering in Startups.
 pubDate: "2022-03-05"
+authors: ["monica-miller"]
 categories: ["YC", "Startup Culture", "Women in Tech", "Spotlight of the Week"]
 draft: false
+# TODO: Add hero image
+heroImage: "../example-1/orange-blobs-1.jpg"
 ---
 
 Hi, y'all!

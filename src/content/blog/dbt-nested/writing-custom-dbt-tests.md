@@ -4,7 +4,9 @@ description: Sharing my experience with singular and generic testing I created f
 pubDate: 2022-02-27
 categories: ["dbt", "data", "testing", "dbt tutorials"]
 draft: false
-images: []
+authors: ["monica-miller"]
+# TODO: Add hero image
+heroImage: "../example-1/orange-blobs-1.jpg"
 ---
 
 Hi, y'all!

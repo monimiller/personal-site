@@ -4,6 +4,9 @@ description: "A summary of the greatest conference to ever do data"
 pubDate: "2022-10-24"
 categories: ["dbt", "data"]
 draft: false
+authors: ["monica-miller"]
+# TODO: Add hero image
+heroImage: "./example-1/orange-blobs-1.jpg"
 ---
 
 Let me declare my position before writing this. I started using dbt professionally and personally about a year ago, and have considered myself a big fan of the project and the community ever since. I’m probably what you would call a [community lurker](https://orbit.love/blog/lets-expand-the-community-builders-dictionary), following all the data influencers and doing my best to keep up to date with the #memes-and-off-topic-chatter channel offering slack reactions where I see fit. Therefore, I feel like I have the ability to provide a more unbiased opinion about my experience at Coalesce over those that rank higher in the stratosphere. So, here it goes.

@@ -4,6 +4,9 @@ description: My first blog post in the hopes that you will learn a little more a
 pubDate: "2022-01-31"
 categories: ["blogging?", "blogging!"]
 draft: false
+authors: ["monica-miller"]
+# TODO: Add hero image
+heroImage: "./example-1/orange-blobs-1.jpg"
 ---
 
 Hi, y'all!

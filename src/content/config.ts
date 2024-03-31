@@ -18,7 +18,7 @@ const blogCollection = defineCollection({
         .string()
         .optional()
         .transform((str) => (str ? new Date(str) : undefined)),
-      heroImage: image(),
+      heroImage: image().optional(), // TODO: make this required
       categories: z.array(z.string()),
       // blog posts will be excluded from build if draft is "true"
       draft: z.boolean().optional(),

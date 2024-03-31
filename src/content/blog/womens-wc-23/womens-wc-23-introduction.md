@@ -2,8 +2,11 @@
 title: Monica vs the Machine - Women's 2023 World Cup Analysis
 description: Pitting myself versus a CatBoost algorithm to see who wins.
 pubDate: "2023-07-20"
+authors: ["monica-miller"]
 categories: ["data-analysis", "python"]
 draft: false
+# TODO: Add hero image
+heroImage: "../example-1/orange-blobs-1.jpg"
 ---
 
 ## Once upon a time
@@ -28,7 +31,7 @@ I will dive into an analysis of the data in my second post, but for now I wanted
 
 ### The Predicted Bracket
 
-{% imagePlaceholder "./public/static/images/catboost-playoff-predictions.png", "CatBoost Playoff Predictions", "CatBoost Playoff Predictions" %}
+![CatBoost Playoff Predictions]("./public/static/images/catboost-playoff-predictions.png", "CatBoost Playoff Predictions", "CatBoost Playoff Predictions")
 
 ## The Result
 

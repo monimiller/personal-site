@@ -2,8 +2,11 @@
 title: Spotlight of the Week - Elpha
 description: Sharing some great resources about Elpha.
 pubDate: "2022-02-28"
+authors: ["monica-miller"]
 categories: ["Career Growth", "Women in Tech", "Spotlight of the Week"]
 draft: false
+# TODO: Add hero image
+heroImage: "../example-1/orange-blobs-1.jpg"
 ---
 
 ### What is Spotlight of the Week?

@@ -2,6 +2,7 @@
 title: Spotlight of the Week - Ada Academy
 description: Learning about Ada Academy's mission and giving opportunities.
 pubDate: "2022-04-16"
+authors: ["monica-miller"]
 categories:
   [
     "Career Growth",
@@ -10,6 +11,8 @@ categories:
     "Non-Profit Organizations",
   ]
 draft: false
+# TODO: Add hero image
+heroImage: "../example-1/orange-blobs-1.jpg"
 ---
 
 ### What is Spotlight of the Week?
