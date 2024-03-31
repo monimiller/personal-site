@@ -9,17 +9,17 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import ExternalLink from "@components/MarkdownComponents/ExternalLink.astro";
 
 export async function getStaticPaths() {
-  const otherPages: CollectionEntry<"otherPages">[] = await getCollection(
-    "otherPages",
-    ({ data }) => {
-      // filter out draft pages
-      return data.draft !== true;
-    },
-  );
-  return otherPages.map((page) => ({
-    params: { page: page.slug },
-    props: page,
-  }));
+    const otherPages: CollectionEntry<"otherPages">[] = await getCollection(
+        "otherPages",
+        ({ data }) => {
+            // filter out draft pages
+            return data.draft !== true;
+        },
+    );
+    return otherPages.map((page) => ({
+        params: { page: page.slug },
+        props: page,
+    }));
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
@@ -31,16 +31,18 @@ const { title, description } = page.data;
 ---
 
 <BaseLayout title={title} description={description}>
-  <section class="container pt-24 md:pt-36">
-    <div class="w-full rounded-xl bg-base-200/50 py-20 text-center md:py-32">
-      <h1 class="h1">{title}</h1>
-    </div>
-    <div class="mx-auto max-w-3xl">
-      <div
-        class="text-base-content prose mt-10 max-w-none text-sm md:text-base"
-      >
-        <Content components={{ a: ExternalLink }} />
-      </div>
-    </div>
-  </section>
+    <section class="container pt-24 md:pt-36">
+        <div
+            class="w-full rounded-xl bg-base-200/50 py-20 text-center md:py-32"
+        >
+            <h1 class="h1">{title}</h1>
+        </div>
+        <div class="mx-auto max-w-3xl">
+            <div
+                class="text-base-content prose mt-10 max-w-none text-sm md:text-base"
+            >
+                <Content components={{ a: ExternalLink }} />
+            </div>
+        </div>
+    </section>
 </BaseLayout>

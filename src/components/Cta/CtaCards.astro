@@ -11,57 +11,63 @@ import FeatureCard from "@components/FeatureCard/FeatureCardMedium.astro";
 import Button from "@components/Button/Button.astro";
 
 interface FeatureData {
-  icon: string;
-  title: string;
-  text: string;
+    icon: string;
+    title: string;
+    text: string;
 }
 
 // data
 const featureData: FeatureData[] = [
-  {
-    icon: "tabler:paint",
-    title: "Eco-friendly paints",
-    text: `We use low-VOC paints that are safe for you and your family. We also use eco-friendly 
+    {
+        icon: "tabler:paint",
+        title: "Eco-friendly paints",
+        text: `We use low-VOC paints that are safe for you and your family. We also use eco-friendly 
       cleaning products to ensure that your home is safe for you and your family.`,
-  },
-  {
-    icon: "tabler-home-heart",
-    title: "Your satisfaction guaranteed",
-    text: `You want to know that you and your home will be respected. You won't pay a dime until 
+    },
+    {
+        icon: "tabler-home-heart",
+        title: "Your satisfaction guaranteed",
+        text: `You want to know that you and your home will be respected. You won't pay a dime until 
       your project is completed, an inspection is done, and you are 100% satisfied.`,
-  },
-  {
-    icon: "tabler:list-check",
-    title: "Leading warranties",
-    text: `We offer a 2-year warranty on all of our work. If you're not satisfied with the quality of 
+    },
+    {
+        icon: "tabler:list-check",
+        title: "Leading warranties",
+        text: `We offer a 2-year warranty on all of our work. If you're not satisfied with the quality of 
       our work, we'll come back and fix it for free.`,
-  },
+    },
 ];
 ---
 
 <section id="cta" class="my-20 bg-primary-100 py-20">
-  <div class="container relative grid gap-10 md:grid-cols-2">
-    <div class="mx-auto flex max-w-lg flex-col">
-      <h2 class="h1 leading-tight">What are you waiting for?</h2>
-      <p class="description mt-6">
-        Schedule your free quote today and turn your vision into reality.
-      </p>
-      <div class="flex">
-        <Button variant="primary" href="/contact/" class="mt-6" arrow="right">
-          Schedule a free estimate
-        </Button>
-      </div>
+    <div class="container relative grid gap-10 md:grid-cols-2">
+        <div class="mx-auto flex max-w-lg flex-col">
+            <h2 class="h1 leading-tight">What are you waiting for?</h2>
+            <p class="description mt-6">
+                Schedule your free quote today and turn your vision into
+                reality.
+            </p>
+            <div class="flex">
+                <Button
+                    variant="primary"
+                    href="/contact/"
+                    class="mt-6"
+                    arrow="right"
+                >
+                    Schedule a free estimate
+                </Button>
+            </div>
+        </div>
+        <div class="mx-auto flex max-w-lg flex-col gap-8">
+            {
+                featureData.map((feature) => (
+                    <FeatureCard
+                        title={feature.title}
+                        text={feature.text}
+                        icon={feature.icon}
+                    />
+                ))
+            }
+        </div>
     </div>
-    <div class="mx-auto flex max-w-lg flex-col gap-8">
-      {
-        featureData.map((feature) => (
-          <FeatureCard
-            title={feature.title}
-            text={feature.text}
-            icon={feature.icon}
-          />
-        ))
-      }
-    </div>
-  </div>
 </section>

@@ -10,35 +10,35 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://monimiller.com",
-  output: "hybrid",
-  adapter: netlify({
-    imageCDN: false,
-  }),
-  redirects: {
-    "/admin": "/keystatic",
-  },
-  markdown: {
-    shikiConfig: {
-      // Shiki Themes: https://github.com/shikijs/shiki/blob/main/docs/themes.md
-      theme: "rose-pine-dawn",
-      wrap: true,
-    },
-  },
-  // trailingSlash: "always",
-  integrations: [
-    // example auto import component into mdx files
-    AutoImport({
-      imports: [
-        // https://github.com/delucis/astro-auto-import
-        "@components/Admonition/Admonition.astro",
-      ],
+    site: "https://monimiller.com",
+    output: "hybrid",
+    adapter: netlify({
+        imageCDN: false,
     }),
-    mdx(),
-    react(),
-    keystatic(),
-    tailwind(),
-    sitemap(),
-    compress(),
-  ],
+    redirects: {
+        "/admin": "/keystatic",
+    },
+    markdown: {
+        shikiConfig: {
+            // Shiki Themes: https://github.com/shikijs/shiki/blob/main/docs/themes.md
+            theme: "rose-pine-dawn",
+            wrap: true,
+        },
+    },
+    // trailingSlash: "always",
+    integrations: [
+        // example auto import component into mdx files
+        AutoImport({
+            imports: [
+                // https://github.com/delucis/astro-auto-import
+                "@components/Admonition/Admonition.astro",
+            ],
+        }),
+        mdx(),
+        react(),
+        keystatic(),
+        tailwind(),
+        sitemap(),
+        compress(),
+    ],
 });

@@ -9,22 +9,22 @@ const countedCategories = countItems(allCategories);
 const processedCategories = sortByValue(countedCategories);
 
 interface Props {
-  showCount?: boolean;
+    showCount?: boolean;
 }
 
 const { showCount = false } = Astro.props as Props;
 ---
 
 <div class="flex flex-wrap justify-center gap-x-4 gap-y-2">
-  {
-    processedCategories.map(([category, count]) => (
-      <a
-        href={`/categories/${category}/`}
-        class="button button--ghost py-2 text-sm"
-      >
-        {humanize(category)}
-        {showCount && <span class="text-xs opacity-70">{count}</span>}
-      </a>
-    ))
-  }
+    {
+        processedCategories.map(([category, count]) => (
+            <a
+                href={`/categories/${category}/`}
+                class="button button--ghost py-2 text-sm"
+            >
+                {humanize(category)}
+                {showCount && <span class="text-xs opacity-70">{count}</span>}
+            </a>
+        ))
+    }
 </div>

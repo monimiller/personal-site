@@ -9,23 +9,23 @@ import Seo from "@components/Seo/Seo.astro";
 import siteData from "@config/siteData.json";
 
 export interface Props {
-  type?: "blog" | "general" | undefined;
-  title: string;
-  description: string;
-  image?: ImageMetadata;
-  postFrontmatter?: CollectionEntry<"blog">["data"];
-  authors?: CollectionEntry<"authors">[];
-  noindex?: boolean;
+    type?: "blog" | "general" | undefined;
+    title: string;
+    description: string;
+    image?: ImageMetadata;
+    postFrontmatter?: CollectionEntry<"blog">["data"];
+    authors?: CollectionEntry<"authors">[];
+    noindex?: boolean;
 }
 
 const {
-  type = "general",
-  title,
-  description,
-  image,
-  authors,
-  postFrontmatter,
-  noindex = false,
+    type = "general",
+    title,
+    description,
+    image,
+    authors,
+    postFrontmatter,
+    noindex = false,
 } = Astro.props as Props;
 ---
 
@@ -35,28 +35,28 @@ const {
 <!-- Poppins Font -->
 <link rel="preconnect" href="https://api.fontshare.com" />
 <link
-  href="https://api.fontshare.com/v2/css?f[]=poppins@401,500,400,700&display=swap"
-  rel="stylesheet"
+    href="https://api.fontshare.com/v2/css?f[]=poppins@401,500,400,700&display=swap"
+    rel="stylesheet"
 />
 
 <!-- Favicons. Generated from https://realfavicongenerator.net/ -->
 <link rel="icon" href="/favicons/favicon.ico" />
 <link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="/favicons/apple-touch-icon.png"
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/favicons/apple-touch-icon.png"
 />
 <link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="/favicons/favicon-32x32.png"
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/favicons/favicon-32x32.png"
 />
 <link
-  rel="icon"
-  type="image/png"
-  sizes="16x16"
-  href="/favicons/favicon-16x16.png"
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/favicons/favicon-16x16.png"
 />
 <link rel="manifest" href="/favicons/site.webmanifest" />
 <meta name="msapplication-TileColor" content="#2d89ef" />
@@ -67,13 +67,13 @@ const {
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 <Seo
-  type="{type}"
-  title="{title}"
-  description="{description}"
-  image="{image}"
-  authors="{authors}"
-  postFrontmatter="{postFrontmatter}"
-  noindex="{noindex}"
+    type="{type}"
+    title="{title}"
+    description="{description}"
+    image="{image}"
+    authors="{authors}"
+    postFrontmatter="{postFrontmatter}"
+    noindex="{noindex}"
 />
 
 <!-- no fallback as I saw issues with firefox fallback -->
@@ -81,7 +81,6 @@ const {
 
 <!-- Analytics -->
 <script
-  data-goatcounter="https://monimiller.goatcounter.com/count"
-  async
-  src="//gc.zgo.at/count.js"
-></script>
+    data-goatcounter="https://monimiller.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"></script>

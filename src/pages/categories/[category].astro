@@ -1,7 +1,7 @@
 ---
 import {
-  type InferGetStaticPropsType,
-  type InferGetStaticParamsType,
+    type InferGetStaticPropsType,
+    type InferGetStaticParamsType,
 } from "astro";
 
 // main layout
@@ -19,14 +19,14 @@ import { slugify, humanize } from "@js/textUtils";
 
 // generate pagination for tag pages if there are a bunch of posts for a single tag
 export async function getStaticPaths() {
-  const posts = await getAllPosts();
-  const allCategories = posts.map((post) => post.data.categories).flat();
-  const countedCategories = countItems(allCategories);
-  const processedCategories = sortByValue(countedCategories);
+    const posts = await getAllPosts();
+    const allCategories = posts.map((post) => post.data.categories).flat();
+    const countedCategories = countItems(allCategories);
+    const processedCategories = sortByValue(countedCategories);
 
-  return processedCategories.map(([category, count]) => ({
-    params: { category: category },
-  }));
+    return processedCategories.map(([category, count]) => ({
+        params: { category: category },
+    }));
 }
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
@@ -37,35 +37,35 @@ const { category } = Astro.params as Params;
 
 const posts = await getAllPosts();
 const filteredPosts = posts.filter((post) => {
-  // make sure to slugify them for comparison
-  const slugifiedCategory = post.data.categories.map((category) =>
-    slugify(category),
-  );
+    // make sure to slugify them for comparison
+    const slugifiedCategory = post.data.categories.map((category) =>
+        slugify(category),
+    );
 
-  return slugifiedCategory.includes(category);
+    return slugifiedCategory.includes(category);
 });
 ---
 
 <BaseLayout
-  title={`Our Blog Posts on ${humanize(category)}`}
-  description="Learn from our blog posts about web development, design, and more."
+    title={`Our Blog Posts on ${humanize(category)}`}
+    description="Learn from our blog posts about web development, design, and more."
 >
-  <section class="container pt-36 md:pt-44">
-    <h1 class="h1 text-center">
-      Helpful tips on <span class="text-primary-600"
-        >{humanize(category).toLowerCase()}</span
-      >
-    </h1>
-    <div class="mt-6 flex justify-center">
-      <CategoryCloud />
-    </div>
+    <section class="container pt-36 md:pt-44">
+        <h1 class="h1 text-center">
+            Helpful tips on <span class="text-primary-600"
+                >{humanize(category).toLowerCase()}</span
+            >
+        </h1>
+        <div class="mt-6 flex justify-center">
+            <CategoryCloud />
+        </div>
 
-    <div class="mt-20 grid gap-4 gap-y-12 md:mt-28">
-      {
-        filteredPosts.map((post) => (
-          <PostCardFull post={post} showDescription={true} />
-        ))
-      }
-    </div>
-  </section>
+        <div class="mt-20 grid gap-4 gap-y-12 md:mt-28">
+            {
+                filteredPosts.map((post) => (
+                    <PostCardFull post={post} showDescription={true} />
+                ))
+            }
+        </div>
+    </section>
 </BaseLayout>

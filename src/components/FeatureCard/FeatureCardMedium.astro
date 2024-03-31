@@ -9,22 +9,22 @@
 import { Icon } from "astro-icon";
 
 interface Props {
-  icon: string;
-  title: string;
-  text: string;
+    icon: string;
+    title: string;
+    text: string;
 }
 
 const { icon, title, text } = Astro.props as Props;
 ---
 
 <div class="flex gap-4">
-  <Icon
-    name={icon}
-    class="mt-1 h-14 w-14 shrink-0 text-primary-500"
-    aria-hidden="true"
-  />
-  <div class="flex flex-col gap-2">
-    <h3 class="inline font-medium">{title}</h3>
-    <p class="opacity-80">{text}</p>
-  </div>
+    <Icon
+        name={icon}
+        class="mt-1 h-14 w-14 shrink-0 text-primary-500"
+        aria-hidden="true"
+    />
+    <div class="flex flex-col gap-2">
+        <h3 class="inline font-medium">{title}</h3>
+        <p class="opacity-80">{text}</p>
+    </div>
 </div>
