@@ -1,0 +1,21 @@
+---
+import { Image } from "astro:assets";
+
+// images
+import logo from "@images/stellar-logo.png";
+
+// data
+import siteData from "@config/siteData.json";
+---
+
+<a class="primary-focus flex items-center align-middle" href="/" class="">
+  <p class="sr-only">{siteData.title}</p>
+  <Image
+    src={logo}
+    alt="Stellar logo"
+    loading="eager"
+    height={90}
+    class="h-10 w-auto"
+    aria-label="Stellar logo"
+  />
+</a>
