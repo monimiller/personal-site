@@ -12,24 +12,26 @@ import Button from "@components/Button/Button.astro";
 
 interface Props {
     title: string; // larger title
-    details: string; // text details
+    description: string; // text description
+    event: string;
     href: string; // link to learn more
     image: ImageMetadata; // an imported image
     imageSide: "left" | "right";
     idx: number; // determines which "blob" icon svg to use. There are 4 options (0-3)
 }
 
-const { image, title, href, idx, details, imageSide } = Astro.props as Props;
+const { image, title, href, idx, description, imageSide } =
+    Astro.props as Props;
 ---
 
 <div class="mx-auto grid gap-8 rounded-xl md:grid-cols-2 md:gap-12 lg:gap-20">
     <!-- text -->
     <div class=`${imageSide === "left" ? "md:order-last": ""} col-span-1`>
         <h2 class="h2 mt-6">{title}</h2>
-        <p class="mt-4 opacity-80">{details}</p>
+        <p class="mt-4 opacity-80">{description}</p>
         <div class="z-20 mt-4 flex">
             <Button variant="ghost" href={href} arrow="right">
-                Learn more <span class="sr-only">about {title}</span>
+                Watch <span class="sr-only">{title}</span>
             </Button>
         </div>
     </div>

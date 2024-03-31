@@ -16,10 +16,6 @@
 // {% youtube 'bvmfjXaU4Kc', 'AWS re:Invent 2023 - Upgrading from the modern data stack to the modern data lake' %}
 // Videos
 
-// {% youtube 'r7KdcXS_27I', 'Exploring Data lakehouses' %}
-
-// Starburst Galaxy Introduction to Autoscaling {% youtube '_cnfW-VmcmQ', 'Starburst Galaxy Introduction to Autoscaling' %}
-
 // Starburst Galaxy Role Based Access Control RBAC Overview
 
 // {% youtube 'Ca6hdmm1xxE', 'Starburst Galaxy Role Based Access Control RBAC Overview' %}
@@ -60,16 +56,21 @@ export const talkData: talk[] = [
     image: Virginia,
     title: "Upgrading from the modern data stack to the modern data lake",
     event: "AWS re:Invent 2023",
-    // TODO desction:
+    // TODO description:
     link: "bvmfjXaU4Kc",
   },
   {
     image: Victra,
     title: "Exploring Data Lakehouses",
-    bio: `I'm from the south side of Chicago. I graduated from the University of Illinois in 2013.
-      I've been working in the paint industry ever since. I’m a huge fan of the outdoors and I love to travel.
-      `,
+    // TODO description:
     link: "r7KdcXS_27I",
+  },
+
+  {
+    image: Victra,
+    title: "Starburst Galaxy Introduction to Autoscaling",
+    // TODO description:
+    link: "_cnfW-VmcmQ",
   },
 ];
 
