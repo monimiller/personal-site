@@ -38,6 +38,7 @@ export interface talk {
   date: string;
   description: string;
   link: string;
+  slides: string;
 }
 
 import Virginia from "@images/girl1.jpg";
@@ -57,20 +58,20 @@ export const talkData: talk[] = [
     title: "Upgrading from the modern data stack to the modern data lake",
     event: "AWS re:Invent 2023",
     // TODO description:
-    link: "bvmfjXaU4Kc",
+    link: "https://youtu.be/bvmfjXaU4Kc",
   },
   {
     image: Victra,
     title: "Exploring Data Lakehouses",
     // TODO description:
-    link: "r7KdcXS_27I",
+    link: "https://youtu.be/r7KdcXS_27I",
   },
 
   {
     image: Victra,
     title: "Starburst Galaxy Introduction to Autoscaling",
     // TODO description:
-    link: "_cnfW-VmcmQ",
+    link: "https://youtu.be/_cnfW-VmcmQ",
   },
 ];
 

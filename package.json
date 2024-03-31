@@ -26,6 +26,7 @@
         "animejs": "^3.2.2",
         "astro": "^4.4.9",
         "astro-auto-import": "^0.4.2",
+        "astro-embed": "^0.6.2",
         "astro-icon": "0.8.2",
         "astro-seo": "^0.8.3",
         "react": "^18.2.0",
