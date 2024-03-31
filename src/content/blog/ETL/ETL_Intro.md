@@ -1,8 +1,8 @@
 ---
-title: 'ETL for Everyone!'
+title: "ETL for Everyone!"
 description: Addressing the basic data movement concepts.
-pubDate: '2022-04-10'
-categories: ['data', 'ETL', 'data warehousing']
+pubDate: "2022-04-10"
+categories: ["data", "ETL", "data warehousing"]
 draft: false
 # heroImage: ['/public/static/images/Phoebe.jpg']
 ---

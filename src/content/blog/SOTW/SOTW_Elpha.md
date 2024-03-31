@@ -1,8 +1,8 @@
 ---
 title: Spotlight of the Week - Elpha
 description: Sharing some great resources about Elpha.
-pubDate: '2022-02-28'
-categories: ['Career Growth', 'Women in Tech', 'Spotlight of the Week']
+pubDate: "2022-02-28"
+categories: ["Career Growth", "Women in Tech", "Spotlight of the Week"]
 draft: false
 ---
 

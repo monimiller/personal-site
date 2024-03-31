@@ -1,8 +1,8 @@
 ---
-title: 'Vibe Check - An Unbiased Review of Coalesce 2022'
-description: 'A summary of the greatest conference to ever do data'
-pubDate: '2022-10-24'
-categories: ['dbt', 'data']
+title: "Vibe Check - An Unbiased Review of Coalesce 2022"
+description: "A summary of the greatest conference to ever do data"
+pubDate: "2022-10-24"
+categories: ["dbt", "data"]
 draft: false
 ---
 

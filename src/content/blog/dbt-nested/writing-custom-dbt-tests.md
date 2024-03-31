@@ -2,7 +2,7 @@
 title: Creating Your Own dbt Tests for the Problematic Data Engineer
 description: Sharing my experience with singular and generic testing I created for the dbt Jaffle Shop tutorial.
 pubDate: 2022-02-27
-categories: ['dbt', 'data', 'testing', 'dbt tutorials']
+categories: ["dbt", "data", "testing", "dbt tutorials"]
 draft: false
 images: []
 ---

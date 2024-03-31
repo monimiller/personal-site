@@ -22,8 +22,8 @@
   }
 }
 
-/*  things in the components layer can be overriden with utility classes. 
-    Useful for custom styles on third-party components, and things like 
+/*  things in the components layer can be overriden with utility classes.
+    Useful for custom styles on third-party components, and things like
     btn, card, badge, etc  */
 @layer components {
   @import "buttons";

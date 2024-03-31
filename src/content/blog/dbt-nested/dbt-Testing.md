@@ -2,7 +2,7 @@
 title: Built In dbt Tests for the Problematic Data Engineer
 description: Sharing some of the helpful built-in dbt generic tests I have implemented in my workflows.
 pubDate: 2022-02-15
-categories: ['dbt', 'data', 'testing']
+categories: ["dbt", "data", "testing"]
 draft: false
 images: []
 ---
@@ -35,7 +35,7 @@ models:
       - name: status
         tests:
           - accepted_values:
-              values: ['placed', 'shipped', 'completed', 'returned']
+              values: ["placed", "shipped", "completed", "returned"]
       - name: customer_id
         tests:
           - relationships:
