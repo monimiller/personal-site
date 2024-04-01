@@ -34,7 +34,12 @@ export const talkData: talk[] = [
     link: "https://youtu.be/r7KdcXS_27I",
   },
   // Webinars
-  // TODO Chatted with Tom about Data Lakehouse 101
+  {
+    image: Victra,
+    title: "Starburst Lakehouse 101",
+    description: "Chatted with Tom about Data Lakehouse 101",
+    link: "https://www.starburst.io/resources/starburst-lakehouse-101/",
+  },
   // Videos
   {
     image: Victra,
