@@ -10,13 +10,13 @@ import { Image } from "astro:assets";
 import BaseLayout from "@layouts/BaseLayout.astro";
 
 // components
-import Profile from "@components/Profile/Profile.astro";
+import Fact from "@components/Fact/Fact.astro";
 import CtaCardCenter from "@components/Cta/CtaCardCenter.astro";
 
 import heroImage from "@assets/images/reflecting-pool.jpg";
 
 // data
-import teamData from "@config/teamData.json";
+import factData from "@config/factData.json";
 ---
 
 <BaseLayout
@@ -71,32 +71,20 @@ import teamData from "@config/teamData.json";
         </p>
     </section>
 
-    <!-- TODO Fast facts -->
-
-    <!-- I have a cockapoo named Phoebe, a husband named Edmund, and the three of us all share a love of food, walks, and spending time with our family and friends. -->
-
-    <!-- For fun, I'd love to play two truths and a lie with you! Go to my first blog post ever!! to see the answer. -->
-
-    <!--     I played soccer in college and actually hold a conference record and a couple of school records. -->
-    <!--     I am deaf in my left ear and for a select period of time I wore a hearing aid to grade school. -->
-    <!--     I have the same middle name as my mom because she wanted me to have names related to both of my parents (Middle/Mom, Last/Dad). -->
-    <!-- meet the team -->
-    <!-- <section class="container mt-24 md:mt-36"> -->
-    <!--     <h2 class="h2 text-center"> -->
-    <!--         Meet the <span class="text-primary-600">team</span> -->
-    <!--     </h2> -->
-    <!--     <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"> -->
-    <!--         { -->
-    <!--             teamData.map((member) => ( -->
-    <!--                 <Profile -->
-    <!--                     name={member.name} -->
-    <!--                     title={member.title} -->
-    <!--                     image={member.image} -->
-    <!--                     bio={member.bio} -->
-    <!--                 /> -->
-    <!--             )) -->
-    <!--         } -->
-    <!--     </div> -->
-    <!-- </section> -->
+    <!-- Fast facts -->
+    <section class="container mt-24 md:mt-36">
+        <h2 class="h2 text-center">
+            Fast <span class="text-primary-600">Facts</span>
+        </h2>
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {
+                factData.map((fact) => (
+                    <Fact
+                        content={fact.content}
+                    />
+                ))
+            }
+        </div>
+    </section>
     <CtaCardCenter />
 </BaseLayout>
