@@ -11,7 +11,7 @@ heroImage: "./Y_Combinator_logo.svg"
 
 Hi, y'all!
 
-As I figure out what works best for my personal page, I am mixing it up a bit and am going to try writing my **Spotlight of the Week** articles separate from my topic specific articles for the next couple of weeks. I think this will allow me to dive into more detail for each spotlight and can also allow for easier search-ability on the blog post channel. My entire goal of these posts is to facilitate resource sharing, and I think that compartmentalizing the _SOTW_ content may help this mission. So stick with me as I try it out, and no one hold it against me if I decide to embark on another reorg before the ink has dried on the last one.
+As I figure out what works best for my personal page, I am mixing it up a bit and am going to try writing my **Spotlight of the Week** articles separate from my topic specific articles for the next couple of weeks. I think this will allow me to dive into more detail for each spotlight and can also allow for easier search-ability on the blog post channel. My entire goal of these posts is to facilitate resource sharing, and I think that compartmentalizing the [SOTW](/categories/spotlight-of-the-week/) content may help this mission. So stick with me as I try it out, and no one hold it against me if I decide to embark on another reorg before the ink has dried on the last one.
 
 ### What is Spotlight of the Week?
 

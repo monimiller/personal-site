@@ -10,9 +10,11 @@ heroImage: "./Gender_Gap_GWC.png"
 ---
 
 <Admonition variant="info">
+
 ### What is Spotlight of the Week?
 
 As we know, _Empowered Women Empower Women_. I plan to live out this mantra by amplifying one of my favorite things: women making their mark in tech. My goal each week is to highlight women I look up to, organizations I support, and general knowledge that I find interesting that pertains to this topic. Please reach out if you have an idea to share, a resource I don't know about yet, or any questions you have relating to any of these spotlights.
+
 </Admonition>
 
 ## Girls Who Code
