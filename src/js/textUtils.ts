@@ -40,6 +40,7 @@ export function humanize(text: string): string {
       .replace("Dag", "DAG")
       .replace("Sql", "SQL")
       .replace("Etl", "ETL")
+      .replace("Ide", "IDE")
   );
 }
 
