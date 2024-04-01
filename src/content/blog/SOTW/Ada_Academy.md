@@ -12,7 +12,7 @@ categories:
   ]
 draft: false
 # TODO: Add hero image
-heroImage: "../example-1/orange-blobs-1.jpg"
+heroImage: "../orange-blobs-2.jpg"
 ---
 
 ### What is Spotlight of the Week?

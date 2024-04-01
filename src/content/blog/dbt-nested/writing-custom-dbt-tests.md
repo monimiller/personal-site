@@ -6,7 +6,7 @@ categories: ["dbt", "data", "testing", "dbt tutorials"]
 draft: false
 authors: ["monica-miller"]
 # TODO: Add hero image
-heroImage: "../example-1/orange-blobs-1.jpg"
+heroImage: "../orange-blobs-1.jpg"
 ---
 
 Hi, y'all!

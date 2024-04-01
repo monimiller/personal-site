@@ -6,7 +6,7 @@ categories: ["dbt Cloud", "dbt", "release notes", "DAG", "data lineage", "IDE"]
 draft: false
 authors: ["monica-miller"]
 # TODO: Add hero image
-heroImage: "../example-1/orange-blobs-1.jpg"
+heroImage: "../orange-blobs-3.jpg"
 ---
 
 _Picture the following scenario:_

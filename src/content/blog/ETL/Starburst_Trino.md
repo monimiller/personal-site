@@ -7,7 +7,7 @@ categories:
 draft: false
 authors: ["monica-miller"]
 # TODO: Add hero image
-heroImage: "../example-1/orange-blobs-1.jpg"
+heroImage: "../orange-blobs-1.jpg"
 # heroImage: ['/public/static/images/Phoebe.jpg']
 ---
 
