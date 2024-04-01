@@ -1,36 +1,3 @@
-//  title 	permalink 	description 	layout 	youtube
-// Speaking
-
-// /speaking/index.html
-
-// Talks
-
-// page
-
-// true
-
-// "What I Wish I Knew" - UTD College Loop Chapter of Girls Who Code
-
-// Chatted with Tom about Data Lakehouse 101
-
-// {% youtube 'bvmfjXaU4Kc', 'AWS re:Invent 2023 - Upgrading from the modern data stack to the modern data lake' %}
-// Videos
-
-// Starburst Galaxy Role Based Access Control RBAC Overview
-
-// {% youtube 'Ca6hdmm1xxE', 'Starburst Galaxy Role Based Access Control RBAC Overview' %}
-
-// {% youtube 'btm0Gah-AMc', 'Creating Batch and Interactive Clusters with Starburst Galaxy' %}
-
-// {% youtube 'E7axCw579dg', 'Querying Batch and Interactive Clusters with Starburst Galaxy' %}
-
-// {% youtube '3yS8E4RdM5s', 'Data products and security: A Guide to access control' %}
-
-// {% youtube 'rnGDBKNFnC8', 'Configuring your AWS cross account IAM role for Starburst Galaxy' %}
-// Podcasts
-
-//     37: Trino powers up the community support
-
 export interface talk {
   image: ImageMetadata; // an imported image
   title: string;
@@ -66,12 +33,53 @@ export const talkData: talk[] = [
     // TODO description:
     link: "https://youtu.be/r7KdcXS_27I",
   },
-
+  // Webinars
+  // TODO Chatted with Tom about Data Lakehouse 101
+  // Videos
   {
     image: Victra,
     title: "Starburst Galaxy Introduction to Autoscaling",
     // TODO description:
     link: "https://youtu.be/_cnfW-VmcmQ",
+  },
+  {
+    image: Victra,
+    title: "Starburst Galaxy Role Based Access Control RBAC Overview",
+    // TODO description:
+    link: "https://youtu.be/Ca6hdmm1xxE",
+  },
+  {
+    image: Victra,
+    title: "Creating Batch and Interactive Clusters with Starburst Galaxy",
+    // TODO description:
+    link: "https://youtu.be/btm0Gah-AMc",
+  },
+  {
+    image: Victra,
+    title: "Querying Batch and Interactive Clusters with Starburst Galaxy",
+    // TODO description:
+    link: "https://youtu.be/E7axCw579dg",
+  },
+  {
+    image: Victra,
+    title: "Data products and security: A Guide to access control",
+    // TODO description:
+    link: "https://youtu.be/3yS8E4RdM5s",
+  },
+  {
+    image: Victra,
+    title: "Configuring your AWS cross account IAM role for Starburst Galaxy",
+    // TODO description:
+    link: "https://youtu.be/rnGDBKNFnC8",
+  },
+  // Podcasts
+  {
+    image: Victra,
+    title: "37: Trino powers up the community support",
+    event: "Trino Community",
+    description:
+      "In this episode we have the pleasure to chat with our colleagues, who now make the Trino community better every day",
+    link: "https://trino.io/episodes/37.html",
   },
 ];
 
