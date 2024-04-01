@@ -5,6 +5,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 // components
 import PostCardFull from "@components/PostCard/PostCardFull.astro";
 import CategoryCloud from "@components/CategoryCloud/CategoryCloud.astro";
+import Search from "astro-pagefind/components/Search";
 
 // utils
 import { getAllPosts } from "@js/blogUtils";
@@ -23,7 +24,9 @@ const posts = await getAllPosts();
         <div class="mt-6 flex justify-center">
             <CategoryCloud />
         </div>
-
+        <div class="mt-6 flex justify-center">
+            <Search id="search" className="pagefind-ui" />
+        </div>
         <div class="mt-20 grid gap-4 gap-y-12 md:mt-28">
             {
                 posts.map((post) => (
