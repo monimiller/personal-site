@@ -6,7 +6,7 @@ authors: ["monica-miller"]
 categories: ["Career Growth", "Women in Tech", "Spotlight of the Week"]
 draft: false
 # TODO: Add hero image
-heroImage: "../example-1/orange-blobs-1.jpg"
+heroImage: "./Gender_Gap_GWC.png"
 ---
 
 ### What is Spotlight of the Week?
@@ -15,13 +15,13 @@ As we know, _Empowered Women Empower Women_. I plan to live out this mantra by a
 
 ## Girls Who Code
 
-Happy 10th Birthday to _Girls Who Code_! I came across Reshma's LinkedIn post and again was mesmerized by the awesome women involved with this mission.
+Happy 10th Birthday to _Girls Who Code_! I came across [Reshma's](https://www.linkedin.com/in/reshma-saujani) LinkedIn post and again was mesmerized by the awesome women involved with this mission.
 
 <p align="center"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6914701488933990400" height="836" width="504" frameBorder="0" allowFullScreen title="Embedded post"></iframe></p>
 
 So, because I am curious about all things, I spent the afternoon getting lost on the [Girls Who Code Website](https://girlswhocode.com/) and loved what I saw. Thinking I could spread the word and connect those who could benefit from this organization, I then saw this statistic.
 
-![GWC IMAGE](/static/images/Gender_Gap_GWC.png) [^1]
+![GWC IMAGE](./Gender_Gap_GWC.png) [^1]
 [^1]: Original image source can be found [here](https://girlswhocode.com/about-us).
 
 Alright, you caught me bystanding. That's ridiculous. Now I'm mad, and I'm going to get involved.

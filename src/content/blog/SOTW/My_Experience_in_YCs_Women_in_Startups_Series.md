@@ -6,7 +6,7 @@ authors: ["monica-miller"]
 categories: ["YC", "Startup Culture", "Women in Tech", "Spotlight of the Week"]
 draft: false
 # TODO: Add hero image
-heroImage: "../example-1/orange-blobs-1.jpg"
+heroImage: "./Y_Combinator_logo.svg"
 ---
 
 Hi, y'all!
@@ -19,7 +19,7 @@ As we know, _Empowered Women Empower Women_. I plan to live out this mantra by a
 
 ## YC Job Series Women Eng in Startups
 
-This week, let's talk about my experience attending the [YC Job Series for Women Eng in Startups in 2021](https://www.workatastartup.com/events/yc-women-eng-in-startups-2021) sponsored by both YC and [Elpha](SOTW_Elpha). I attended this cohort last fall, and there were so many amazing **BOSS WOMEN** I was introduced to and now act as an official fangirl of. Even if you have absolutely no desire to join a startup, I still highly recommend looking out for future cohorts and signing up in order to hear career (& life) advice from some brilliant individuals.
+This week, let's talk about my experience attending the [YC Job Series for Women Eng in Startups in 2021](https://www.workatastartup.com/events/yc-women-eng-in-startups-2021) sponsored by both [YC](https://www.ycombinator.com/) and [Elpha](/blog/sotw/elpha). I attended this cohort last fall, and there were so many amazing **BOSS WOMEN** I was introduced to and now act as an official fangirl of. Even if you have absolutely no desire to join a startup, I still highly recommend looking out for future cohorts and signing up in order to hear career (& life) advice from some brilliant individuals.
 
 ### Structure:
 
@@ -39,13 +39,11 @@ When I attended the cohort, it was a weekly commitment of two hours for four wee
 
 If you need more reasons to sign up for future cohorts, here's a look into some of awesome women that were involved in this program.
 
-- [Cadran Cowansage](https://www.linkedin.com/in/cadrancowansage/) - CEO and Founder of Elpha
-- [Carolyn Mooney](https://www.linkedin.com/in/carolyn-m-mooney/) - CEO at Nextmv
-- [Danyao Wang](https://www.linkedin.com/in/danyaowang/) - Sr. Staff Engineer at Faire
-- [Shruthi Murthy](https://www.linkedin.com/in/shruthi-murthy-abb731/) - Head of Engineering at Modern Treasury
+- [Cadran Cowansage](https://www.linkedin.com/in/cadrancowansage/) - CEO and Founder of [Elpha](https://elpha.com/)
+- [Carolyn Mooney](https://www.linkedin.com/in/carolyn-m-mooney/) - CEO at [Nextmv](https://www.nextmv.io/)
+- [Danyao Wang](https://www.linkedin.com/in/danyaowang/) - Sr. Staff Engineer at [Faire](https://www.faire.com/)
+- [Shruthi Murthy](https://www.linkedin.com/in/shruthi-murthy-abb731/) - Head of Engineering at [Modern Treasury](https://www.moderntreasury.com/)
 
 #### A big thanks to the coordinators at YC and all the women who contributed to this awesome program. Y'all are rockstars.
 
-Thanks for reading! Please shoot me an email with questions, comments, or information I didn't know about yet!
-\
--Monica
+Thanks for reading! Please [shoot me an email](/contact/) with questions, comments, or information I didn't know about yet!

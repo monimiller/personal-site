@@ -28,5 +28,4 @@ For fun, I'd love to play two truths and a lie with you! Go to my first blog pos
 - I have the same middle name as my mom because she wanted me to have names that related to both of my parents (Middle/Mom, Last/Dad) \
   **LIE! I am indeed named after both of my parents, but my first name is my mom's middle name. My middle name is the spin-off girl version of my father's name.**
 
-Thanks for reading! \
--Monica
+Thanks for reading!

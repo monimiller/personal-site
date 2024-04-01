@@ -21,13 +21,13 @@ As we know, _Empowered Women Empower Women_. I plan to live out this mantra by a
 
 ## Ada Academy
 
-Last week we reviewed the non-profit, [Girls Who Code](../SOTW/Girls_Who_Code). This amazing organization focuses primarily on educating girls before and during college.
+Last week we reviewed the non-profit, [Girls Who Code](/blog/sotw/girls_who_code). This amazing organization focuses primarily on educating girls before and during college.
 
 I was recently given the recommendation to learn about [Ada Academy](https://adadevelopersacademy.org/organization/) and thought this would be the perfect follow-up to last week's SOTW since it serves a similar mission but focuses on a different demographic. Named after Ada Lovelace, this organization has created a tuition-free training program to prepare women for a career in software development.
 
 ## (Not So) Fun Facts
 
-These facts are all [here](https://adadevelopersacademy.org/history/) and obviously should garner significant attention individually, which must only exponentially increase when grouped together. My husband likes to say "Listen to the Data". It's understandable to live in this environment daily and become immune to the disproportionally within tech today, and examples like these help me personally draw out the criticality of the situation by providing tangible information.
+[These facts](https://adadevelopersacademy.org/history/) obviously should garner significant attention individually, which must only exponentially increase when grouped together. My husband likes to say "Listen to the Data". It's understandable to live in this environment daily and become immune to the disproportionally within tech today, and examples like these help me personally draw out the criticality of the situation by providing tangible information.
 
 - _25% of software developers are women_
 - _**10% of that 25% are women of color**_

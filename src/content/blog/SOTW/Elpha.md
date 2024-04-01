@@ -25,6 +25,4 @@ Here is a fantastic [article](https://techcrunch.com/2019/11/06/elpha/) talking 
 - [Salary Negotiations](https://elpha.com/resources/salary-negotiation-tips). Discussing the thing we all despise.
 - [Job Quitting](https://elpha.com/resources/how-to-quit-your-job-just-started). A scary topic that is handled eloquently in this article.
 
-Thanks for reading! Please shoot me an email with questions, comments, or information I didn't know about yet!
-\
--Monica
+Thanks for reading! Please [shoot me an email](/contact/) with questions, comments, or information I didn't know about yet!
