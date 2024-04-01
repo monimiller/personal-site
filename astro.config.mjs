@@ -7,6 +7,7 @@ import AutoImport from "astro-auto-import";
 import react from "@astrojs/react";
 import keystatic from "@keystatic/astro";
 import netlify from "@astrojs/netlify";
+import pagefind from "astro-pagefind";
 
 // https://astro.build/config
 export default defineConfig({
@@ -40,5 +41,9 @@ export default defineConfig({
         tailwind(),
         sitemap(),
         compress(),
+        pagefind(),
     ],
+    build: {
+        format: "file",
+    },
 });
