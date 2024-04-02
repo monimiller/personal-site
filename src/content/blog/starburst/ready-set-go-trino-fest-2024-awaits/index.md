@@ -43,8 +43,6 @@ Save your spot and register today to attend Trino Fest virtually or join us live
 
 [Save your spot today!](https://www.starburst.io/info/trino-fest-2024/)
 
-
-
 ## Sponsor Trino Fest 2024
 
 To make Trino Fest a smashing success, Starburst is excited to collaborate with other organizations within the community. If you are interested in sponsoring, please email [events@starburstdata.com](mailto:events@starburstdata.com) for information.

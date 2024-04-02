@@ -77,13 +77,7 @@ import factData from "@config/factData.json";
             Fast <span class="text-primary-600">Facts</span>
         </h2>
         <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {
-                factData.map((fact) => (
-                    <Fact
-                        content={fact.content}
-                    />
-                ))
-            }
+            {factData.map((fact) => <Fact content={fact.content} />)}
         </div>
     </section>
     <CtaCardCenter />
