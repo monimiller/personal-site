@@ -78,14 +78,14 @@ export const talkData: talk[] = [
     link: "https://youtu.be/rnGDBKNFnC8",
   },
   // Podcasts
-  {
-    image: Victra,
-    title: "37: Trino powers up the community support",
-    event: "Trino Community",
-    description:
-      "In this episode we have the pleasure to chat with our colleagues, who now make the Trino community better every day",
-    link: "https://trino.io/episodes/37.html",
-  },
+  // {
+  //   image: Victra,
+  //   title: "37: Trino powers up the community support",
+  //   event: "Trino Community",
+  //   description:
+  //     "In this episode we have the pleasure to chat with our colleagues, who now make the Trino community better every day",
+  //   link: "https://trino.io/episodes/37.html",
+  // },
 ];
 
 export default talkData;
