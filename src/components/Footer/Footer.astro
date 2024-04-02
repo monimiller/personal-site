@@ -19,7 +19,7 @@ const today = new Date();
                 <SiteLogo />
                 <div class="">
                     <Button variant="primary" href="/contact/"
-                        >Get a FREE quote</Button
+                        >Contact Me</Button
                     >
                 </div>
                 <div class="hidden text-sm opacity-80 md:block">
@@ -29,26 +29,6 @@ const today = new Date();
             </div>
 
             <!-- TODO <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} /> -->
-            <!-- Contact info -->
-            <div class="flex flex-col">
-                <h3 class="mb-2 mt-6 text-lg font-medium">
-                    Location & Contact
-                </h3>
-                <p>{siteData.contact.address1}</p>
-                <p>{siteData.contact.address2}</p>
-                <p>
-                    Ph: <a
-                        href={`tel:${siteData.contact.phone}`}
-                        class="transition hover:text-primary-500 hover:underline"
-                        >{siteData.contact.phone}</a
-                    >
-                </p>
-                <a
-                    href="mailto:example@email.com"
-                    class="transition hover:text-primary-500 hover:underline"
-                    >{siteData.contact.email}</a
-                >
-            </div>
         </div>
 
         <div class="flex items-center md:justify-end">
