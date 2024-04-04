@@ -14,7 +14,7 @@ Starburst is thrilled to wish [Trino a very happy tenth birthday](https://trino.
 
 ![](https://www.starburst.io/wp-content/uploads/2022/08/Trino-turns-10.png)
 
- 
+
 
 10 years ago, Martin Traverso, Dain Sundstrom, David Phillips, and Eric Hwang created Presto, the massively parallel processing SQL engine to address performance, scalability, and extensibility needs for Facebook analytics. By the fall of 2013, Presto was released as open source software, and gained the interest of other popular companies such as Netflix, LinkedIn, and Teradata.
 

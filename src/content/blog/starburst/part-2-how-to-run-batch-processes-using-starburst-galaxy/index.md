@@ -10,7 +10,6 @@ draft: true
 # canonicalUrl: "https://www.starburst.io/blog/part-2-how-to-run-batch-processes-using-starburst-galaxy/"
 ---
 
-
 I deeply despise surprises. Not the “I got you a puppy!” surprises but the “wait, that wasn’t supposed to fail” surprises that elicit a special combination of confusion and heartbreak. I hate the way my body reacts, the increase in heart rate, the hand sweating, and the stress knot in my stomach that miraculously appears around the same time my brain starts shuffling through expletives. Some developers _LIVE_ for the rush of adrenaline, but not me. I like my data pipelines like I like my toast: plain and bug-free.
 
 Alas, a world without failures is not one that data engineers live in. Things happen, sometimes jobs fail, and there is absolutely no postmortem reason discovered as to why the job worked on one run but didn’t work on the next. Sometimes we are unluckier than others, and the job that fails could be supporting an executive-level fraud trend dashboard that gets scrutinized every morning. This failure is painful. Don’t ask me how I know that.
@@ -95,7 +94,7 @@ from
     ) OL on C.custkey = OL.custkey
 ```
 
-[view raw](https://gist.github.com/monimiller/c24664f6353982b11430bd9e850a71ca/raw/399e63959280ad4c1edfa430e86f0daeef1305c1/batch_vs_interactive.md) [batch\_vs\_interactive.md](https://gist.github.com/monimiller/c24664f6353982b11430bd9e850a71ca#file-batch_vs_interactive-md) hosted with ❤ by [GitHub](https://github.com/)
+[view raw](https://gist.github.com/monimiller/c24664f6353982b11430bd9e850a71ca/raw/399e63959280ad4c1edfa430e86f0daeef1305c1/batch_vs_interactive.md) [batch_vs_interactive.md](https://gist.github.com/monimiller/c24664f6353982b11430bd9e850a71ca#file-batch_vs_interactive-md) hosted with ❤ by [GitHub](https://github.com/)
 
 I have created a video demonstrating my experiment execution if you prefer to follow along (and be thoroughly amazed) visually.
 

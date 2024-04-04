@@ -1,7 +1,7 @@
 ---
 title: Build an open data lake architecture with dbt Cloud and Starburst Galaxy
 description: >
- Three or so moons ago, I had the pleasure of demonstrating to you the notorious pair that is Starburst and dbt. We posted the dbt Core and Starburst Galaxy tutorial, and it was awesome to see people get excited about using the two technologies together to make life even better for the golden trio that is data engineers, analytics engineers, and data analysts. Starburst gives you the ability to join data from different data stores like data warehouses, data lakes, object storage, which means you can leverage all the goodness of dbt within one single repository making it more efficient to build, test, and document data pipelines.
+  Three or so moons ago, I had the pleasure of demonstrating to you the notorious pair that is Starburst and dbt. We posted the dbt Core and Starburst Galaxy tutorial, and it was awesome to see people get excited about using the two technologies together to make life even better for the golden trio that is data engineers, analytics engineers, and data analysts. Starburst gives you the ability to join data from different data stores like data warehouses, data lakes, object storage, which means you can leverage all the goodness of dbt within one single repository making it more efficient to build, test, and document data pipelines.
 pubDate: "2023-05-05"
 authors: ["monica-miller"]
 categories: ["dbt", "Trino", "Starburst"]
@@ -69,13 +69,13 @@ I’ve logged into Starburst Galaxy and completed all the [necessary setup infra
 
 At step 3, **Configure your environment**, navigate back to the cluster you created in Starburst Galaxy. Click the **Connection info** button, and then select dbt as the client of choice. You should see connection information that looks something like this.
 
- ![](https://www.starburst.io/wp-content/uploads/2023/05/Screenshot-2023-05-05-at-10.15.56-AM.png)
+![](https://www.starburst.io/wp-content/uploads/2023/05/Screenshot-2023-05-05-at-10.15.56-AM.png)
 
 Download the information and bring it back to dbt Cloud.  Put in the appropriate host and port from the connection info. Then, put in your username for Starburst Galaxy, but also attach the role you want to use (shown as User in the connection info). Enter your Galaxy password.
 
-**Catalog:** dbt\_aws\_tgt – _name of the target AWS catalog in Galaxy_
+**Catalog:** dbt_aws_tgt – _name of the target AWS catalog in Galaxy_
 
-**Schema:** dbt\_mmiller – _default schema for your models, add an identifier for yourself_
+**Schema:** dbt_mmiller – _default schema for your models, add an identifier for yourself_
 
 **Target Name:** default – _won’t come up in this scenario_
 
@@ -85,7 +85,7 @@ _![](https://www.starburst.io/wp-content/uploads/2023/05/Screenshot-2023-05-05-a
 
 Next, test the connection to make sure everything is configured properly.
 
- ![](https://www.starburst.io/wp-content/uploads/2023/05/Screenshot-2023-05-05-at-10.18.42-AM.png)
+![](https://www.starburst.io/wp-content/uploads/2023/05/Screenshot-2023-05-05-at-10.18.42-AM.png)
 
 Create a fork of the [tutorial repository](https://github.com/monimiller/dbt-galaxy-covid-demo). Then, select this fork as your repository in dbt Cloud. I’m connected to dbt Cloud through GitHub, so my repositories automatically popped up. Search and select your fork.
 

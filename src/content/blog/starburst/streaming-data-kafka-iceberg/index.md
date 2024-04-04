@@ -72,4 +72,4 @@ Here we enter the schema and table name of the Iceberg table we want the Kafka d
 
 ### Step 3: Map to columns
 
-Now that we have specified the details of the Kafka source and Iceberg target, we need to set up the mapping from the Kafka message to the Iceberg table. With our streaming ingest capabilities, we’re able to automatically infer the schema of the Kafka message. Our pizza\_orders topics publishes JSON messages in the form of:
+Now that we have specified the details of the Kafka source and Iceberg target, we need to set up the mapping from the Kafka message to the Iceberg table. With our streaming ingest capabilities, we’re able to automatically infer the schema of the Kafka message. Our pizza_orders topics publishes JSON messages in the form of:

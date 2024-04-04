@@ -64,7 +64,7 @@ A best-in-class fully-managed query engine for data lake analytics.
 
 #### **Prerequisites and Helpful Hints**
 
-The information provided in this blog post is to supplement the step-by-step instructions found in the github repository, specifically the [README.md](https://github.com/starburstdata/galaxy-kafka-loader-example/blob/main/README.md). For more detailed information, visit this repository. Trino works best with case-insensitive identifiers, so all the SQL columns and tables should be lowercase by convention. The recommended practice is to use lower snake case (ex: “hello\_world” or “order\_id”).
+The information provided in this blog post is to supplement the step-by-step instructions found in the github repository, specifically the [README.md](https://github.com/starburstdata/galaxy-kafka-loader-example/blob/main/README.md). For more detailed information, visit this repository. Trino works best with case-insensitive identifiers, so all the SQL columns and tables should be lowercase by convention. The recommended practice is to use lower snake case (ex: “hello_world” or “order_id”).
 
 For the sake of this technical tutorial, you will be using the Sample Kafka Publisher, a simple data generation tool provided in the repository, to publish messages to your Kafka topic.  Within the tutorial instructions, we will assume that you do not already have a topic available and will walk you through the steps to create a topic quickly using [Confluent Cloud](https://www.confluent.io/confluent-cloud/) (which has a free tier).
 
@@ -107,7 +107,7 @@ _Build the Job_
 To build the Loader you will need a Java 11 runtime environment, so make sure you have Java 11 installed on your Operating System.
 
 1. Clone the [repository](https://github.com/starburstdata/galaxy-kafka-loader-example).
-2. Perform a clean install in the project root directory. The output Flink job JAR will be available at the following path: _./target/galaxy-ka__fka-loader-example-1-SNAPSHOT.jar_._![](https://www.starburst.io/wp-content/uploads/2022/08/loadergif.gif)_
+2. Perform a clean install in the project root directory. The output Flink job JAR will be available at the following path: _./target/galaxy-ka\_\_fka-loader-example-1-SNAPSHOT.jar_._![](https://www.starburst.io/wp-content/uploads/2022/08/loadergif.gif)_
 3. Add or update your local [AWS default credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) so that your local context is properly configured to reach your AWS environment. The necessary credentials are whatever the loader needs to run, which would be `AmazonS3FullAccess`, `AWSGlueConsoleFullAccess`, `SecretsManagerReadWrite`.
 
 _Launch the Loader_
@@ -194,7 +194,7 @@ DELETE FROM test_table
 
 #### **Data Quality**
 
-A common issue is to have malformed messages accidentally inserted into the ingest pipeline. A typical best-practice is to add a Dead Letter Queue (DLQ) topic to enable the Flink job to push out any messages that fail to parse. This allows the ingestion process to continue without halting in the presence of bad messages. If a dead letter queue topic is not configured, any incoming messages that fail to parse will halt the loading process. Another best practice is to specifically create validations around the incoming data value of the messages.  Some examples include sampling account\_id fields every ten minutes to validate the data flowing in is valid or setting up heartbeat tests to ensure data is continuously flowing in or an alert is triggered. Because of the nature of the streaming environment, forgoing these continuous checks and failing to catch time sensitive errors can result in disastrous results such as losing data forever.
+A common issue is to have malformed messages accidentally inserted into the ingest pipeline. A typical best-practice is to add a Dead Letter Queue (DLQ) topic to enable the Flink job to push out any messages that fail to parse. This allows the ingestion process to continue without halting in the presence of bad messages. If a dead letter queue topic is not configured, any incoming messages that fail to parse will halt the loading process. Another best practice is to specifically create validations around the incoming data value of the messages.  Some examples include sampling account_id fields every ten minutes to validate the data flowing in is valid or setting up heartbeat tests to ensure data is continuously flowing in or an alert is triggered. Because of the nature of the streaming environment, forgoing these continuous checks and failing to catch time sensitive errors can result in disastrous results such as losing data forever.
 
 ### **Schema Evolution**
 
@@ -213,7 +213,7 @@ ALTER TABLE test_table
     ADD COLUMN new_column VARCHAR;
 ```
 
-[view raw](https://gist.github.com/monimiller/d2a9a7ea356f0c13d4e6ec1dc9829893/raw/7f758f2d2e65f92c5ccda3f6a70d88fa8eec37b4/add_column_iceberg.md) [add\_column\_iceberg.md](https://gist.github.com/monimiller/d2a9a7ea356f0c13d4e6ec1dc9829893#file-add_column_iceberg-md) hosted with ❤ by [GitHub](https://github.com/)
+[view raw](https://gist.github.com/monimiller/d2a9a7ea356f0c13d4e6ec1dc9829893/raw/7f758f2d2e65f92c5ccda3f6a70d88fa8eec37b4/add_column_iceberg.md) [add_column_iceberg.md](https://gist.github.com/monimiller/d2a9a7ea356f0c13d4e6ec1dc9829893#file-add_column_iceberg-md) hosted with ❤ by [GitHub](https://github.com/)
 
 In order for the changes to take effect, the Kinesis Data Analytics Streaming Application must be restarted, either through pressing the button to ‘“Stop”, waiting for the application to end, and then pressing the button to “Run”. A faster method is to click the “Configure” button, and then the “Save changes” button at the bottom of the configurations page – forcing the Flink job to restart. Either restart option will cause the job to detect the new schema changes and begin operating with that configuration.
 
@@ -233,7 +233,7 @@ ALTER TABLE test_table
 
 ```
 
-[view raw](https://gist.github.com/monimiller/bf913a986a87949405b07e426371f807/raw/cf3eb276daa83f671452de50dfaf3a727969f452/remove_column_iceberg.md) [remove\_column\_iceberg.md](https://gist.github.com/monimiller/bf913a986a87949405b07e426371f807#file-remove_column_iceberg-md) hosted with ❤ by [GitHub](https://github.com/)
+[view raw](https://gist.github.com/monimiller/bf913a986a87949405b07e426371f807/raw/cf3eb276daa83f671452de50dfaf3a727969f452/remove_column_iceberg.md) [remove_column_iceberg.md](https://gist.github.com/monimiller/bf913a986a87949405b07e426371f807#file-remove_column_iceberg-md) hosted with ❤ by [GitHub](https://github.com/)
 
 In order for the changes to take effect, the Kinesis Data Analytics Streaming Application must be restarted, either through pressing the button to “Stop”, waiting for the application to end, and then pressing the button to “Run”. A faster method is to click the “Configure” button, and then the “Save changes” button at the bottom of the configurations page – forcing the Flink job to restart. Either restart option will identify the new schema changes and display them within the table. Once the loader restarts, the dropped column will no longer be written.
 

@@ -1,5 +1,5 @@
 ---
-title:  Join us at Trino Fest 2023
+title: Join us at Trino Fest 2023
 description: >
 Are you ready for some fun? Starburst is hosting Trino Fest 2023: Lakehouse Summer Camp, a virtual event dedicated to celebrating all things Trino, on the 14th and 15th of June. Just like any summer camp, Trino Fest will be a place to make friends, learn new things, and create memories as we welcome all Trino enthusiasts and data professionals to attend, speak, or sponsor the event.
 pubDate: "2023-04-07"
@@ -29,7 +29,7 @@ The [call for speakers](https://sessionize.com/trino-fest-2023) is now open, and
 - ETL/ELT/batch query processing
 - Other tools and integrations in the Trino ecosystem
 
- The call for speakers closes on May 19th, so be sure to submit your talk soon!
+The call for speakers closes on May 19th, so be sure to submit your talk soon!
 
 [Call for speakers](https://sessionize.com/trino-fest-2023)
 
