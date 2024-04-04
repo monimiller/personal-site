@@ -1,6 +1,7 @@
 ---
 import { type CollectionEntry } from "astro:content";
 import { ViewTransitions } from "astro:transitions";
+import { Fathom } from "astro-analytics";
 
 // component imports
 import Seo from "@components/Seo/Seo.astro";
@@ -82,4 +83,7 @@ const {
 <script
     data-goatcounter="https://monimiller.goatcounter.com/count"
     async
-    src="//gc.zgo.at/count.js"></script>
+    src="//gc.zgo.at/count.js"
+></script>
+
+<Fathom site="UTTEMPUO" />
