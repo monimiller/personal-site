@@ -73,9 +73,9 @@ At step 3, **Configure your environment**, navigate back to the cluster you crea
 
 Download the information and bring it back to dbt Cloud.  Put in the appropriate host and port from the connection info. Then, put in your username for Starburst Galaxy, but also attach the role you want to use (shown as User in the connection info). Enter your Galaxy password.
 
-**Catalog:** dbt_aws_tgt – _name of the target AWS catalog in Galaxy_
+**Catalog:** dbt*aws_tgt – \_name of the target AWS catalog in Galaxy*
 
-**Schema:** dbt_mmiller – _default schema for your models, add an identifier for yourself_
+**Schema:** dbt*mmiller – \_default schema for your models, add an identifier for yourself*
 
 **Target Name:** default – _won’t come up in this scenario_
 

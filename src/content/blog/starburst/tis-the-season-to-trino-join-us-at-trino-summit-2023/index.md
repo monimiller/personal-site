@@ -23,6 +23,4 @@ The fun doesn’t stop there. Save the date of December 13th and 14th, 2023 and 
 
 [Sign up for Trino Summit 2023](https://www.starburst.io/info/trinosummit2023/?utm_source=event&utm_medium=speaker&utm_campaign=NORAM-FY24-Q4-EV-Trino-Summit-2023&utm_content=23-trino-summit-starburst-blog)
 
-
-
 Thank you to the other sponsors, Monte Carlo, Coginiti, and Alluxio, for helping us create this fantastic event.

@@ -39,7 +39,7 @@ export const talkData: talk[] = [
     title: "An introduction to data contracts",
     description: `
 As organizations grow, Data Producers and Data Consumers lose touch and critical disconnections within the organization start to arise. Data Producers should not be held responsible for support they never agreed to, yet Data Consumers cannot be expected to own data from source systems they didn’t build. Consumers should have the power to define the schema they need instead of being forced to adapt to low-quality data. The answer? Data Contracts. Learn from Chad Sanderson, Chief Operator of Data Quality Camp, how data contracts can drive a cultural change toward data-centric collaboration resulting in well-modeled, high-quality, and trusted data.`,
-    link: "https://www.starburst.io/datanova-2023/on-demand/?wvideo=m2wnkos268"
+    link: "https://www.starburst.io/datanova-2023/on-demand/?wvideo=m2wnkos268",
   },
   // TODO Any other DataNova 2023 content? https://www.starburst.io/datanova-2023/on-demand/
   // TODO
@@ -67,7 +67,7 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
     title: "Enhancing your data lake analytics with Starburst Galaxy",
     description: `The world’s most valuable resource is data. Starburst provides a fast data lake query engine that utilizes low-cost data lake storage to provide consumers with easy and stable access to their data in open file formats, resulting in reduced data management costs and shorter time to insights for critical business decisions. Join this talk to learn how to implement a basic reporting structure that can help you operationalize your current data lake and perform various analytics. As an example, see how to group, filter, and aggregate the COVID-19 public data lake to answer proposed business questions. This presentation is brought to you by Starburst Data, an AWS Partner.`,
     // TODO Find YouTube
-    link: "https://www.starburst.io/info/starburst-at-aws-reinvent-2022/?utm_source=linkedin&utm_medium=social&utm_campaign=Global-FY23-Q4-Event-AWS-reinvent-promo&utm_content=promo-1"
+    link: "https://www.starburst.io/info/starburst-at-aws-reinvent-2022/?utm_source=linkedin&utm_medium=social&utm_campaign=Global-FY23-Q4-Event-AWS-reinvent-promo&utm_content=promo-1",
   },
   {
     // FIXME image: "https://media.licdn.com/dms/image/C5622AQEJd-2b5yGFlA/feedshare-shrink_800/0/1665608484286?e=1715212800&v=beta&t=mzB2UxJtwvH7gRyCsJTtsjpgdBcwKepjAapd3fpMakA"
@@ -79,15 +79,15 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
     link: "https://www.linkedin.com/posts/monimiller_trino-dataanalytics-data-activity-6983129625778413568-eXqL?utm_source=share&utm_medium=member_desktop",
   },
   {
-  // TODO Upload High Res original
-  // FIXME image: https://media.licdn.com/dms/image/C4E22AQEWM7NimfR9mg/feedshare-shrink_800/0/1661453774578?e=1715212800&v=beta&t=7ZN4VdP2-HYp1MDU9Cs7sTnNvw2HPizHDSszo50xl98
+    // TODO Upload High Res original
+    // FIXME image: https://media.licdn.com/dms/image/C4E22AQEWM7NimfR9mg/feedshare-shrink_800/0/1661453774578?e=1715212800&v=beta&t=7ZN4VdP2-HYp1MDU9Cs7sTnNvw2HPizHDSszo50xl98
     image: Victra,
     event: "DevOpsDays Dallas 2023",
     title: "Trino: The Data Synthesizer",
     // TODO Make sure this sounds good
     description: `Data is arguably the most valuable asset that organizations have, but it's not easy to get it into the hands of end-users`,
     // TODO Find Recording
-    link: "https://www.linkedin.com/posts/monimiller_devops-devopsdays-devopsdaysdfw-activity-6968640244845797376-dMSt?utm_source=share&utm_medium=member_desktop"
+    link: "https://www.linkedin.com/posts/monimiller_devops-devopsdays-devopsdaysdfw-activity-6968640244845797376-dMSt?utm_source=share&utm_medium=member_desktop",
   },
   // Webinars
   {
@@ -100,7 +100,7 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
     image: Victra,
     title: "AWS Dev Day: Data Lake Analytics",
     description: `In this hands-on lab, we guide you through the formation of data lake analytics using Amazon Simple Storage Service (Amazon S3) and Starburst Galaxy, with Covid-19 data as our sample set.`,
-    link: "https://www.starburst.io/info/aws-devday-data-lake-analytics-lab/?utm_campaign=galaxy&utm_medium=social&utm_source=linkedin&utm_type=&utm_content=galaxylabpromo1li&utm_term="
+    link: "https://www.starburst.io/info/aws-devday-data-lake-analytics-lab/?utm_campaign=galaxy&utm_medium=social&utm_source=linkedin&utm_type=&utm_content=galaxylabpromo1li&utm_term=",
   },
 
   // Videos
@@ -144,33 +144,36 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
     image: Victra,
     title: "Exploring data lakehouses | Starburst Academy",
     description: `Dive into the world of data lakehouses with our latest video! Join us for a short breakdown of how data lakehouses revolutionize data management by combining the best features of data lakes and data warehouses. Discover how this innovative approach offers a modern solution to your data needs, providing the flexibility of data lakes with the structured querying capabilities of data warehouses.`,
-    link: "https://www.youtube.com/watch?v=r7KdcXS_27I"
+    link: "https://www.youtube.com/watch?v=r7KdcXS_27I",
   },
   {
     image: Victra,
     title: "Starburst Galaxy Getting Started",
     description: `Take a tour of Starburst Galaxy. See how Starburst Galaxy simplifies the catalog configuration process and cluster creation. Get an overview of admin functionality such as account creation, permission levels, usage and billing, audit logs, and query history.`,
-    link: "https://www.youtube.com/watch?v=udGrjfalCZA"
+    link: "https://www.youtube.com/watch?v=udGrjfalCZA",
   },
   // Promos
   {
     image: Victra,
     title: "Cross-cloud Analytics in Starburst Galaxy | Launch Week 2023",
-    description: "Spending cycles building single-use ETL pipelines just to migrate a copy of data from one cloud to another? That all stops today with the introduction of cross-cloud analytics in Starburst Galaxy.",
-    link: "https://www.youtube.com/watch?v=ec-KxooQjZg"
+    description:
+      "Spending cycles building single-use ETL pipelines just to migrate a copy of data from one cloud to another? That all stops today with the introduction of cross-cloud analytics in Starburst Galaxy.",
+    link: "https://www.youtube.com/watch?v=ec-KxooQjZg",
   },
   {
     image: Victra,
     title: "Announcing Gravity in Starburst Galaxy | Launch Week 2023",
-    description: "Introducing Gravity in Starburst Galaxy! Gravity is a unified access and governance layer that lets you manage all your data.",
-    link: "https://www.youtube.com/watch?v=gejzbMQ3cN8"
+    description:
+      "Introducing Gravity in Starburst Galaxy! Gravity is a unified access and governance layer that lets you manage all your data.",
+    link: "https://www.youtube.com/watch?v=gejzbMQ3cN8",
   },
 
   {
     image: Victra,
     title: "Row filters and column masks in Starburst Galaxy",
-    description: "So, we have an early surprise for you all... Ahead of Launch Week, we are announcing row filters and column masks! Subscribe to our channel for all the exciting announcements next week.",
-    link: "https://www.youtube.com/watch?v=uqz6Ed9_tps"
+    description:
+      "So, we have an early surprise for you all... Ahead of Launch Week, we are announcing row filters and column masks! Subscribe to our channel for all the exciting announcements next week.",
+    link: "https://www.youtube.com/watch?v=uqz6Ed9_tps",
   },
   {
     // FIXME image: "https://embed-ssl.wistia.com/deliveries/c02f1eb965ef95f69d42c352799e37f606501376.jpg"
@@ -184,7 +187,7 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
     image: Victra,
     title: "Space Quest League Challenge 2",
     // TODO Find original video
-    link: "https://www.linkedin.com/feed/update/urn:li:activity:6957716426270859265?utm_source=share&utm_medium=member_desktop"
+    link: "https://www.linkedin.com/feed/update/urn:li:activity:6957716426270859265?utm_source=share&utm_medium=member_desktop",
   },
   // TODO Data product infomercial
   // https://www.linkedin.com/feed/update/urn:li:activity:7024766547420147712/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B8VARVf2BS5KPHTzU60kTFg%3D%3D
@@ -220,7 +223,7 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
     image: Victra,
     title: "Starburst 101 Workshop | San Francisco",
     link: "https://www.starburst.io/info/starburst-101-workshop-on-the-road-san-fran",
-    date: "2023-06-13"
+    date: "2023-06-13",
   },
   // TODO Trino Live NYC
   // https://media.licdn.com/dms/image/D5622AQHZmURjnHsGIw/feedshare-shrink_800/0/1686929499889?e=1715212800&v=beta&t=CzfW54f8uNVhcjt-pt-Nvs-fu4_r-QK7R8Y7-0nvtTc
