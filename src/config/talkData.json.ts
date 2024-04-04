@@ -152,6 +152,12 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
     description: `Take a tour of Starburst Galaxy. See how Starburst Galaxy simplifies the catalog configuration process and cluster creation. Get an overview of admin functionality such as account creation, permission levels, usage and billing, audit logs, and query history.`,
     link: "https://www.youtube.com/watch?v=udGrjfalCZA",
   },
+  {
+    image: Victra,
+    title: "How data products bridge the gap for data consumers",
+    description: `Unlock the power of data products and bridge the gap between data producers and data consumers with our latest video! Join us as we explore how data products revolutionize the way data is accessed and utilized, empowering data consumers to make informed decisions and drive business outcomes.`,
+    link: "https://www.youtube.com/watch?v=knI2RY1ewes",
+  },
   // Promos
   {
     image: Victra,
@@ -183,6 +189,16 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
     link: "https://www.starburst.io/blog/datanova-2023-data-rebels-may-the-force-be-with-you/?video=as7yktgqun",
   },
   {
+    image: Victra,
+    title: "Great Lakes Connectivity in Starburst Galaxy | Launch Week 2023",
+    link:"https://www.youtube.com/watch?v=lh0H_kNwXQQ",
+  },
+  {
+    image: Victra,
+    title: "Warp Speed and fault-tolerant execution in Starburst Galaxy",
+    link: "https://www.youtube.com/watch?v=NJmaSL10K_I"
+  },
+  {
     // source: https://www.linkedin.com/feed/update/urn:li:activity:6955522185532739585?utm_source=share&utm_medium=member_desktop
     image: Victra,
     title: "Space Quest League Challenge 2",
@@ -191,6 +207,7 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
   },
   // TODO Data product infomercial
   // https://www.linkedin.com/feed/update/urn:li:activity:7024766547420147712/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B8VARVf2BS5KPHTzU60kTFg%3D%3D
+  // https://www.youtube.com/watch?v=7kXtMi0ftEY
   // TODO Data Contracts Mean girls
   // https://www.linkedin.com/feed/update/urn:li:activity:7023714337089310720/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B8VARVf2BS5KPHTzU60kTFg%3D%3D
   // TODO DataNova DataMesh
