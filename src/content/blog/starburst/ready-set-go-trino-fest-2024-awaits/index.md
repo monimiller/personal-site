@@ -5,12 +5,9 @@ pubDate: "2024-02-20"
 authors: ["monica-miller"]
 categories: ["Trino", "Starburst"]
 heroImage: "./Trino-Blog-Headers-3.png"
-draft: false
+draft: true
+# canonicalUrl: "https://www.starburst.io/blog/ready-set-go-trino-fest-2024-awaits/"
 ---
-
-<head>
-    <link rel="canonical" href="https://www.starburst.io/blog/ready-set-go-trino-fest-2024-awaits/" />
-</head>
 
 After our electric end to 2023 with an awesome [Trino Summit](https://www.starburst.io/info/trinosummit2023), the team immediately got to work planning our next Trino celebration, this time as a hybrid event. Starburst is excited to host Trino Fest on June 13th, 2024 both live in Boston and virtually anywhere around the world! We’ve heard your requests for another in-person event, and are excited to create a space for everyone to get together with fellow Trino lovers. If you can’t join us live, don’t worry. We will also be streaming the event and have plenty of activities planned so those joining us virtually can still participate in the fun.
 
