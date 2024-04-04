@@ -3,7 +3,7 @@ title: "42: the Solution to Data Analysts Everywhere"
 description: Introducing Trino, Starburst, and Starburst Galaxy - the REAL answer to Life, the Universe and Everything.
 pubDate: "2022-04-16"
 categories:
-  ["data", "ETL", "data anlytics", "data engineering", "Modern Data Stack"]
+  ["data", "ETL", "data analytics", "data engineering", "Modern Data Stack"]
 draft: false
 authors: ["monica-miller"]
 # TODO: Add hero image
