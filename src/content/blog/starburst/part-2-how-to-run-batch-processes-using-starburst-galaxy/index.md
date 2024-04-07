@@ -6,8 +6,8 @@ pubDate: "2023-05-19"
 authors: ["monica-miller"]
 categories: ["Trino", "Starburst"] # Analytics EngineerData ArchitectData EngineerHow-To GuidesStarburst Galaxy
 heroImage: "../../orange-blobs-1.jpg"
-draft: true
-# canonicalUrl: "https://www.starburst.io/blog/part-2-how-to-run-batch-processes-using-starburst-galaxy/"
+draft: false
+canonicalUrl: "https://www.starburst.io/blog/part-2-how-to-run-batch-processes-using-starburst-galaxy/"
 ---
 
 I deeply despise surprises. Not the “I got you a puppy!” surprises but the “wait, that wasn’t supposed to fail” surprises that elicit a special combination of confusion and heartbreak. I hate the way my body reacts, the increase in heart rate, the hand sweating, and the stress knot in my stomach that miraculously appears around the same time my brain starts shuffling through expletives. Some developers _LIVE_ for the rush of adrenaline, but not me. I like my data pipelines like I like my toast: plain and bug-free.

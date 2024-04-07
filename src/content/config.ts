@@ -23,6 +23,7 @@ const blogCollection = defineCollection({
       categories: z.array(z.string()),
       // blog posts will be excluded from build if draft is "true"
       draft: z.boolean().optional(),
+      canonicalUrl: z.string().url().optional(),
     }),
 });
 
