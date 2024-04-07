@@ -189,12 +189,12 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
   {
     image: TODO,
     title: "Great Lakes Connectivity in Starburst Galaxy | Launch Week 2023",
-    link:"https://www.youtube.com/watch?v=lh0H_kNwXQQ",
+    link: "https://www.youtube.com/watch?v=lh0H_kNwXQQ",
   },
   {
     image: TODO,
     title: "Warp Speed and fault-tolerant execution in Starburst Galaxy",
-    link: "https://www.youtube.com/watch?v=NJmaSL10K_I"
+    link: "https://www.youtube.com/watch?v=NJmaSL10K_I",
   },
   {
     // source: https://www.linkedin.com/feed/update/urn:li:activity:6955522185532739585?utm_source=share&utm_medium=member_desktop
