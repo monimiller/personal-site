@@ -1,227 +1,107 @@
-# Eleventy Excellent
+# Welcome to Stellar!
 
-Opiniated but easy to use Eleventy starter, based on the workflow suggested by Andy Bell's [buildexcellentwebsit.es](https://buildexcellentwebsit.es/).
-
-If you end up using this starter, feel free to send me a link, I'd love to see it!
-Also let me know if you miss any features. Currently in planning: dark mode, inlining CSS and JS.
-
-- [Eleventy Excellent](#eleventy-excellent)
-  - [Preview](#preview)
-  - [Features](#features)
-  - [First steps](#first-steps)
-  - [Deploy directly to Netlify](#deploy-directly-to-netlify)
-  - [Development](#development)
-    - [Install dependencies](#install-dependencies)
-    - [Working locally](#working-locally)
-    - [Creating a production build](#creating-a-production-build)
-  - [Built with Eleventy Excellent](#built-with-eleventy-excellent)
-  - [Logbook](#logbook)
-    - [23-01-26](#23-01-26)
-    - [23-01-25](#23-01-25)
-    - [23-01-09](#23-01-09)
-    - [22-12-29](#22-12-29)
-    - [22-12-20](#22-12-20)
-    - [22-12-13](#22-12-13)
-    - [22-12-12](#22-12-12)
-    - [22-11-24](#22-11-24)
-    - [22-11-04](#22-11-04)
-    - [22-10-30](#22-10-30)
-    - [22-10-04](#22-10-04)
-    - [22-10-03](#22-10-03)
-  - [Credits and Thank yous](#credits-and-thank-yous)
-
-## Preview
-
-https://eleventy-excellent.netlify.app/
-
-## Features
-
-**This starter includes:**
-
-- The whole CSS workflow as suggested by buildexcellentwebsit.es
-- Accessible site navigation, editable in `src/_data/navigation.js`
-- Image optimization with Eleventy-img _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-an-image/))_
-- Youtube embed with lite-youtube _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-a-video/))_
-- Easy resource fetching with eleventy-fetch _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-fetched-content/))_
-- Syntax highlighting via eleventy-plugin-syntaxhighlight _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-some-code/))_
-- Advanced markdown handling _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-all-the-markdown/))_
-- 301 redirects for Netlify _([see blog post](https://eleventy-excellent.netlify.app/blog/post-with-301-redirects/))_
-- Automatically generated Open Graph images for blog posts _([see blog post](https://eleventy-excellent.netlify.app/blog/open-graph-images/))_
-- SEO basics (XML-sitemap, metadata)
-- dayjs handling dates & times
-- Bundling via esbuild
-- RSS feed
-- Links to social networks in footer
-- Mastodon domain verification snippet
-
-## First steps
-
-- **Important:** edit meta data in `src/_data/meta.js`, it's being used all over the template.
-- Search for 'eleventy-excellent.netlify.app'. You'll find an entry in `src/assets/css/global/global-styles.css`. Replace with your own domain.
-- Edit your social media in `src/_data/social.js` and `src/_includes/icons`. If you add new icons they must be prefixed with "social-". By default you have rss, mastodon, twitter, ko-fi, linkedin and github. Great resource: https://lucide.dev/
-- Not required, but recommended: Delete `github.js` in `src/_data/github.js` and the blog posts, as these serve only as an example.
-- Edit your preferences (colors, fluid text sizes etc.) in `src/assets/design-tokens`.
-- Optional: set your (favicon) icons in `src/assets/images/favicon`.
-- Optional: rename `.env-sample` to `.env` and set custom URL for local development.
-- Optional: Change fonts. This starter uses three fonts, Red Hat Display, Inter and Roboto Mono. You can add or delete fonts in `src/assets/fonts`. I recommend creating font subsets for performance, for example using the [Fontsquirrel Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator). Next, edit `src/assets/css/global/fonts.css`. Add your new font aliases in `src/assets/design-tokens/fonts.json`. Finally, in `src/_layouts/base.njk` edit the font preloads. Roboto mono is only used for code blocks. It's preload is set directly in the post layout: `src/_layouts/post.njk`.
-
-## Deploy directly to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/madrilene/eleventy-excellent)
-
-## Development
-
-### Install dependencies
+To get started, first install all necessary packages:
 
 ```
 npm install
 ```
 
-### Working locally
+## Code Intro
 
-Starts watch tasks to compile when changes detected
+I have created a few code tours to introduce you to the codebase. You will need the extension [Code Tour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour) to view them in VSCode.
 
-```
-npm start
-```
-
-### Creating a production build
-
-Minify JS, CSS and HTML.
+The source files have the following setup. Note that not all files are included - it is already long, no one wants it to be longer.
 
 ```
-npm run build
+.
+├── .tours/
+│   └── code-intro.tour
+├── .vscode/
+│   └── extensions.json
+├── public/
+│   ├── favicons/
+│   │   └── favicon.ico
+│   ├── images/
+│   └── robots.txt
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │       └── hero.jpg
+│   ├── components/
+│   │   ├── Hero/
+│   │   │   ├── HeroBgImage.astro
+│   │   │   ├── HeroCentered.astro
+│   │   │   └── HeroSideImage.astro
+│   │   └── Footer/
+│   │       └── Footer.astro
+│   ├── config/
+│   │   ├── faqData.json.ts
+│   │   └── navData.json.ts
+│   ├── content/
+│   │   ├── authors/
+│   │   ├── blog/
+│   │   ├── otherPages/
+│   │   └── config.ts
+│   ├── js/
+│   │   └── blogUtils.ts
+│   ├── layouts/
+│   │   └── BaseLayout.astro
+│   ├── pages/
+│   │   ├── index.astro
+│   │   ├── blog/
+│   │   │   ├── [...slug].astro
+│   │   │   └── index.astro
+│   │   ├── categories/
+│   │   │   ├── [category].astro
+│   │   │   └── index.astro
+│   │   ├── [page].astro
+│   │   ├── 404.astro
+│   │   ├── contact.astro
+│   │   ├── index.astro
+│   │   └── rss.xml.ts
+│   └── styles/
+│       └── global.scss
+├── .gitignore
+├── .prettierrc.mjs
+├── astro.config.mjs
+├── netlify.toml
+├── package.json
+├── package-lock.json
+├── README.md
+├── tailwind.config.cjs
+└── tsconfig.json
 ```
 
-## Built with Eleventy Excellent
+For robots like Google to see the correct sitemap, you will want to edit the `public/robots.txt` file to use your website domain.
 
-- [flamedfury.com](https://flamedfury.com/)
-- [deimidis.me](https://deimidis.me/)
-- [andystitt.com](https://andystitt.com/)
-- [figcat.com](https://figcat.com/)
-- [stephenanfield.com](https://stephenanfield.com/)
-- [krgr.dev](https://krgr.dev/)
-- [lenesaile.com](https://www.lenesaile.com/)
+## Other Resources
 
-## Logbook
+- See my [blog post](https://webreaper.dev/posts/best-vscode-extensions-front-end-developers/) for recommended VSCode extensions.
+- You can learn more information from the [theme docs](https://cosmicthemes.com/docs/) page on the [Cosmic Themes Website](https://cosmicthemes.com/).
+- For support, see the [support page](https://cosmicthemes.com/support/).
+- [License details](https://cosmicthemes.com/license/)
 
-### 23-01-26
+## General Astro Info
 
-- Replaced Heydon's redundant click event for cards with his pseudo-content trick solution so we don't lose the context menu.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-  \- https://inclusive-components.design/cards/#theredundantclickevent
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-  \+ https://inclusive-components.design/cards/#thepseudocontenttrick
+Any static assets, like images, can be placed in the `public/` directory. I also frequently use `src/assets` for images when using Astro asssets for image optimization.
 
-### 23-01-25
+### 🧞 Commands
 
-- updated Eleventy
-- minor: added automatically generated open graph images for blog posts
+All commands are run from the root of the project, from a terminal:
 
-### 23-01-09
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:3000`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-- updated Eleventy
-- added package version number in footer
+### 👀 Want to learn more?
 
-### 22-12-29
-
-- updated Eleventy
-- minor: changed CSS for header, not using the sidebar solution anymore. sidebar.css thus deleted. Now the focus for the logo section doesn't expand all the way to the menu anymore.
-- Updated and added some `rel` values after reading Alvaro Montoro's excellent article [A Theory of Web Relativity](https://www.htmhell.dev/adventcalendar/2022/21/).
-- stripped "noreferrer" from external links in markdown (editable in `config/plugins/markdown.js`), because I don't mind the target page of carefully placed links to identify the source of the reference.
-- added two more pages to the 'built with' section, yay!
-- Thought: Now that actually some websites in production are based on this starter, should I create formal release notes?
-
-### 22-12-20
-
-- Andy now links to his mastodon profile
-- Linked blog posts in readme
-
-### 22-12-13
-
-- added JS and CSS as as first-class citizens in Eleventy, out of the npm scripts.
-- imported htmlmin transform, css and js processing with `eleventyConfig.addPlugin(require("other-config-file.js"))`, see https://front-end.social/@eleventy@fosstodon.org/109501433721579265
-
-### 22-12-12
-
-- updated head structure for better performance
-- added "built with this" section in readme
-- added note for internal links in markdown blog post
-- adding page based preload option, making preload of monospaced font in posts default to avoid CLS
-
-### 22-11-24
-
-- updated required node version in package.json
-- meta.js now controls most of the templates defaults
-- added RSS feed, because of course!!
-- made twitter and other meta data OPTIONAL
-- added Mastodon verification and more social icon defaults
-- focus-within for the cards
-
-### 22-11-04
-
-- added blog posts for feature explanation
-
-### 22-10-30
-
-- WebC in own branch
-- simplify main branch
-
-### 22-10-04
-
-- all markdown syntax set
-
-### 22-10-03
-
-- first commit. Updated
-
-## Credits and Thank yous
-
-**Andy Bell**
-
-His CSS methodology "CUBE" makes sense to me. It goes hand in hand with _Every Layout_ (which he co-authors). He has recently published an approach that incorporates Tailwind CSS into his methodology. Also, I learned how to use Eleventy in 2020 with his (now free) course.
-
-- https://buildexcellentwebsit.es/
-- https://cube.fyi/
-- https://learneleventyfromscratch.com/
-
-**Heydon Pickering**
-
-I strongly orientate myself on Heydon's approaches and really love his books.
-
-- https://every-layout.dev/
-- https://inclusive-components.design/
-
-**Zach Leatherman**
-
-He is developing Eleventy and is constantly making it even better!
-
-- https://www.11ty.dev/
-- https://www.zachleat.com/
-
-**Stephanie Eckles**
-
-Stephanie provides a lot of resources for Eleventy and modern CSS.
-
-- https://smolcss.dev/
-- https://moderncss.dev/
-
-**Aleksandr Hovhannisyan**
-
-I love order and structure. Aleksandr does this in an exemplary way, which is why I based the structure of eleventy.js on his personal site. The 301 redirect solution I'm using is from his blog.
-
-- https://github.com/AleksandrHovhannisyan
-- https://www.aleksandrhovhannisyan.com/blog/eleventy-netlify-redirects/
-
-**Manuel Matuzović**
-
-Manuel is an accessibility expert. The menu I'm using is from one of his articles on web.dev.
-
-- https://web.dev/website-navigation/
-- https://www.matuzo.at/
-
-**Bernard Nijenhuis**
-
-Bernard wrote the article on which the Open Graph Images implementation is based.
-
-- https://bnijenhuis.nl/notes/automatically-generate-open-graph-images-in-eleventy/
+Feel free to check out the [Astro documentation](https://docs.astro.build).

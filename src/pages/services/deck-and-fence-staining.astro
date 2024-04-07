@@ -1,0 +1,27 @@
+---
+/**
+ * * Examples services page. You can add as many as you need.
+ * I created a layout file to keep services consistent. That is where I put the CTA and any other sections
+ * that are consistent across all services pages.
+ */
+
+// layout
+import ServiceLayoutCenter from "@layouts/ServiceLayoutCenter.astro";
+
+import image from "@images/paint-swatches.jpg";
+---
+
+<ServiceLayoutCenter
+    title="Deck and Fence Staining Services"
+    description="Details of the deck and fence staining services offered by example company"
+    image={image}
+>
+    <p>
+        Why sweat in the summer heat or freeze in the winter cold when you can
+        have your home painted by professionals? We offer deck and fence
+        staining services to help you keep your home looking its best. Our team
+        of professionals will come out and stain your deck or fence with a high
+        quality, long lasting stain that will protect your wood from the
+        elements.
+    </p>
+</ServiceLayoutCenter>

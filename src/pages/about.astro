@@ -1,0 +1,93 @@
+---
+/**
+ * * About page with various sections including some text, team profiles, and CTA
+ * Edit the team member information inside src/config/teamData.json.ts
+ */
+import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+
+// main layout
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+// components
+import Fact from "@components/Fact/Fact.astro";
+import CtaCardCenter from "@components/Cta/CtaCardCenter.astro";
+
+import heroImage from "@assets/images/reflecting-pool.jpg";
+
+// data
+import factData from "@config/factData.json";
+---
+
+<BaseLayout
+    title="About Me"
+    description="Get in touch! Contact information for Monica Miller."
+>
+    <Image
+        src={heroImage}
+        class="hidden h-full w-auto object-cover sm:block"
+        alt="Woman in front of a reflection pool with a hand on her hip in an orange blazer"
+        aria-hidden="true"
+        loading="eager"
+        height={2000}
+    />
+    <!-- text section -->
+    <section class="container mx-auto pt-36 md:pt-44">
+        <h1 class="h1 text-center">
+            Hi, I'm
+
+            <span class="relative whitespace-nowrap">
+                Monica!
+                <span>
+                    <Icon
+                        name="freehand-zig-underline"
+                        class="absolute left-0 top-0 -z-10 h-full w-full translate-y-[60%] scale-y-75 text-primary-300"
+                        aria-hidden="true"
+                    />
+                </span>
+            </span>
+        </h1>
+        <p class="description mx-auto mt-10 max-w-2xl text-center md:mt-20">
+            After being inspired by many individuals I admire, I decided to
+            create my own website.
+            <!-- TODO Currently, I am using the platform Vercel with a Next.js Starter Blog template. -->
+        </p>
+        <p class="description mx-auto mt-10 max-w-2xl text-center md:mt-20">
+            Here's some basic information about me. I went to the University of
+            Texas at Dallas (UTD) for my undergraduate degree in Mechanical
+            Engineering, where I was introduced to programming through the use
+            of loops to create various shapes using the asterisk key. My junior
+            year I landed an internship at USAA, partially because of my love
+            for Sudoku, and was amazed by the job possibilities I didn't even
+            know existed in the software space. Ever since then, I have tried to
+            be a continuous learner, and soak up all the knowledge I can related
+            to all things tech. I started my career post-graduation (May 2019)
+            in the data world and still reside there today, mostly doing data
+            movement. In December of 2021, I achieved my Masters in Systems
+            Engineering and Management also from UTD. I currently work at
+            Starburst Data as a Developer Advocate, so please contact me with
+            all your data needs and I can help get you connected with the right
+            individuals.
+        </p>
+
+        <!-- <p class="description mx-auto mt-10 max-w-2xl text-center md:mt-20"> -->
+        <!--     Monica is a former data engineer turned developer advocate. As a -->
+        <!--     data engineer, she spent her time primarily developing and -->
+        <!--     supporting ETL pipelines for both near-real time analytics and batch -->
+        <!--     processing. Monica now works to improve the lives of other data -->
+        <!--     engineers by creating informational resources, speaking at -->
+        <!--     conferences, and writing about her experiences in the data space. -->
+        <!-- </p> -->
+    </section>
+
+    <!-- Fast facts -->
+    <section class="container mt-24 md:mt-36">
+        <h2 class="h2 text-center">
+            Fast <span class="text-primary-600">Facts</span>
+        </h2>
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {factData.map((fact) => <Fact content={fact.content} />)}
+        </div>
+    </section>
+    <CtaCardCenter />
+</BaseLayout>
