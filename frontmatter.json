@@ -66,16 +66,16 @@
             "title": "Content",
             "file": "[[workspace]]/src/config/contentData.json",
             "fileType": "json",
-            "labelField": "name",
+            "labelField": "title",
             "singleEntry": false,
             "schema": {
-                "title": "Sponsors",
+                "title": "Content",
                 "type": "object",
-                "required": ["name", "url"],
+                "required": ["title", "image", "url", "type"],
                 "properties": {
-                    "name": {
+                    "title": {
                         "type": "string",
-                        "title": "Name"
+                        "title": "Title"
                     },
                     "url": {
                         "type": "string",
@@ -83,13 +83,38 @@
                     },
                     "description": {
                         "type": "string",
-                        "title": "Description"
+                        "title": "Description",
+                        "multiline": true
+                    },
+                    "image": {
+                        "type": "string",
+                        "title": "Image"
+                    },
+                    "date": {
+                        "type": "string",
+                        "title": "Date"
+                    },
+                    "event": {
+                        "type": "string",
+                        "title": "Event"
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "Type",
+                        "choices": [
+                            "talk",
+                            "webinar",
+                            "workshop",
+                            "video",
+                            "podcast",
+                            "meetup",
+                            "promo"
+                        ]
                     }
                 }
             }
         }
     ],
-
     "frontMatter.website.host": "https://monimiller.com",
     "frontMatter.git.enabled": true
 }
