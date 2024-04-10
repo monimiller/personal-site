@@ -1,67 +1,95 @@
 {
-  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.framework.id": "astro",
-  "frontMatter.preview.host": "http://localhost:4321",
-  "frontMatter.content.publicFolder": "public",
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "blog",
-      "path": "[[workspace]]/src/content/blog"
-    }
-  ],
-  "frontMatter.taxonomy.contentTypes": [
-    {
-      "name": "default",
-      "pageBundle": false,
-      "previewPath": "'blog'",
-      "filePrefix": null,
-      "clearEmpty": true,
-      "fields": [
+    "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+    "frontMatter.framework.id": "astro",
+    "frontMatter.preview.host": "http://localhost:4321",
+    "frontMatter.content.publicFolder": "public",
+    "frontMatter.content.pageFolders": [
         {
-          "title": "Title",
-          "name": "title",
-          "type": "string",
-          "single": true
-        },
-        {
-          "title": "Description",
-          "name": "description",
-          "type": "string"
-        },
-        {
-          "title": "Publishing date",
-          "name": "pubDate",
-          "type": "datetime",
-          "default": "{{now}}",
-          "isPublishDate": true
-        },
-        {
-          "title": "Content preview",
-          "name": "heroImage",
-          "type": "image",
-          "isPreviewImage": true
-        },
-        {
-          "title": "authors",
-          "name": "authors",
-          "type": "choice",
-          "choices": [
-            "monica-miller"
-          ]
-        },
-        {
-          "title": "categories",
-          "name": "categories",
-          "type": "categories"
-        },
-        {
-          "title": "draft",
-          "name": "draft",
-          "type": "draft"
+            "title": "blog",
+            "path": "[[workspace]]/src/content/blog"
         }
-      ]
-    }
-  ],
-  "frontMatter.website.host": "https://monimiller.com",
-  "frontMatter.git.enabled": true
+    ],
+    "frontMatter.taxonomy.contentTypes": [
+        {
+            "name": "default",
+            "pageBundle": false,
+            "previewPath": "'blog'",
+            "filePrefix": null,
+            "clearEmpty": true,
+            "fields": [
+                {
+                    "title": "Title",
+                    "name": "title",
+                    "type": "string",
+                    "single": true
+                },
+                {
+                    "title": "Description",
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "title": "Publishing date",
+                    "name": "pubDate",
+                    "type": "datetime",
+                    "default": "{{now}}",
+                    "isPublishDate": true
+                },
+                {
+                    "title": "Content preview",
+                    "name": "heroImage",
+                    "type": "image",
+                    "isPreviewImage": true
+                },
+                {
+                    "title": "authors",
+                    "name": "authors",
+                    "type": "choice",
+                    "choices": ["monica-miller"]
+                },
+                {
+                    "title": "categories",
+                    "name": "categories",
+                    "type": "categories"
+                },
+                {
+                    "title": "draft",
+                    "name": "draft",
+                    "type": "draft"
+                }
+            ]
+        }
+    ],
+    "frontMatter.data.files": [
+        {
+            "id": "contentData",
+            "title": "Content",
+            "file": "[[workspace]]/src/config/contentData.json",
+            "fileType": "json",
+            "labelField": "name",
+            "singleEntry": false,
+            "schema": {
+                "title": "Sponsors",
+                "type": "object",
+                "required": ["name", "url"],
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Name"
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "URL"
+                    },
+                    "description": {
+                        "type": "string",
+                        "title": "Description"
+                    }
+                }
+            }
+        }
+    ],
+
+    "frontMatter.website.host": "https://monimiller.com",
+    "frontMatter.git.enabled": true
 }
