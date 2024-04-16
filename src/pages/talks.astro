@@ -8,6 +8,7 @@ import Hero from "@components/Hero/HeroCentered.astro";
 import FeatureCardsSmall from "@components/Feature/FeatureCardsSmall.astro";
 import TalkSideImage from "@components/Talks/TalkSideImage.astro";
 import TestimonialsSwiper from "@components/Testimonials/TestimonialsSwiper.astro";
+import SpeakerInfo from "@components/SpeakerInfo.astro";
 import FeatureGalleryOneRow from "@components/Feature/FeatureGalleryOneRow.astro";
 import CtaBgImage from "@components/Cta/CtaBgImage.astro";
 import FaqAccordions from "@components/Faq/FaqAccordions.astro";
@@ -18,7 +19,9 @@ import siteData from "@config/siteData.json";
 
 <BaseLayout title={siteData.title} description={siteData.description}>
     <Hero />
-    <FeatureCardsSmall />
+    <!-- TODO <TestimonialsSwiper /> -->
+    <!-- <FeatureCardsSmall /> -->
+    <SpeakerInfo>
     <TalkSideImage />
     <FeatureGalleryOneRow />
 </BaseLayout>
