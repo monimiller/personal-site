@@ -11,11 +11,14 @@ export const speakerData: SpeakerItem[] = [
   },
   {
     question: "Long Bio",
-    answer: `TODO`,
+    answer: `Monica Miller is a data engineer, conference speaker, and writer, currently working Developer Relations at Starburst Data. She is a Senior Developer Advocate and member of the Trino community.
+<br>
+<br>
+She graduated from The University of Texas at Dallas with a BS in mechanical engineering and received her MS from the The University of Texas at Dallas in Systems Engineering. When she's not speaking, writing, or mentoring, Moni likes to chase squirrels with her dog, Phoebe. She also played soccer in a past life.`,
   },
   {
-    question: 'Headshot',
-    answer: `<a class="">Download photo</a>`,
+    question: "Headshot",
+    answer: `<a href="/images/headshot.png">Download photo</a>`,
   },
   {
     question: "Links",
