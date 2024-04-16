@@ -2,10 +2,10 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
-import compress from "astro-compress";
 import AutoImport from "astro-auto-import";
 import react from "@astrojs/react";
 import pagefind from "astro-pagefind";
+import playformCompress from "@playform/compress";
 
 // https://astro.build/config
 export default defineConfig({
@@ -31,8 +31,8 @@ export default defineConfig({
         react(),
         tailwind(),
         sitemap(),
-        compress(),
         pagefind(),
+        playformCompress(),
     ],
     build: {
         format: "file",
