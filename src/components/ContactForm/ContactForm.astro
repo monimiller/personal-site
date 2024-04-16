@@ -11,25 +11,46 @@ import Button from "@components/Button/Button.astro";
 
 <section id="contact" class="mx-auto min-w-fit max-w-3xl rounded-lg">
     <div class="rounded-lg">
-<form action="https://submit-form.com/YBYV395g6"
-            class="mt-4 flex flex-col gap-4">
-
+        <form
+            action="https://submit-form.com/YBYV395g6"
+            class="mt-4 flex flex-col gap-4"
+        >
             <div>
                 <div class="grid gap-4 sm:grid-cols-2">
                     <div class="flex flex-col">
-  <label for="name" class="form__label sr-only">Name<span class="text-red-600">*</span></label>
-  <input type="text" id="name" name="name" placeholder="Name" required="" />
-  <label for="email" class="form__label sr-only mb-1">Email<span class="text-red-600">*</span></label>
-  <input type="email" id="email" name="email" placeholder="Email" required="" />
-  <label for="message"class="form__label sr-only mb-1" >Message<span class="text-red-600">*</span></label>
-  <textarea
-    id="message"
-    name="message"
-                    rows="4"
-    placeholder="Message"
-    required=""
-  ></textarea>
-  <Button type="submit">Send</Button>
-</form>
+                        <label for="name" class="form__label sr-only"
+                            >Name<span class="text-red-600">*</span></label
+                        >
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Name"
+                            required=""
+                        />
+                        <label for="email" class="form__label sr-only mb-1"
+                            >Email<span class="text-red-600">*</span></label
+                        >
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            required=""
+                        />
+                        <label for="message" class="form__label sr-only mb-1"
+                            >Message<span class="text-red-600">*</span></label
+                        >
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Message"
+                            required=""></textarea>
+                        <Button type="submit">Send</Button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </section>

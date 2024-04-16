@@ -53,7 +53,9 @@ if (type === "blog") {
         postFrontmatter: postFrontmatter,
         image: optimizedImage,
         authors: authors,
-        canonicalUrl: postFrontmatter.canonicalUrl ? postFrontmatter.canonicalUrl : canonicalUrl,
+        canonicalUrl: postFrontmatter.canonicalUrl
+            ? postFrontmatter.canonicalUrl
+            : canonicalUrl,
     });
 }
 // for general pages

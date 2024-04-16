@@ -1,13 +1,13 @@
-media: 
-    input: src/assets/images/post-pics
-    output: assets/images
+media:
+  input: src/assets/images/post-pics
+  output: assets/images
 content:
   - name: posts
     label: Posts
     path: src/posts
     type: collection
     view:
-      fields: [ title, published, date ]
+      fields: [title, published, date]
     fields:
       - name: published
         label: Published
