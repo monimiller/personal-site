@@ -177,22 +177,25 @@
 
     {
         "image": "TODO",
-        "title": "Trino on Ice - Austin",
+        "title": "Trino on Ice",
         "link": "https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Ftrino-americas%2Fevents%2F296038059%2F",
-        "type": "meetup"
+        "type": "meetup",
+        "location": "Austin, TX"
     },
     {
         "image": "TODO",
-        "title": "Trino on Ice - Boston",
+        "title": "Trino on Ice",
         "link": "https://media.licdn.com/dms/image/sync/D4E27AQHxGpHW7FrMfg/articleshare-shrink_1280_800/0/1712142082193?e=1712872800&v=beta&t=H6JAiSX4oz49vi8Q53LNDny-uKXvqNWVcLf7FAoa8eM",
-        "type": "meetup"
+        "type": "meetup",
+        "location": "Boston, MA"
     },
     {
         "image": "TODO",
-        "title": "Starburst 101 Workshop | San Francisco",
+        "title": "Starburst 101 Workshop",
         "link": "https://www.starburst.io/info/starburst-101-workshop-on-the-road-san-fran",
         "date": "2023-06-13",
-        "type": "meetup"
+        "type": "meetup",
+        "location": "San Francisco, CA"
     },
     {
         "image": "TODO",
@@ -200,6 +203,7 @@
         "description": "The data lakehouse architecture has taken the analytics world by storm, applying critical data warehouse-like capabilities to the data lake. To achieve this desired result, you need to select two critical components of your lakehouse - a query engine and a table format. In this workshop, Jack Klamer and Monica Miller will lead you through how you can easily build and manage an open data lakehouse architecture using open-source technologies such as Trino and Apache Iceberg to support your growing analytics. Trino is an open source highly parallel and distributed query engine built from the ground up at Facebook for efficient, low-latency analytics. Iceberg is an open source, highly performant table storage format that enables an engine like Trino to perform data warehousing SQL functionality such as UPDATE, DELETE, and MERGE commands on the data lakehouse. Jack and Monica will help you configure and build a sample data lakehouse, transform your data, highlight key Iceberg functionality, and produce a final output ready to be utilized by downstream consumers.",
         "link": "https://www.datacouncil.ai/talks24/not-your-fathers-data-lakehouse-building-with-trino-and-iceberg",
         "date": "2024-03-26",
-        "type": "workshop"
+        "type": "workshop",
+        "location": "Austin, TX"
     }
 ]

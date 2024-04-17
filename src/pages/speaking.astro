@@ -19,39 +19,45 @@ import speakingData from "@config/contentData.json";
 ---
 
 <BaseLayout title={siteData.title} description={siteData.description}>
-  <Hero />
-  <!-- TODO <TestimonialsSwiper /> -->
-  <!-- <FeatureCardsSmall /> -->
-  <SpeakerInfo />
+    <Hero />
+    <!-- TODO <TestimonialsSwiper /> -->
+    <!-- <FeatureCardsSmall /> -->
+    <SpeakerInfo />
 
-  <div class="mx-auto max-w-6xl space-y-8 px-4">
-    <h2 class="text-2xl font-bold">Past</h2>
-    <div>
-      <ul class="my-4 grid gap-8">
-        {
-          speakingData.map((event) => (
-            <li>
-              <div class="space-y-1">
-                <a
-                  href={event.link}
-                    class="mr-auto transition hover:text-primary-500 hover:underline"
-                >
-                  <h3 class="text-2xl font-bold">{event.title}</h3>
-                </a>
-                <div class="flex items-center space-x-1 text-gray-500 dark:text-gray-400">
-                  <span>{event.location}</span>
-                  <!-- TODO {event.date &&( -->
-                    <span>•</span>
-                  <span>{event.date}</span>
-                </div>
+    <div class="mx-auto max-w-6xl space-y-8 px-4">
+        <h2 class="text-2xl font-bold">Past</h2>
+        <div>
+            <ul class="my-4 grid gap-8">
+                <!-- FIXME Make the highlighting go only over the text -->
+                {
+                    speakingData.map((event) => (
+                        <li>
+                            <div class="space-y-1">
+                                <a
+                                    href={event.link}
+                                    class=" underline  decoration-primary-200 decoration-2 hover:no-underline"
+                                >
+                                    <h3 class="md:bg text-2xl font-bold text-primary-500 transition hover:bg-primary-200">
+                                        {event.title}
+                                    </h3>
+                                </a>
+                                <div class="flex items-center space-x-1 text-gray-500 dark:text-gray-400">
+                                    <span>{event.location}</span>
+                                    {event.date ? <span>•</span> : ""}
+                                    {event.date ? (
+                                        <span>{event.date}</span>
+                                    ) : (
+                                        ""
+                                    )}
+                                </div>
 
-                <p>{event.description}</p>
-              </div>
-            </li>
-          ))
-        }
-      </ul>
+                                <p>{event.description}</p>
+                            </div>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
     </div>
-  </div>
-  <FeatureGalleryOneRow />
+    <FeatureGalleryOneRow />
 </BaseLayout>
