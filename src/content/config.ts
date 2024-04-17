@@ -51,8 +51,29 @@ const otherPagesCollection = defineCollection({
     }),
 });
 
+// Speaking
+const SpeakingCollection = defineCollection({
+  type: "data",
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      description: z.string().optional(), // TODO Remove optional
+      image: image().optional(),
+      link: z.string().url().optional(),
+      location: z.string(),
+      event: z.string().optional(),
+      date: z
+        .string()
+        .or(z.date())
+        .transform((val) => new Date(val))
+        .optional(), // TODO Remove optional
+      type: z.enum(["conference", "webinar", "promo", "meetup"]).optional(),
+    }),
+});
+
 export const collections = {
   blog: blogCollection,
   authors: authorsCollection,
   otherPages: otherPagesCollection,
+  speaking: SpeakingCollection,
 };

@@ -1,0 +1,14 @@
+image: https://embed-ssl.wistia.com/deliveries/20506495c9ef90114d24554626dfa12acc7670a0.jpg
+title: An introduction to data contracts
+description: >
+  As organizations grow, Data Producers and Data Consumers lose touch
+  and critical disconnections within the organization start to arise. Data Producers
+  should not be held responsible for support they never agreed to, yet Data Consumers
+  cannot be expected to own data from source systems they didn’t build. Consumers
+  should have the power to define the schema they need instead of being forced to
+  adapt to low-quality data. The answer? Data Contracts. Learn from Chad Sanderson,
+  Chief Operator of Data Quality Camp, how data contracts can drive a cultural change
+  toward data-centric collaboration resulting in well-modeled, high-quality, and
+  trusted data.
+link: https://www.starburst.io/datanova-2023/on-demand/?wvideo=m2wnkos268
+type: talk

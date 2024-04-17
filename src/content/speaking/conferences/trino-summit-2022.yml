@@ -1,0 +1,10 @@
+image: https://trino.io/assets/blog/trino-summit-2022/starburst.jpg
+event: Trino Summit 2022
+title: Federating them all on Starburst Galaxy
+description:
+Running and scaling Trino is difficult. Starburst showcases Starburst
+Galaxy, a SaaS data platform built around the Trino query engine. This demoes
+running federated queries over Pokémon data scattered across MongoDB and Iceberg
+tables.
+link: https://www.youtube.com/watch?v=Zfmxwu0m98k
+type: talk

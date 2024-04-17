@@ -15,13 +15,21 @@ import FaqAccordions from "@components/Faq/FaqAccordions.astro";
 
 // data
 import siteData from "@config/siteData.json";
+
+import { getCollection } from "astro:content";
+
+const allEvents = await getCollection("speaking");
 ---
 
 <BaseLayout title={siteData.title} description={siteData.description}>
-    <Hero />
-    <!-- TODO <TestimonialsSwiper /> -->
-    <!-- <FeatureCardsSmall /> -->
-    <SpeakerInfo />
-    <TalkSideImage />
-    <FeatureGalleryOneRow />
+  <Hero />
+  <!-- TODO <TestimonialsSwiper /> -->
+  <!-- <FeatureCardsSmall /> -->
+  <SpeakerInfo />
+
+  {allEvents.map((event) => (<h2>{event.title}</h2>
+  <a href={event.link}>Link</a>
+  Blah))}
+  <!-- <TalkSideImage /> -->
+  <FeatureGalleryOneRow />
 </BaseLayout>
