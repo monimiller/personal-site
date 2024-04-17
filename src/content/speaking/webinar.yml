@@ -1,0 +1,63 @@
+- image: TODO
+  title: Starburst Lakehouse 101
+  description: Chatted with Tom about Data Lakehouse 101
+  link: https://www.starburst.io/resources/starburst-lakehouse-101/
+- image: TODO
+  title: "AWS Dev Day: Data Lake Analytics"
+  description:
+    In this hands-on lab, we guide you through the formation of data lake
+    analytics using Amazon Simple Storage Service (Amazon S3) and Starburst Galaxy,
+    with Covid-19 data as our sample set.
+  link: https://www.starburst.io/info/aws-devday-data-lake-analytics-lab/?utm_campaign=galaxy&utm_medium=social&utm_source=linkedin&utm_type=&utm_content=galaxylabpromo1li&utm_term=
+- image: TODO
+  title: Starburst Galaxy Introduction to Autoscaling
+  link: https://youtu.be/_cnfW-VmcmQ
+  type: video
+- image: TODO
+  title: Starburst Galaxy Role Based Access Control RBAC Overview
+  link: https://youtu.be/Ca6hdmm1xxE
+  type: video
+- image: TODO
+  title: Creating Batch and Interactive Clusters with Starburst Galaxy
+  link: https://youtu.be/btm0Gah-AMc
+  type: video
+- image: TODO
+  title: Querying Batch and Interactive Clusters with Starburst Galaxy
+  link: https://youtu.be/E7axCw579dg
+  type: video
+- image: TODO
+  title: "Data products and security: A Guide to access control"
+  link: https://youtu.be/3yS8E4RdM5s
+  type: video
+- image: TODO
+  title: Configuring your AWS cross account IAM role for Starburst Galaxy
+  link: https://youtu.be/rnGDBKNFnC8
+  type: video
+- image: TODO
+  title: Exploring data lakehouses | Starburst Academy
+  description:
+    Dive into the world of data lakehouses with our latest video! Join
+    us for a short breakdown of how data lakehouses revolutionize data management
+    by combining the best features of data lakes and data warehouses. Discover how
+    this innovative approach offers a modern solution to your data needs, providing
+    the flexibility of data lakes with the structured querying capabilities of data
+    warehouses.
+  link: https://www.youtube.com/watch?v=r7KdcXS_27I
+- image: TODO
+  title: Starburst Galaxy Getting Started
+  description:
+    Take a tour of Starburst Galaxy. See how Starburst Galaxy simplifies
+    the catalog configuration process and cluster creation. Get an overview of admin
+    functionality such as account creation, permission levels, usage and billing,
+    audit logs, and query history.
+  link: https://www.youtube.com/watch?v=udGrjfalCZA
+  type: webinar
+- image: TODO
+  title: How data products bridge the gap for data consumers
+  description:
+    Unlock the power of data products and bridge the gap between data producers
+    and data consumers with our latest video! Join us as we explore how data products
+    revolutionize the way data is accessed and utilized, empowering data consumers
+    to make informed decisions and drive business outcomes.
+  link: https://www.youtube.com/watch?v=knI2RY1ewes
+  type: webinar
