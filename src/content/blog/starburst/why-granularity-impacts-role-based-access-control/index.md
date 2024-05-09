@@ -8,7 +8,7 @@ authors: ["monica-miller"]
 # TODO Data ArchitectData EngineerData Leader/CxOEducationHead of AnalyticsInfoSecsecurity
 categories: ["Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
-draft: false
+draft: true
 # canonicalUrl: "https://www.starburst.io/blog/why-granularity-impacts-role-based-access-control/"
 ---
 
