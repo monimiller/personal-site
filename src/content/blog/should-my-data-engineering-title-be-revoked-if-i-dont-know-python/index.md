@@ -43,8 +43,6 @@ environments for my dbt projects, installing one time use packages I may
 need for some specific instance and then never again, or getting stuck
 on Jinja for the sake of an obscure dbt macro.
 
-<br>
-
 Am I a fraud? Does my lack of knowledge of object-oriented programming
 or the fact that I have no Python code deployed in production mean that
 I don't qualify as a data engineer? Am I excommunicated from my
@@ -68,8 +66,7 @@ because regardless of the opinion if hardcore engineers don't use SQL,
 all other data professionals do. And having that somewhat universal
 language to communicate between roles is priceless. As my friend and
 coworker pointed out, one of the most heavily used  [DataFrame functions
-he sees in the field is](https://lestermartin.blog/2023/09/12/pystarburst-the-dataframe-api/#or-just-run-some-sql),
-<!-- .sql\(\) -->
+he sees in the field is .sql()](https://lestermartin.blog/2023/09/12/pystarburst-the-dataframe-api/#or-just-run-some-sql),
 which lets the Python folks type out - you guessed it - SQL.
 
 The truth is that I very much so classify my experience as [data
@@ -127,8 +124,7 @@ that includes around 250 tools, then according to the good old
 calculator](https://www.calculatorsoup.com/calculators/discretemathematics/combinations.php?n=250&r=5&action=solve),
 we have too many, an estimate of around 7817031300 different options.
 
-![State of Data Engineering 2024](https://cdn-kfpfp.nitrocdn.com/LPJTcQItTfFXIvmLmluGDpHNkMGCVcPt/assets/images/optimized/rev-2532649/lakefs.io/wp-content/uploads/2024/05/SoDE24-state-of-data-engineering-2048x1075.png){width="5.390625546806649in"
-height="2.833533464566929in"}
+![State of Data Engineering 2024](https://cdn-kfpfp.nitrocdn.com/LPJTcQItTfFXIvmLmluGDpHNkMGCVcPt/assets/images/optimized/rev-2532649/lakefs.io/wp-content/uploads/2024/05/SoDE24-state-of-data-engineering-2048x1075.png)
 
 As a curious thought exercise, let's guess how many of these tools are
 UI based or can be categorized as a SQL derivative. I'd bet a high
@@ -171,14 +167,14 @@ error that comes with the complicated data life, then sign me up.
 
 This next generation of data people will even look staunchly different
 than the ones today. With the rise of
-[[Copilot]{.underline}](https://www.microsoft.com/en-us/microsoft-copilot/?ef_id=_k_Cj0KCQjwpNuyBhCuARIsANJqL9NQpugy8zp8ifcYsPQcPb9IXo26P_s-F5hJU3Nz9punlpsiE83pzvMaAhFnEALw_wcB_k_&OCID=AIDcmm1o1fzy5i_SEM__k_Cj0KCQjwpNuyBhCuARIsANJqL9NQpugy8zp8ifcYsPQcPb9IXo26P_s-F5hJU3Nz9punlpsiE83pzvMaAhFnEALw_wcB_k_&gad_source=1&gclid=Cj0KCQjwpNuyBhCuARIsANJqL9NQpugy8zp8ifcYsPQcPb9IXo26P_s-F5hJU3Nz9punlpsiE83pzvMaAhFnEALw_wcB),
+[Copilot](https://www.microsoft.com/en-us/microsoft-copilot/?ef_id=_k_Cj0KCQjwpNuyBhCuARIsANJqL9NQpugy8zp8ifcYsPQcPb9IXo26P_s-F5hJU3Nz9punlpsiE83pzvMaAhFnEALw_wcB_k_&OCID=AIDcmm1o1fzy5i_SEM__k_Cj0KCQjwpNuyBhCuARIsANJqL9NQpugy8zp8ifcYsPQcPb9IXo26P_s-F5hJU3Nz9punlpsiE83pzvMaAhFnEALw_wcB_k_&gad_source=1&gclid=Cj0KCQjwpNuyBhCuARIsANJqL9NQpugy8zp8ifcYsPQcPb9IXo26P_s-F5hJU3Nz9punlpsiE83pzvMaAhFnEALw_wcB),
 anything is possible. I can see a world where I start using Python every
 day. But I also see a world where I'm able to lean even more into my SQL
-comfort zone. With the rise of [[table
-formats]{.underline}](https://www.youtube.com/watch?v=SQ3smAu4KWQ),
-[[data
-lakehouses]{.underline}](https://www.starburst.io/blog/icehouse-trino-iceberg-lakehouse/),
-and [[query engines]{.underline}](https://trino.io/) (_quick plug_), I
+comfort zone. With the rise of [table
+formats](https://www.youtube.com/watch?v=SQ3smAu4KWQ),
+[data
+lakehouses](https://www.starburst.io/blog/icehouse-trino-iceberg-lakehouse/),
+and [query engines](https://trino.io/) (_quick plug_), I
 dream of an outcome where I can develop SQL based systems that I can
 enable my data consumers and end-users to service themselves. And while
 I do understand some are against the pride of utilizing low-code or no
@@ -190,6 +186,6 @@ helps me make better decisions. And I like that there are avenues today
 that make it easier for me than ever to do so. But I also can't deny the
 history of technologies developed like Hive, Datastage, Informatica,
 Nifi, Trino & more which have for years been trying to bring SQL to the
-people, which makes me think that I can't be the only one [[solving data
-problems]{.underline}](https://medium.com/@byanalytixlabs/data-engineer-skills-101-everything-you-need-to-know-for-a-career-in-data-engineering-2381094ad405#:~:text=Maintain%20Data%20Storage%20Solutions,maintain%20robust%20data%20storage%20solutions)
+people, which makes me think that I can't be the only one [solving data
+problems](https://medium.com/@byanalytixlabs/data-engineer-skills-101-everything-you-need-to-know-for-a-career-in-data-engineering-2381094ad405#:~:text=Maintain%20Data%20Storage%20Solutions,maintain%20robust%20data%20storage%20solutions)
 via SQL.
