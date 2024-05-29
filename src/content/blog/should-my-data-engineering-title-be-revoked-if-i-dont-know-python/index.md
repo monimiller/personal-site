@@ -1,83 +1,90 @@
 ---
 title: Should my data engineering title be revoked if I don’t know Python?
 pubDate: 2024-05-29T16:39:54.846Z
-draft: true
-type: default
+draft: false
 description: A self-discovery into life, liberty, and the pursuit of data.
+categories: ["sql", "data-engineering"]
+authors: ["monica-miller"]
+# TODO: Add hero image
+heroImage: "./concerned_woman.png"
 ---
-Should my data engineering title be revoked if I don't know Python?
 
-**A self-discovery into life, liberty, and the pursuit of data.**
+## <center> A self-discovery into life, liberty, and the pursuit of data.
 
-*A short disclaimer for all the "real engineers" that will potentially
+---
+
+_A short disclaimer for all the "real engineers" that will potentially
 never give my thoughts or opinions the time of day after I bear my soul
 and personal experiences. I've been self-taught my entire career, and
-I'm not afraid to learn. So please don't cancel me forever as I admit to
+I'm not afraid to learn. Please don't cancel me forever as I admit to
 the interweb that at this very moment, Python isn't one of my top ten
-special skills.*
+special skills._
+
+---
 
 **I was a data engineer for three years and SQL was my everyday
 programming language.** Let me answer some of your next questions. My
-official title was indeed *Data Engineer***,** which I might add was a
+official title was indeed _Data Engineer_, which I might add was a
 significant improvement towards accurately representing my role over my
-first title of *Software Developer & Integrator*. I have lived through
-many of the [[same growing
-pains]{.underline}](https://www.starburst.io/blog/why-granularity-impacts-role-based-access-control/)
+first title of _Software Developer & Integrator_. I have lived through
+many of the [same growing
+pains](https://www.starburst.io/blog/why-granularity-impacts-role-based-access-control/)
 that are synonymous with any data engineering right of passage, and I
 spent most of my time building and maintaining near-real time,
 micro-batch, and batch data pipelines transforming data from multiple
 different sources and ensuring the data quality of these said pipelines
-to the business. *And I did most of this work only using SQL.* I never
+to the business. _And I did most of this work only using SQL._ I never
 learned Scala at all. I can google my way through any basic Python needs
 I have (I can crush a
-[[FizzBuzz]{.underline}](https://www.geeksforgeeks.org/fizz-buzz-implementation/)
+[FizzBuzz](https://www.geeksforgeeks.org/fizz-buzz-implementation/)
 like nobody's business), but I have to admit my deep dark confession
 that my Python use is mostly centered around creating virtual
 environments for my dbt projects, installing one time use packages I may
 need for some specific instance and then never again, or getting stuck
 on Jinja for the sake of an obscure dbt macro.
 
+<br>
+
 Am I a fraud? Does my lack of knowledge of object-oriented programming
 or the fact that I have no Python code deployed in production mean that
 I don't qualify as a data engineer? Am I excommunicated from my
 profession because I don't have an utter repugnant reaction if I have to
-navigate around using the UI instead of the CLI? My \*elite\* impostor
+navigate around using the UI instead of the CLI? My *elite* impostor
 syndrome and deepest insecurities would argue that my time in the
 trenches - where I did substantial work - would mean nothing. Because I
 am self-taught and completely learned on the job, without having the
 substantial background of a traditional software engineer, my experience
 is invalid. The last couple of weeks have been spent profoundly
 reflecting on all these questions after some recent parallel
-conversations - with co-workers, friends, and real people out there
-doing the things - that lead me to the very scary conclusion that it's
+conversations with co-workers, friends, and real people out there
+doing the things, that lead me to the very scary conclusion that it's
 actually a case-by-case basis for each individual role as to whether or
 not a data engineering job can be accomplished entirely on the basis of
 SQL. However, regardless of your opinion on the matter, you cannot
-objectively deny the [[data
-culture]{.underline}](https://rivery.io/blog/best-data-influencers/)
-capitalizing on the mentality that **SQL is King**. [[Everyone's
-teaching SQL tips and tricks]{.underline}](https://dataexpert.io/),
+objectively deny the [data culture](https://rivery.io/blog/best-data-influencers)
+capitalizing on the mentality that **SQL is King**. [Everyone's
+teaching SQL tips and tricks](https://dataexpert.io/),
 because regardless of the opinion if hardcore engineers don't use SQL,
 all other data professionals do. And having that somewhat universal
 language to communicate between roles is priceless. As my friend and
-coworker pointed out, one of the most heavily used [[DataFrame functions
-he sees in the field is
-.sql()]{.underline}](https://lestermartin.blog/2023/09/12/pystarburst-the-dataframe-api/#or-just-run-some-sql),
+coworker pointed out, one of the most heavily used  [DataFrame functions
+he sees in the field is](https://lestermartin.blog/2023/09/12/pystarburst-the-dataframe-api/#or-just-run-some-sql),
+<!-- .sql\(\) -->
 which lets the Python folks type out - you guessed it - SQL.
 
-The truth is that I very much so classify my experience as [[data
-engineering]{.underline}](https://medium.com/@byanalytixlabs/data-engineer-skills-101-everything-you-need-to-know-for-a-career-in-data-engineering-2381094ad405#:~:text=Maintain%20Data%20Storage%20Solutions,maintain%20robust%20data%20storage%20solutions).
+The truth is that I very much so classify my experience as [data
+engineering](https://medium.com/@byanalytixlabs/data-engineer-skills-101-everything-you-need-to-know-for-a-career-in-data-engineering-2381094ad405#:~:text=Maintain%20Data%20Storage%20Solutions,maintain%20robust%20data%20storage%20solutions).
 I spent hours upon hours cleaning and cleansing data, building and
 maintaining new data pipelines, fixing legacy code, running CI/CD
 pipelines, ensuring data quality, securing our data, and so much more.
 And after my start to this identity crisis I found
-[[article]{.underline}](https://www.datacamp.com/blog/how-to-become-a-data-engineer)
+[article](https://www.datacamp.com/blog/how-to-become-a-data-engineer)
 after
-[[article]{.underline}](https://www.altexsoft.com/blog/what-is-data-engineer-role-skills/)
+[article](https://www.altexsoft.com/blog/what-is-data-engineer-role-skills/)
 validating my experience. But here's the problem with data in general.
-It's all a spectrum. I also think you could have called me a [[Data
+It's all a spectrum. I also think you could have called me a [Data
 Product
-Owner]{.underline}](https://tamr.com/blog/data-product-owner-role-responsibilities),
+Owner](https://tamr.com/blog/data-product-owner-role-responsibilities),
 or my more affectionately known nickname "girl we ping on Slack when the
 IA jobs fail". But the truth is, there were situations where my direct
 teammates were doing very different things. Everyone has outstanding and
@@ -87,40 +94,40 @@ tangled with multiple completely contrasting tech stacks, resulting in
 data engineers developing varying areas of expertise. Data engineers
 become fingerprints, each and every one of them holds special skills
 developed from facing the obscure challenges and needs unique to each
-organization *at that specific moment in time*.
+organization _at that specific moment in time_.
 
 There are two contributing problems:
 
 1.  Everyone defines data engineering differently
 
-2.  There are literally [[too many
-    things]{.underline}](https://lakefs.io/blog/the-state-of-data-engineering-2024/)
+2.  There are literally [too many
+    things](https://lakefs.io/blog/the-state-of-data-engineering-2024/)
 
 As roles and responsibilities blend and blur, where is the line between
 infrastructure engineer and data engineer? Between data engineer and
 analytics engineer? And between an analytics engineer and BI analyst?
 I've actually never truly understood the role of a data architect, but
-you have to throw that one in too. Don't forget the treasured [[data
+you have to throw that one in too. Don't forget the treasured [data
 scientists who are critical to our entire
-operation]{.underline}](https://www.youtube.com/watch?v=I9oNqDWagtM),
+operation](https://www.youtube.com/watch?v=I9oNqDWagtM),
 especially with the rise of Generative AI, and before you know it,
-you've created [[a chaotic radar
-plot]{.underline}](https://coderpad.io/blog/data-science/the-differences-between-data-science-and-data-engineering-job-roles/)
+you've created [a chaotic radar
+plot](https://coderpad.io/blog/data-science/the-differences-between-data-science-and-data-engineering-job-roles/)
 where roles and responsibilities intersect and overlap no matter the
 title. It becomes clearer why we have all gravitated toward a sole
 lingua franca for our data initiatives where possible.
 
-Let's add the second layer of complication and address the [[complex
-ecosystem]{.underline}](https://lakefs.io/blog/the-state-of-data-engineering-2024/)
+Let's add the second layer of complication and address the [complex
+ecosystem](https://lakefs.io/blog/the-state-of-data-engineering-2024/)
 of tooling that we all agree is impossible to learn in full. If we shoot
 for the stars and pretend each of these roles above can master 5 of
 these associated technologies/tools, and we take a conservative guess
 that includes around 250 tools, then according to the good old
-[[combinations
-calculator]{.underline}](https://www.calculatorsoup.com/calculators/discretemathematics/combinations.php?n=250&r=5&action=solve),
+[combinations
+calculator](https://www.calculatorsoup.com/calculators/discretemathematics/combinations.php?n=250&r=5&action=solve),
 we have too many, an estimate of around 7817031300 different options.
 
-![](media/image1.png){width="5.390625546806649in"
+![State of Data Engineering 2024](https://cdn-kfpfp.nitrocdn.com/LPJTcQItTfFXIvmLmluGDpHNkMGCVcPt/assets/images/optimized/rev-2532649/lakefs.io/wp-content/uploads/2024/05/SoDE24-state-of-data-engineering-2048x1075.png){width="5.390625546806649in"
 height="2.833533464566929in"}
 
 As a curious thought exercise, let's guess how many of these tools are
@@ -133,8 +140,8 @@ I'm willing to call a spade a spade. The rise of the cloud has greatly
 aided and abetted data engineering to shift left and allow for data
 engineers like myself to even exist. Since the inception of Redshift,
 the rise of dbt, and the plethora of new data technologies born out of
-the chaos that is the [[modern data
-stack]{.underline}](https://www.getdbt.com/blog/future-of-the-modern-data-stack),
+the chaos that is the [modern data
+stack](https://www.getdbt.com/blog/future-of-the-modern-data-stack),
 custom written Java UDFs are no longer a top five choice for data
 transformations, and some of the highly technical software engineering
 principles assumed in the past are no longer necessary. I've often
@@ -171,7 +178,7 @@ comfort zone. With the rise of [[table
 formats]{.underline}](https://www.youtube.com/watch?v=SQ3smAu4KWQ),
 [[data
 lakehouses]{.underline}](https://www.starburst.io/blog/icehouse-trino-iceberg-lakehouse/),
-and [[query engines]{.underline}](https://trino.io/) (*quick plug*), I
+and [[query engines]{.underline}](https://trino.io/) (_quick plug_), I
 dream of an outcome where I can develop SQL based systems that I can
 enable my data consumers and end-users to service themselves. And while
 I do understand some are against the pride of utilizing low-code or no
