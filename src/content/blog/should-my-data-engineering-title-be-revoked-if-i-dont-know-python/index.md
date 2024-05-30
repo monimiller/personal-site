@@ -1,5 +1,5 @@
 ---
-title: Should my data engineering title be revoked if I don’t know Python?
+title: Can I still be a data engineer if I don’t know Python?
 pubDate: 2024-05-29T16:39:54.846Z
 draft: false
 description: A self-discovery into life, liberty, and the pursuit of data.
@@ -124,7 +124,8 @@ that includes around 250 tools, then according to the good old
 calculator](https://www.calculatorsoup.com/calculators/discretemathematics/combinations.php?n=250&r=5&action=solve),
 we have too many, an estimate of around 7817031300 different options.
 
-![State of Data Engineering 2024](https://cdn-kfpfp.nitrocdn.com/LPJTcQItTfFXIvmLmluGDpHNkMGCVcPt/assets/images/optimized/rev-2532649/lakefs.io/wp-content/uploads/2024/05/SoDE24-state-of-data-engineering-2048x1075.png)
+![State of Data Engineering
+2024](https://cdn-kfpfp.nitrocdn.com/LPJTcQItTfFXIvmLmluGDpHNkMGCVcPt/assets/images/optimized/rev-2532649/lakefs.io/wp-content/uploads/2024/05/SoDE24-state-of-data-engineering-2048x1075.png) 
 
 As a curious thought exercise, let's guess how many of these tools are
 UI based or can be categorized as a SQL derivative. I'd bet a high

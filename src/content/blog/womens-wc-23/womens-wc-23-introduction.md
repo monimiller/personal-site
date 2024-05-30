@@ -6,7 +6,6 @@ authors:
   - monica-miller
 categories:
   - data-analysis
-  - python
 draft: false
 heroImage: ./monica-playoff-predictions.png
 keywords:
