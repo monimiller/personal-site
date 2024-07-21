@@ -19,8 +19,8 @@ content:
       - name: updatedDate
         label: Updated Date
         type: date
-      - name: Title
-        label: title
+      - name: title
+        label: Title
         type: string
       - name: description
         label: Description
