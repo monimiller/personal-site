@@ -14,7 +14,7 @@ content:
         type: boolean
         default: true
       - name: date
-        label: Date
+        label: pubDate
         type: date
       - name: title
         label: Title
