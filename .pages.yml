@@ -24,7 +24,10 @@ content:
         type: string
       - name: description
         label: Description
-        type: rich-text
+        type: string
       - name: canonicalUrl
         label: Canonical URL
         type: string
+      - name: body
+        label: Body
+        type: rich-text
