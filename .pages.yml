@@ -4,7 +4,7 @@ media:
 content:
   - name: posts
     label: Posts
-    path: src/posts
+    path: src/content/blog
     type: collection
     view:
       fields: [title, published, date]
