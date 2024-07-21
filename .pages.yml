@@ -13,18 +13,18 @@ content:
         label: draft
         type: boolean
         default: true
-      - name: Publish Date
-        label: pubDate
+      - name: pubDate
+        label: Publish Date
         type: date
-      - name: Updated Date
-        label: updatedDate
+      - name: updatedDate
+        label: Updated Date
         type: date
-      - name: title
-        label: Title
+      - name: Title
+        label: title
         type: string
-      - name: Description
-        label: description
+      - name: description
+        label: Description
         type: rich-text
-      - name: Canonical URL
-        label: canonicalUrl
+      - name: canonicalUrl
+        label: Canonical URL
         type: string
