@@ -9,6 +9,12 @@ content:
     view:
       fields: [title, published, pubDate]
     fields:
+      - name: title
+        label: Title
+        type: string
+      - name: description
+        label: Description
+        type: string
       - name: Draft
         label: draft
         type: boolean
@@ -19,12 +25,6 @@ content:
       - name: updatedDate
         label: Updated Date
         type: date
-      - name: title
-        label: Title
-        type: string
-      - name: description
-        label: Description
-        type: string
       - name: canonicalUrl
         label: Canonical URL
         type: string
