@@ -215,14 +215,25 @@ As organizations grow, Data Producers and Data Consumers lose touch and critical
   // TODO Data Rebel Awards
   // https://www.linkedin.com/company/starburstdata/?miniCompanyUrn=urn%3Ali%3Afsd_company%3A27159855&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3B8VARVf2BS5KPHTzU60kTFg%3D%3D
   // Podcasts
-  // {
-  //   image: TODO,
-  //   title: "37: Trino powers up the community support",
-  //   event: "Trino Community",
-  //   description:
-  //     "In this episode we have the pleasure to chat with our colleagues, who now make the Trino community better every day",
-  //   link: "https://trino.io/episodes/37.html",
-  // },
+  {
+    image: TODO,
+    // image: "https://img.youtube.com/vi/oG-HSB3tCY8/default.jpg",
+    title: "37: Trino powers up the community support",
+    event: "Trino Community",
+    description:
+      "In this episode we have the pleasure to chat with our colleagues, who now make the Trino community better every day",
+    link: "https://trino.io/episodes/37.html",
+  },
+  {
+    image: TODO,
+    //  image: "https://images.squarespace-cdn.com/content/v1/5d7be50aa287a36acfa50c36/1727821477333-WFXRNFTT6K3P2J5YL1XN/DATAforApple.png",
+    title: "The Good Content Will Prevail",
+    event: "#DataFemme",
+    description:
+      "Starburst's Senior Developer Monica Miller champions female representation in the data science world while gearing up for Datanova, Starburst's premiere data conference on October 23-24!",
+    link: "https://www.dikayodata.com/datafemme/datanova",
+    date: "2024-10-02",
+  },
   // Meetups
   {
     image: TODO,

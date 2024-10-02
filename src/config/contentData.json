@@ -1,5 +1,13 @@
 [
     {
+        "image": "https://images.squarespace-cdn.com/content/v1/5d7be50aa287a36acfa50c36/1727821477333-WFXRNFTT6K3P2J5YL1XN/DATAforApple.png",
+        "title": "The Good Content Will Prevail",
+        "event": "#DataFemme",
+        "description": "Starburst's Senior Developer Monica Miller champions female representation in the data science world while gearing up for Datanova, Starburst's premiere data conference on October 23-24!",
+        "link": "https://www.dikayodata.com/datafemme/datanova",
+        "date": "2024-10-02"
+    },
+    {
         "title": "What I Wish I Knew",
         "url": "https://www.linkedin.com/posts/monimiller_dataengineer-career-software-activity-6981075187215597569-Md-u?utm_source=share&utm_medium=member_desktop",
         "description": "A talk about the things I wish I knew when I started my career in tech.",
@@ -205,5 +213,12 @@
         "date": "2024-03-26",
         "type": "workshop",
         "location": "Austin, TX"
+    },
+    {
+        "image": "TODO",
+        "title": "37: Trino powers up the community support",
+        "event": "Trino Community",
+        "description": "In this episode we have the pleasure to chat with our colleagues, who now make the Trino community better every day",
+        "link": "https://trino.io/episodes/37.html"
     }
 ]
