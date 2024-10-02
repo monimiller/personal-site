@@ -1,1 +1,9 @@
-{"src":{"content":{"blog":{"should-my-data-engineering-title-be-revoked-if-i-dont-know-python":{}}}}}
+{
+    "src": {
+        "content": {
+            "blog": {
+                "should-my-data-engineering-title-be-revoked-if-i-dont-know-python": {}
+            }
+        }
+    }
+}

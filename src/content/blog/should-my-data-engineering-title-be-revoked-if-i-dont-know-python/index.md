@@ -47,7 +47,7 @@ Am I a fraud? Does my lack of knowledge of object-oriented programming
 or the fact that I have no Python code deployed in production mean that
 I don't qualify as a data engineer? Am I excommunicated from my
 profession because I don't have an utter repugnant reaction if I have to
-navigate around using the UI instead of the CLI? My *elite* impostor
+navigate around using the UI instead of the CLI? My _elite_ impostor
 syndrome and deepest insecurities would argue that my time in the
 trenches - where I did substantial work - would mean nothing. Because I
 am self-taught and completely learned on the job, without having the
@@ -65,7 +65,7 @@ teaching SQL tips and tricks](https://dataexpert.io/),
 because regardless of the opinion if hardcore engineers don't use SQL,
 all other data professionals do. And having that somewhat universal
 language to communicate between roles is priceless. As my friend and
-coworker pointed out, one of the most heavily used  [DataFrame functions
+coworker pointed out, one of the most heavily used [DataFrame functions
 he sees in the field is .sql()](https://lestermartin.blog/2023/09/12/pystarburst-the-dataframe-api/#or-just-run-some-sql),
 which lets the Python folks type out - you guessed it - SQL.
 
@@ -125,7 +125,7 @@ calculator](https://www.calculatorsoup.com/calculators/discretemathematics/combi
 we have too many, an estimate of around 7817031300 different options.
 
 ![State of Data Engineering
-2024](https://cdn-kfpfp.nitrocdn.com/LPJTcQItTfFXIvmLmluGDpHNkMGCVcPt/assets/images/optimized/rev-2532649/lakefs.io/wp-content/uploads/2024/05/SoDE24-state-of-data-engineering-2048x1075.png) 
+2024](https://cdn-kfpfp.nitrocdn.com/LPJTcQItTfFXIvmLmluGDpHNkMGCVcPt/assets/images/optimized/rev-2532649/lakefs.io/wp-content/uploads/2024/05/SoDE24-state-of-data-engineering-2048x1075.png)
 
 As a curious thought exercise, let's guess how many of these tools are
 UI based or can be categorized as a SQL derivative. I'd bet a high
