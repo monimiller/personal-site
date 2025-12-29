@@ -31,7 +31,7 @@ module.exports = {
                 //   900: "#105269",
                 //   950: "#033649",
                 // },
-                primary: colors.orange,
+                primary: colors.sky,
                 base: colors.neutral,
                 info: "#7dd3fc",
                 "info-content": "#082f49",
