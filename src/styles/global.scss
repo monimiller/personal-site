@@ -66,7 +66,7 @@
 
   /* main gradient. Used for tags and some headings */
   .main-text-gradient {
-    @apply bg-gradient-to-r from-sky-500 to-cyan-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-500 to-accent-dark bg-clip-text text-transparent;
   }
 
   /* use with "animate-pause" to pause a CSS animation */
