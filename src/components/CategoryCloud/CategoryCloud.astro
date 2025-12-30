@@ -15,15 +15,15 @@ interface Props {
 const { showCount = false } = Astro.props as Props;
 ---
 
-<div class="flex flex-wrap justify-center gap-x-4 gap-y-2">
+<div class="flex flex-wrap justify-center gap-3">
     {
         processedCategories.map(([category, count]) => (
             <a
                 href={`/categories/${category}/`}
-                class="button button--ghost py-2 text-sm"
+                class="button button--ghost px-4 py-2 text-sm transition-all hover:scale-105"
             >
                 {humanize(category)}
-                {showCount && <span class="text-xs opacity-70">{count}</span>}
+                {showCount && <span class="ml-1.5 text-xs opacity-60">({count})</span>}
             </a>
         ))
     }

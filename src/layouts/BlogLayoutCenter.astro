@@ -41,15 +41,15 @@ const authorsData = await getAllAuthorsData(authors);
     <article class="container pt-36 md:pt-44">
         <!-- Blog post info -->
         <div class="flex w-full flex-col items-center">
-            <div class="mx-auto flex w-full max-w-[800px]">
+            <div class="mx-auto flex w-full max-w-[900px]">
                 <div class="mx-auto text-center">
                     <!-- Categories -->
-                    <div class="flex justify-center gap-4">
+                    <div class="flex justify-center gap-3">
                         {
                             categories.map((category) => (
                                 <a
                                     href={`/categories/${slugify(category)}/`}
-                                    class="button button--ghost px-2 py-0.5 font-medium md:px-4 md:py-1"
+                                    class="button button--ghost px-3 py-1 text-xs font-medium md:px-4 md:py-1.5 md:text-sm"
                                 >
                                     {humanize(category)}
                                 </a>
@@ -58,36 +58,36 @@ const authorsData = await getAllAuthorsData(authors);
                     </div>
 
                     <!-- title -->
-                    <h1 class="h1 mt-8">{title}</h1>
+                    <h1 class="h1 mt-8 leading-tight">{title}</h1>
 
                     <div
-                        class="mt-6 flex w-full flex-wrap justify-center gap-4"
+                        class="mt-8 flex w-full flex-wrap items-center justify-center gap-3 text-sm"
                     >
                         <!-- author info -->
                         {
                             authorsData.map((authorData) => (
-                                <div class="mb-auto flex">
+                                <div class="flex items-center gap-2">
                                     <figure>
                                         <Image
                                             src={authorData.data.avatar}
                                             alt={`${authorData.data.name} avatar`}
                                             width={100}
                                             quality="high"
-                                            class="h-7 w-7 rounded-full object-cover"
+                                            class="h-8 w-8 rounded-full object-cover ring-2 ring-primary-100"
                                         />
                                     </figure>
-                                    <div class="my-auto ml-2 opacity-80">
+                                    <div class="font-medium">
                                         {authorData.data.name}
                                     </div>
                                 </div>
                             ))
                         }
 
-                        <span>&bull;</span>
+                        <span class="opacity-50">&bull;</span>
 
                         <!-- Date -->
                         <time
-                            class="my-auto h-full opacity-80"
+                            class="opacity-70"
                             datetime={pubDate.toISOString()}
                             >{formatDate(pubDate)}
                         </time>
@@ -96,13 +96,13 @@ const authorsData = await getAllAuthorsData(authors);
             </div>
 
             <!-- blog post main image -->
-            <div class="mt-6 max-w-[1000px] overflow-hidden">
+            <div class="mt-10 max-w-[1100px] overflow-hidden md:mt-12">
                 <Image
                     src={heroImage}
                     alt={`Cover for ${title}`}
                     width={2000}
                     quality="high"
-                    class="max-h-[70vh] rounded-xl object-cover"
+                    class="max-h-[65vh] w-full rounded-2xl object-cover shadow-lg"
                     loading="eager"
                     format="webp"
                 />
@@ -110,27 +110,27 @@ const authorsData = await getAllAuthorsData(authors);
         </div>
 
         <!-- article content -->
-        <div class="mt-10 w-full">
-            <div class="mx-auto max-w-2xl">
-                <div class="text-base-content text-base">
+        <div class="mt-14 w-full md:mt-16">
+            <div class="mx-auto max-w-3xl">
+                <div class="text-base-content">
                     {
                         updatedDate && (
-                            <div class="mb-6 italic">
+                            <div class="mb-8 rounded-lg bg-base-200 px-4 py-3 text-sm italic opacity-80">
                                 <time datetime={updatedDate.toISOString()}>
-                                    Updated: {formatDate(updatedDate)}
+                                    Last updated: {formatDate(updatedDate)}
                                 </time>
                             </div>
                         )
                     }
                     <section
                         id="blog-post-content"
-                        class="prose mx-auto md:text-lg"
+                        class="prose prose-lg mx-auto max-w-none"
                     >
                         <slot />
                     </section>
 
                     <!-- button to go back to all posts -->
-                    <div class="mt-16 flex justify-center">
+                    <div class="mt-20 flex justify-center border-t border-base-300 pt-12">
                         <Button
                             variant="outline"
                             href="/blog/"

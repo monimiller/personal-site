@@ -25,44 +25,47 @@ const { title, description, categories, authors, pubDate, heroImage } =
 const authorsData = await getAllAuthorsData(authors);
 ---
 
-<!-- href={`/blog/${post.slug}/`} -->
-<article class=`flex grid gap-4 md:grid-cols-2 md:gap-8 ${className}` {...rest}>
+<article class=`group grid gap-6 md:grid-cols-[400px_1fr] md:gap-10 ${className}` {...rest}>
     <a
         href={`/blog/${post.slug}/`}
-        class="shrink-0 justify-center overflow-hidden rounded-lg sm:justify-normal"
+        class="overflow-hidden rounded-xl"
     >
-        <figure>
+        <figure class="h-full overflow-hidden">
             <Image
                 src={heroImage}
                 alt={`Cover for ${title}`}
                 height={700}
                 quality="high"
-                class="h-auto max-h-96 w-full rounded-lg object-cover transition-all duration-500 hover:scale-[1.02]"
+                class="h-full w-full rounded-xl object-cover transition-all duration-500 group-hover:scale-105"
             />
         </figure>
     </a>
-    <div class="flex w-full flex-col gap-2 md:gap-4">
-        <!-- categories -->
-        <div class="flex flex-wrap gap-4 md:mt-1">
+    <div class="flex w-full flex-col gap-3 md:gap-4">
+        <!-- categories & date -->
+        <div class="flex flex-wrap items-center gap-3">
             {
                 categories.map((category) => (
                     <a
                         href={`/categories/${slugify(category)}/`}
-                        class="button button--ghost px-2 py-0.5 font-medium md:px-4 md:py-1"
+                        class="button button--ghost px-3 py-1 text-xs font-medium md:text-sm"
                     >
                         {humanize(category)}
                     </a>
                 ))
             }
+            <span class="text-sm opacity-60">&bull;</span>
+            <time class="text-sm opacity-70">
+                {formatDate(pubDate)}
+            </time>
         </div>
 
         <!-- title -->
         <div>
             <a
                 href={`/blog/${post.slug}/`}
-                class="border-b-2 border-transparent transition duration-300 hover:border-primary-500"
+                class="group/title"
             >
-                <h2 class="inline text-lg font-medium md:text-2xl lg:text-3xl">
+                <h2 class="text-xl font-semibold leading-tight transition-colors group-hover/title:text-primary-600 md:text-2xl lg:text-3xl">
                     {title}
                 </h2>
             </a>
@@ -71,22 +74,16 @@ const authorsData = await getAllAuthorsData(authors);
         <!-- description -->
         {
             showDescription && (
-                <p class="description hidden text-sm md:block lg:text-base">
+                <p class="text-base leading-relaxed opacity-80 md:text-lg">
                     {description}
                 </p>
             )
         }
 
-        <div class="flex flex-wrap gap-1 text-sm opacity-80">
-            <!-- published date -->
-            <p class="whitespace-nowrap">
-                {formatDate(pubDate)}
-            </p>
-            <span>&bull;</span>
-            <!-- first author -->
-            <p class="whitespace-nowrap">
-                {authorsData[0].data.name}
-            </p>
+        <!-- author -->
+        <div class="mt-auto flex items-center gap-2 text-sm opacity-70">
+            <span>By</span>
+            <span class="font-medium">{authorsData[0].data.name}</span>
         </div>
     </div>
 </article>
