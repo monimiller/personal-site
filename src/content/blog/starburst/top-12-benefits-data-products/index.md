@@ -3,7 +3,7 @@ title: Top 12 benefits of data products for users and the business
 description: >
   Data products have many benefits. They create a new, curated way of interacting with datasets and place team collaboration and business questions at the forefront of data analysis. Businesses adopt data products for many reasons, including ease of use, improved data reliability and trustworthiness, and new opportunities for cross-functional sharing.
 pubDate: "2023-05-23"
-authors: ["monica-miller"] # TODO Evan Smith
+authors: ["monica-miller", "evan-smith"]
 categories: ["Data Products", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true

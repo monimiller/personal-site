@@ -7,6 +7,7 @@ import {
   filterBlogPosts,
   getExistingPosts,
   isAlreadyImported,
+  filterByMonicaWithHtml,
 } from "./lib/rss-parser";
 import { fetchPostContent, getCanonicalUrl, slugify } from "./lib/content-fetcher";
 import { htmlToMarkdown } from "./lib/html-to-markdown";
@@ -174,10 +175,21 @@ async function interactiveMode() {
   log.info(`Already imported: ${existing.size} posts`);
 
   // Filter out already imported
-  const newPosts = blogPosts.filter((p) => !isAlreadyImported(p, existing));
+  const notImported = blogPosts.filter((p) => !isAlreadyImported(p, existing));
+  log.info(`Not yet imported: ${notImported.length} posts`);
+
+  if (notImported.length === 0) {
+    log.success("All posts are already imported!");
+    return;
+  }
+
+  // Filter to only Monica's posts (fetches HTML, uses cache)
+  log.info("Checking authors (fetching HTML, cached)...");
+  const newPosts = await filterByMonicaWithHtml(notImported, log.step);
+  log.success(`Found ${newPosts.length} posts by Monica`);
 
   if (newPosts.length === 0) {
-    log.success("All posts are already imported!");
+    log.success("No new posts by Monica to import!");
     return;
   }
 

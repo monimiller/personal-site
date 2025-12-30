@@ -2,7 +2,7 @@
 title: Announcing Starburst’s Community Forum
 description: "Starburst is excited to announce the launch of our community forum!"
 pubDate: "2023-08-18"
-authors: ["monica-miller"] # TODO Manfred Cole
+authors: ["monica-miller", "cole-bowden", "manfred-moser"]
 categories: ["Trino", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true

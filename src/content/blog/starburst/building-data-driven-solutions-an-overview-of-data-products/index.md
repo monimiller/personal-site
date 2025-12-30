@@ -2,7 +2,7 @@
 title: "Building data-driven solutions: An overview of data products"
 description: "June 13, 2024. Live in Boston. Virtually anywhere."
 pubDate: "2023-04-11"
-authors: ["monica-miller"] # Vishal
+authors: ["monica-miller"]
 categories: ["Data Products", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true

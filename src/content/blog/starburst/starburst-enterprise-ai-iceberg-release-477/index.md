@@ -4,6 +4,8 @@ description: Starburst Enterprise release announcement showcasing new features i
 pubDate: 2025-12-03
 authors:
   - monica-miller
+  - dan-codeluppi
+  - ryo-komatsuzaki
 categories:
   - Starburst
 heroImage: ../../orange-blobs-1.jpg

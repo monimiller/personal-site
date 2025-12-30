@@ -3,7 +3,7 @@ title: Near Real-Time Ingestion For Trino
 description: >
   Build a data ingestion solution to Iceberg tables using Starburst Galaxy together with Apache Flink and AWS Glue
 pubDate: "2022-08-04"
-authors: ["monica-miller"] # TODO Eric Hwang, Brian Zhan
+authors: ["monica-miller", "eric-hwang", "brian-zhan"]
 categories: ["Trino", "Starburst"] # Analytics EngineerData ArchitectData EngineerHow-To GuidesQuery FederationStarburst GalaxyTrino
 heroImage: "../../orange-blobs-1.jpg"
 draft: true

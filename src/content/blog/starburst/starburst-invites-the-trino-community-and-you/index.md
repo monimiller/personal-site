@@ -2,7 +2,7 @@
 title: Starburst invites the Trino community and you!
 description: "Trino Fest: June 14 - 15, 2023. Free. Virtual. Live."
 pubDate: "2023-12-08"
-authors: ["monica-miller"] # Manfred, Cole, Mandy, Anna
+authors: ["monica-miller", "manfred-moser", "cole-bowden", "mandy-darnell", "anna-schibli"]
 categories: ["Trino", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true

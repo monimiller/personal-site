@@ -5,7 +5,20 @@ import type { ExtractedContent, FrontmatterData, AuthorInfo } from "./types";
 import categoryMapping from "../config/category-mapping.json";
 
 // Known author slugs that exist in your site
-const KNOWN_AUTHORS = new Set(["monica-miller"]);
+const KNOWN_AUTHORS = new Set([
+  "monica-miller",
+  "dan-codeluppi",
+  "ryo-komatsuzaki",
+  "evan-smith",
+  "brian-zhan",
+  "eric-hwang",
+  "cole-bowden",
+  "manfred-moser",
+  "anna-schibli",
+  "mandy-darnell",
+  "brandy-love",
+  "matt-fuller",
+]);
 
 /**
  * Generate frontmatter YAML for a blog post
@@ -48,16 +61,25 @@ function escapeYamlString(str: string): string {
 
 /**
  * Map extracted authors to author reference slugs
+ * Includes all known authors, warns about unknown ones
  */
 function mapAuthors(authors: AuthorInfo[]): string[] {
-  // Filter to only Monica for now, as other authors don't exist
+  // Map all authors, keeping only those we have entries for
   const mapped = authors
     .map((a) => a.slug)
     .filter((slug) => KNOWN_AUTHORS.has(slug));
 
   // If no known authors found, default to monica-miller
+  // (shouldn't happen since we filter to Monica posts)
   if (mapped.length === 0) {
     return ["monica-miller"];
+  }
+
+  // Ensure Monica is first in the list (she's the site owner)
+  const monicaIdx = mapped.indexOf("monica-miller");
+  if (monicaIdx > 0) {
+    mapped.splice(monicaIdx, 1);
+    mapped.unshift("monica-miller");
   }
 
   return mapped;

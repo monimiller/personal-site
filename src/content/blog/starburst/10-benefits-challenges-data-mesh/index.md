@@ -2,7 +2,7 @@
 title: 10 benefits and challenges of data mesh
 description: "Data mesh has many advantages for organizations that use it to change their business processes towards a decentralized model. Below we highlight 10 benefits and challenges of data mesh."
 pubDate: "2023-05-30"
-authors: ["monica-miller"] # Evan Smith
+authors: ["monica-miller", "evan-smith"]
 categories: ["Data Mesh", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true

@@ -4,6 +4,13 @@
 import type { RssPost } from "./types";
 import { readdir } from "node:fs/promises";
 import { join } from "node:path";
+import {
+  loadCache,
+  saveCache,
+  getCachedEntry,
+  setCacheEntry,
+  shouldRecheck,
+} from "./author-cache";
 
 const STARBURST_RSS_URL = "https://live-starburst.pantheonsite.io/feed/";
 
@@ -162,4 +169,79 @@ export function isAlreadyImported(post: RssPost, existing: Set<string>): boolean
   if (slug && existing.has(slug)) return true;
 
   return false;
+}
+
+/**
+ * Extract author slugs from post HTML
+ */
+function extractAuthorSlugs(html: string): string[] {
+  const slugs: string[] = [];
+  const regex = /href="\/blog\/author\/([^/"]+)\/?"/g;
+  let match;
+  while ((match = regex.exec(html)) !== null) {
+    if (!slugs.includes(match[1])) {
+      slugs.push(match[1]);
+    }
+  }
+  return slugs;
+}
+
+/**
+ * Fetch HTML and check if Monica is an author
+ * Uses cache to avoid re-fetching
+ */
+export async function checkPostHasMonica(
+  url: string,
+  onProgress?: (msg: string) => void
+): Promise<{ hasMonica: boolean; authors: string[] }> {
+  const cache = await loadCache();
+  const cached = getCachedEntry(cache, url);
+
+  // Return cached result if fresh
+  if (cached && !shouldRecheck(cached)) {
+    return { hasMonica: cached.hasMonica, authors: cached.authors };
+  }
+
+  // Fetch HTML
+  onProgress?.(`Checking authors: ${url}`);
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const html = await response.text();
+    const authors = extractAuthorSlugs(html);
+    const hasMonica = authors.includes("monica-miller");
+
+    // Update cache
+    setCacheEntry(cache, url, hasMonica, authors);
+    await saveCache(cache);
+
+    return { hasMonica, authors };
+  } catch (error) {
+    // On error, don't cache, return false
+    onProgress?.(`Failed to check ${url}: ${error}`);
+    return { hasMonica: false, authors: [] };
+  }
+}
+
+/**
+ * Filter posts to only those where Monica is an author
+ * Fetches HTML for each post and checks author list
+ */
+export async function filterByMonicaWithHtml(
+  posts: RssPost[],
+  onProgress?: (msg: string) => void
+): Promise<RssPost[]> {
+  const results: RssPost[] = [];
+
+  for (const post of posts) {
+    const { hasMonica } = await checkPostHasMonica(post.link, onProgress);
+    if (hasMonica) {
+      results.push(post);
+    }
+  }
+
+  return results;
 }
