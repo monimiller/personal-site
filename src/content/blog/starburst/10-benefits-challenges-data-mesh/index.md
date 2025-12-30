@@ -6,7 +6,7 @@ authors: ["monica-miller"] # Evan Smith
 categories: ["Data Mesh", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/10-benefits-challenges-data-mesh/"
+canonicalUrl: "https://www.starburst.io/blog/10-benefits-challenges-data-mesh/"
 ---
 
 [Data mesh](https://www.starburst.io/learn/data-fundamentals/what-is-data-mesh/) has many advantages for organizations that use it to change their business processes towards a decentralized model. Below we highlight 10 benefits and challenges of data mesh.

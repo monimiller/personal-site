@@ -6,7 +6,7 @@ authors: ["monica-miller"] # TODO Manfred Cole
 categories: ["Trino", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/starburst-community-forum/"
+canonicalUrl: "https://www.starburst.io/blog/starburst-community-forum/"
 ---
 
 Starburst is excited to announce the launch of our [community forum](https://www.starburst.io/community/forum/)! Think of it as [Stack Overflow](https://stackoverflow.com/) meets an old-school web forum meets a rich repository of knowledge where you can find whatever you need to know about [Starburst Galaxy](https://www.starburst.io/platform/starburst-galaxy/), [Starburst Enterprise](https://www.starburst.io/platform/starburst-enterprise/), and [Trino](https://trino.io/). It’s a great place to ask questions, share insights, showcase projects, and connect with a community that is using the same technology you are.

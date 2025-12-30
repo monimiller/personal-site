@@ -6,7 +6,7 @@ authors: ["monica-miller"] # Manfred, Cole, Mandy, Anna
 categories: ["Trino", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/starburst-invites-the-trino-community-and-you/"
+canonicalUrl: "https://www.starburst.io/blog/starburst-invites-the-trino-community-and-you/"
 ---
 
 Last November, Trino Summit in San Francisco was a huge success for the community of users, contributors, and partners in the larger Trino ecosystem. We concluded the year 2022 with many new features, new users, new integrations, and new release. The Starburst team is proud to be a integral part of the community, and we took up the banner again this year. We just could not wait until the later half of the year, and so we are bringing you [Trino Fest 2023](https://www.starburst.io/info/trinofest/).

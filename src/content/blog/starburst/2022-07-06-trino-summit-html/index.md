@@ -7,7 +7,7 @@ authors: ["monica-miller"]
 categories: ["Trino", "Starburst"] # Analytics EngineerData ArchitectData EngineerHow-To GuidesStarburst Galaxy
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/2022-07-06-trino-summit-html/"
+canonicalUrl: "https://www.starburst.io/blog/2022-07-06-trino-summit-html/"
 ---
 
 It’s happening! Starburst is excited to act as the lead sponsor for the 2022 Trino Summit.

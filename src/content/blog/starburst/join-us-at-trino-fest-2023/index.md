@@ -7,7 +7,7 @@ authors: ["monica-miller"]
 categories: ["Trino", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/join-us-at-trino-fest-2023/"
+canonicalUrl: "https://www.starburst.io/blog/join-us-at-trino-fest-2023/"
 ---
 
 Are you ready for some fun? Starburst is hosting Trino Fest 2023: Lakehouse Summer Camp, a virtual event dedicated to celebrating all things [Trino](https://www.starburst.io/learn/open-source-trino/), on the 14th and 15th of June. Just like any summer camp, Trino Fest will be a place to make friends, learn new things, and create memories as we welcome all Trino enthusiasts and data professionals to attend, speak, or sponsor the event.

@@ -6,7 +6,7 @@ authors: ["monica-miller"]
 categories: ["Datanova", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/datanova-2023-data-rebels-may-the-force-be-with-you/"
+canonicalUrl: "https://www.starburst.io/blog/datanova-2023-data-rebels-may-the-force-be-with-you/"
 ---
 
 Being a rebel requires courage, determination, and a little bit of stubbornness. Who better to model these characteristics than Rey, the last Jedi and leader of the next generation of the Resistance.

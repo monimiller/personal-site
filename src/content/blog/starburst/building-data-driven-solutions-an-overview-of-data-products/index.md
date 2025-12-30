@@ -6,7 +6,7 @@ authors: ["monica-miller"] # Vishal
 categories: ["Data Products", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/building-data-driven-solutions-an-overview-of-data-products/"
+canonicalUrl: "https://www.starburst.io/blog/building-data-driven-solutions-an-overview-of-data-products/"
 ---
 
 Have you ever had your entire workday derailed by a slack message? You can try to carefully craft a weekly calendar full of “working blocks” or “focus time”, but the second that burning question comes rolling in, your agenda is out the window. [Data engineers](https://www.starburst.io/learn/data-fundamentals/data-engineering/) in particular resonate with this pattern all too well. A business user doesn’t know the transformation logic behind a certain field in their dashboard? Ping. Someone questioning why the retention on this specific table is 30 days, not 45 days? Ping. Or, there’s a governance need to discover which teams are utilizing a specific table. You guessed it…Ping. You are forced to spend the next five hours investigating missing information that honestly should live in a confluence page somewhere. More often than not it’s usually an extremely difficult task to find these answers, which is exactly why you got pinged in the first place, and it may even result in a required code change.  And when it’s all said and done, data producers and data consumers both feel a little more mistrust, a little more frustration, and a little less willing to collaborate.

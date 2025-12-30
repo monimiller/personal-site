@@ -10,7 +10,7 @@ export interface BlogProps {
   postFrontmatter: CollectionEntry<"blog">["data"];
   image: any; // result of getImage() from Seo.astro
   authors: CollectionEntry<"authors">[];
-  canonicalUrl: URL;
+  canonicalUrl: string | URL;
 }
 
 export type JsonLDProps = BlogProps | GeneralProps;

@@ -7,7 +7,7 @@ authors: ["monica-miller"]
 categories: ["Starburst"] # Analytics EngineerData ArchitectData EngineerEducationModern Data StackQuery FederationSQLUpdates
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/confessions-of-a-space-quest-league-advocate/"
+canonicalUrl: "https://www.starburst.io/blog/confessions-of-a-space-quest-league-advocate/"
 ---
 
 ## Mission 2 Wrap and Mission 3 Launch

@@ -9,7 +9,7 @@ authors: ["monica-miller"]
 categories: ["Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/why-granularity-impacts-role-based-access-control/"
+canonicalUrl: "https://www.starburst.io/blog/why-granularity-impacts-role-based-access-control/"
 ---
 
 ![](https://www.starburst.io/wp-content/uploads/2022/06/kyle-glenn-dGk-qYBk4OA-unsplash-1-scaled.jpg)

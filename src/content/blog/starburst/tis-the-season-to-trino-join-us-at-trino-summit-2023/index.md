@@ -6,7 +6,7 @@ authors: ["monica-miller"]
 categories: ["Trino", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/ready-set-go-trino-fest-2024-awaits/"
+canonicalUrl: "https://www.starburst.io/blog/ready-set-go-trino-fest-2024-awaits/"
 ---
 
 Season’s Greetings, Trino lovers! The holidays are right around the corner, and there’s no better way to celebrate than by joining us virtually on December 13th & 14th for this year’s [Trino Summit](https://www.starburst.io/info/trinosummit2023/?utm_source=event&utm_medium=speaker&utm_campaign=NORAM-FY24-Q4-EV-Trino-Summit-2023&utm_content=23-trino-summit-starburst-blog). Our team at Starburst is thrilled to host this awesome event, and we are extremely excited to gather together the brightest minds in our community right before everyone’s end of year code freeze begins.

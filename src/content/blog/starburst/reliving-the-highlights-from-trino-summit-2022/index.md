@@ -6,7 +6,7 @@ authors: ["monica-miller"]
 categories: ["Trino", "Data Mesh", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/reliving-the-highlights-from-trino-summit-2022/"
+canonicalUrl: "https://www.starburst.io/blog/reliving-the-highlights-from-trino-summit-2022/"
 ---
 
 Last week in San Francisco was one for the Trino history books. After three years of planning, rescheduling, planning, and rescheduling some more, Starburst was finally able to host the first in-person Trino Summit at the Commonwealth Club in San Francisco on the 10th of November, 2022. The original proposal was to gather for the first time in 2020 under a different project name; however, the Covid-19 pandemic threw a wrench into those plans as events pivoted to a virtual format. While our Trino [virtual events](https://www.starburst.io/blog/cinco-de-trino-2022-a-trino-tastic-celebration/) have been a smashing success, I’m thankful that the stars aligned and I was lucky enough to be in-person to experience this milestone.

@@ -7,7 +7,7 @@ authors: ["monica-miller"]
 categories: ["Starburst"] # TODO Data EngineerData LakeData LakehouseData ScientistDeveloperHow-To GuidesPartnersStarburst Galaxy
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/aws-dev-day-recap/"
+canonicalUrl: "https://www.starburst.io/blog/aws-dev-day-recap/"
 ---
 
 On Wednesday, August 3rd, I had the opportunity to share a [hands-on lab](https://github.com/monimiller/data-lake-analytics/blob/main/README.md) exploring [Data Lake](https://www.starburst.io/learn/data-fundamentals/data-lake/) reporting structures with my AWS partner in crime, Antony Thevaraj.  The intent of the tutorial was to demonstrate a feasible method to create data lake reporting structures, while also sharing a tangible example that anyone could test out on their own. Using AWS S3 as the data lake and Starburst Galaxy as the analytics engine, I hope that you will [run the tutorial](https://github.com/monimiller/data-lake-analytics/blob/main/README.md) and experience firsthand the benefits of implementing comprehensive [data lake analytics](https://www.starburst.io/blog/data-lake-analytics-for-smart-modern-data-management/) solutions.

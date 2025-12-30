@@ -7,7 +7,7 @@ authors: ["monica-miller"]
 categories: ["Trino", "Starburst"] # Updates
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/trino-turns-ten/"
+canonicalUrl: "https://www.starburst.io/blog/trino-turns-ten/"
 ---
 
 Starburst is thrilled to wish [Trino a very happy tenth birthday](https://trino.io/blog/2022/08/08/trino-tenth-birthday.html)! We have lots of reasons to celebrate, most importantly because we at Starburst owe our existence to the project we know as Trino today.

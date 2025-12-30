@@ -8,7 +8,7 @@ categories: ["Starburst"] # Analytics EngineerData ArchitectData EngineerData Pi
 # TODO https://www.starburst.io/wp-content/uploads/2022/05/ETL-vs-Interactive-Queries-1024x900.png
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/etl-vs-interactive-queries-the-case-for-both/"
+canonicalUrl: "https://www.starburst.io/blog/etl-vs-interactive-queries-the-case-for-both/"
 ---
 
 <!-- TODO Add a fancy callout -->

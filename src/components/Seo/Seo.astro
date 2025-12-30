@@ -35,11 +35,19 @@ const {
 
 let optimizedImage;
 let jsonLD;
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const siteUrl = new URL(Astro.url.pathname, Astro.site);
+
+// Determine the actual canonical URL - use frontmatter if provided (for cross-posts)
+let canonicalUrl: string | URL = siteUrl;
 
 // if this is a blog page we do things differently
 if (type === "blog") {
     const { authors, postFrontmatter } = Astro.props as BlogProps;
+
+    // Use external canonical URL for cross-posted content
+    if (postFrontmatter.canonicalUrl) {
+        canonicalUrl = postFrontmatter.canonicalUrl;
+    }
 
     optimizedImage = await getImage({
         src: image,
@@ -53,9 +61,7 @@ if (type === "blog") {
         postFrontmatter: postFrontmatter,
         image: optimizedImage,
         authors: authors,
-        canonicalUrl: postFrontmatter.canonicalUrl
-            ? postFrontmatter.canonicalUrl
-            : canonicalUrl,
+        canonicalUrl: canonicalUrl,
     });
 }
 // for general pages

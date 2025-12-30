@@ -7,7 +7,7 @@ authors: ["monica-miller"]
 categories: ["dbt", "Trino", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/build-an-open-data-lake-architecture-with-dbt-cloud-and-starburst-galaxy/"
+canonicalUrl: "https://www.starburst.io/blog/build-an-open-data-lake-architecture-with-dbt-cloud-and-starburst-galaxy/"
 ---
 
 Three or so moons ago, I had the pleasure of demonstrating to you the notorious pair that is Starburst and dbt. We posted the [dbt Core and Starburst Galaxy tutorial](https://www.starburst.io/blog/build-a-data-lakehouse-reporting-structure-with-dbt-and-starburst-galaxy/), and it was awesome to see people get excited about using the two technologies together to make life even better for the golden trio that is [data engineers](https://www.starburst.io/learn/data-fundamentals/data-engineering/), analytics engineers, and data analysts. Starburst gives you the ability to join data from different data stores like [data warehouses](https://www.starburst.io/learn/data-fundamentals/what-is-data-warehouse/), [data lakes](https://www.starburst.io/learn/data-fundamentals/data-lake/), [object storage](https://www.starburst.io/learn/data-fundamentals/cloud-object-storage-vs-hdfs/), which means you can leverage all the goodness of dbt within one single repository making it more efficient to build, test, and document [data pipelines](https://www.starburst.io/learn/data-fundamentals/data-pipeline/).

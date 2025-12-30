@@ -25,7 +25,26 @@ const {
     pubDate,
     updatedDate,
     heroImage,
+    canonicalUrl,
 } = post.data;
+
+// Extract domain from canonical URL for display
+function getSourceName(url: string): string {
+    try {
+        const hostname = new URL(url).hostname.replace("www.", "");
+        // Map common domains to friendly names
+        const domainMap: Record<string, string> = {
+            "starburst.io": "Starburst",
+            "medium.com": "Medium",
+            "dev.to": "DEV",
+            "trino.io": "Trino",
+            "getdbt.com": "dbt",
+        };
+        return domainMap[hostname] || hostname;
+    } catch {
+        return url;
+    }
+}
 
 const authorsData = await getAllAuthorsData(authors);
 ---
@@ -113,6 +132,21 @@ const authorsData = await getAllAuthorsData(authors);
         <div class="mt-14 w-full md:mt-16">
             <div class="mx-auto max-w-3xl">
                 <div class="text-base-content">
+                    {
+                        canonicalUrl && (
+                            <div class="mb-8 rounded-lg border border-primary-200 bg-primary-50 px-4 py-3 text-sm">
+                                Originally published on{" "}
+                                <a
+                                    href={canonicalUrl}
+                                    class="font-medium text-primary-700 underline hover:text-primary-900"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    {getSourceName(canonicalUrl)}
+                                </a>
+                            </div>
+                        )
+                    }
                     {
                         updatedDate && (
                             <div class="mb-8 rounded-lg bg-base-200 px-4 py-3 text-sm italic opacity-80">

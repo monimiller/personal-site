@@ -7,7 +7,7 @@ authors: ["monica-miller"] # TODO Evan Smith
 categories: ["Data Products", "Starburst"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/top-12-benefits-data-products/"
+canonicalUrl: "https://www.starburst.io/blog/top-12-benefits-data-products/"
 ---
 
 [Data products](https://www.starburst.io/learn/data-fundamentals/data-product/) have many benefits. They create a new, curated way of interacting with datasets and place team collaboration and business questions at the forefront of data analysis. Businesses adopt data products for many reasons, including ease of use, improved data reliability and trustworthiness, and new opportunities for cross-functional sharing.

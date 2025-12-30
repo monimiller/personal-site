@@ -7,7 +7,7 @@ authors: ["monica-miller"] # TODO Eric Hwang, Brian Zhan
 categories: ["Trino", "Starburst"] # Analytics EngineerData ArchitectData EngineerHow-To GuidesQuery FederationStarburst GalaxyTrino
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
-# canonicalUrl: "https://www.starburst.io/blog/near-real-time-ingestion-for-trino/"
+canonicalUrl: "https://www.starburst.io/blog/near-real-time-ingestion-for-trino/"
 ---
 
 It is quite popular in today’s data climate for modern data architectures to have some sort of batch processing system to move data into a [data lake](https://www.starburst.io/learn/data-fundamentals/data-lake/) at an hourly or daily cadence.  This is considered an adequate process for lots of analytics needs that do not require immediate updates, like drilling into revenue or user trends.  However, the ability to analyze near real-time data opens up the world to more latency-sensitive use cases that can accelerate anomaly detection and decision making, such as:
