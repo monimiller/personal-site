@@ -1,0 +1,125 @@
+---
+/**
+ * * Tabbed interface for filtering speaking events by type
+ * Uses client-side JavaScript for smooth filtering
+ */
+import SpeakingEventCard from "./SpeakingEventCard.astro";
+import { speakingData } from "@config/speakingData.json";
+
+// Tab definitions
+const tabs = [
+  { id: "all", label: "All" },
+  { id: "talk", label: "Talks" },
+  { id: "workshop", label: "Workshops" },
+  { id: "video", label: "Videos" },
+  { id: "podcast", label: "Podcasts" },
+] as const;
+
+// Count events per type for badge display
+const counts = {
+  all: speakingData.length,
+  talk: speakingData.filter((e) => e.type === "talk").length,
+  workshop: speakingData.filter((e) => e.type === "workshop").length,
+  video: speakingData.filter((e) => e.type === "video").length,
+  podcast: speakingData.filter((e) => e.type === "podcast").length,
+  webinar: speakingData.filter((e) => e.type === "webinar").length,
+  meetup: speakingData.filter((e) => e.type === "meetup").length,
+};
+---
+
+<div class="speaking-tabs">
+  <!-- Tab buttons -->
+  <div
+    class="mb-8 flex flex-wrap justify-center gap-2"
+    role="tablist"
+    aria-label="Filter speaking events"
+  >
+    {
+      tabs.map((tab, idx) => (
+        <button
+          role="tab"
+          aria-selected={idx === 0 ? "true" : "false"}
+          aria-controls="speaking-events-grid"
+          data-tab={tab.id}
+          class:list={[
+            "tab-button rounded-full px-4 py-2 text-sm font-medium transition-all",
+            "hover:bg-primary-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500",
+            idx === 0
+              ? "bg-primary-500 text-white"
+              : "bg-base-100 text-base-600",
+          ]}
+        >
+          {tab.label}
+          <span class="ml-1 text-xs opacity-75">({counts[tab.id]})</span>
+        </button>
+      ))
+    }
+  </div>
+
+  <!-- Events grid -->
+  <div
+    id="speaking-events-grid"
+    role="tabpanel"
+    class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+  >
+    {speakingData.map((event) => <SpeakingEventCard event={event} />)}
+  </div>
+</div>
+
+<script>
+  const setupTabs = () => {
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const eventCards = document.querySelectorAll("[data-type]");
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const selectedTab = button.getAttribute("data-tab");
+
+        // Update button styles
+        tabButtons.forEach((btn) => {
+          const isSelected = btn === button;
+          btn.setAttribute("aria-selected", isSelected ? "true" : "false");
+          btn.classList.toggle("bg-primary-500", isSelected);
+          btn.classList.toggle("text-white", isSelected);
+          btn.classList.toggle("bg-base-100", !isSelected);
+          btn.classList.toggle("text-base-600", !isSelected);
+        });
+
+        // Filter cards with animation
+        eventCards.forEach((card) => {
+          const cardType = card.getAttribute("data-type");
+          const shouldShow = selectedTab === "all" || cardType === selectedTab;
+
+          if (shouldShow) {
+            (card as HTMLElement).style.display = "";
+            card.classList.remove("opacity-0", "scale-95");
+            card.classList.add("opacity-100", "scale-100");
+          } else {
+            card.classList.remove("opacity-100", "scale-100");
+            card.classList.add("opacity-0", "scale-95");
+            // Hide after animation
+            setTimeout(() => {
+              if (!shouldShow) {
+                (card as HTMLElement).style.display = "none";
+              }
+            }, 150);
+          }
+        });
+      });
+    });
+  };
+
+  // Run on initial load
+  setupTabs();
+
+  // Run on Astro view transitions
+  document.addEventListener("astro:after-swap", setupTabs);
+</script>
+
+<style>
+  [data-type] {
+    transition:
+      opacity 150ms ease-out,
+      transform 150ms ease-out;
+  }
+</style>

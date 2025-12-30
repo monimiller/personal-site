@@ -1,0 +1,59 @@
+---
+/**
+ * * Stats banner showing speaking experience metrics
+ */
+import { speakingData } from "@config/speakingData.json";
+
+// Calculate years of speaking (from earliest date to now)
+const dates = speakingData.map((e) => new Date(e.date));
+const earliestDate = new Date(Math.min(...dates.map((d) => d.getTime())));
+const yearsOfSpeaking = Math.floor(
+  (Date.now() - earliestDate.getTime()) / (365.25 * 24 * 60 * 60 * 1000)
+);
+
+// Count by type
+const talks = speakingData.filter((e) => e.type === "talk").length;
+const workshops = speakingData.filter((e) => e.type === "workshop").length;
+const videos = speakingData.filter(
+  (e) => e.type === "video" || e.type === "webinar"
+).length;
+const other = speakingData.filter(
+  (e) => e.type === "podcast" || e.type === "meetup"
+).length;
+
+const stats = [
+  {
+    value: `${yearsOfSpeaking}+`,
+    label: "Years Speaking",
+  },
+  {
+    value: talks.toString(),
+    label: "Conference Talks",
+  },
+  {
+    value: workshops.toString(),
+    label: "Workshops",
+  },
+  {
+    value: `${videos + other}+`,
+    label: "Videos & More",
+  },
+];
+---
+
+<section class="container my-16">
+  <div
+    class="grid grid-cols-2 gap-6 rounded-2xl bg-gradient-to-br from-primary-50 to-primary-100/50 p-8 md:grid-cols-4 md:gap-8"
+  >
+    {
+      stats.map((stat) => (
+        <div class="text-center">
+          <p class="text-3xl font-bold text-primary-600 md:text-4xl lg:text-5xl">
+            {stat.value}
+          </p>
+          <p class="mt-1 text-sm text-base-600 md:text-base">{stat.label}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>

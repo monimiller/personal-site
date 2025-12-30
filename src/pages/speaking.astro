@@ -1,63 +1,41 @@
 ---
-// Inpiration: https://sia.codes/speaking/
+// Inspiration: https://sia.codes/speaking/
 // layout
 import BaseLayout from "@layouts/BaseLayout.astro";
 
 // components
 import Hero from "@components/Hero/HeroCentered.astro";
-import FeatureCardsSmall from "@components/Feature/FeatureCardsSmall.astro";
-import TalkSideImage from "@components/Talks/TalkSideImage.astro";
-import TestimonialsSwiper from "@components/Testimonials/TestimonialsSwiper.astro";
 import SpeakerInfo from "@components/SpeakerInfo.astro";
+import SpeakingStats from "@components/Speaking/SpeakingStats.astro";
+import SpeakingTabs from "@components/Speaking/SpeakingTabs.astro";
 import FeatureGalleryOneRow from "@components/Feature/FeatureGalleryOneRow.astro";
-import CtaBgImage from "@components/Cta/CtaBgImage.astro";
-import FaqAccordions from "@components/Faq/FaqAccordions.astro";
-
-// data
-import siteData from "@config/siteData.json";
-import speakingData from "@config/contentData.json";
+import { Icon } from "astro-icon";
 ---
 
-<BaseLayout title={siteData.title} description={siteData.description}>
+<BaseLayout
+    title="Speaking & Workshops | Monica Miller"
+    description="Conference talks, workshops, videos, and podcasts on Data Lakehouses, Trino, and Data Engineering."
+>
     <Hero />
-    <!-- TODO <TestimonialsSwiper /> -->
-    <!-- <FeatureCardsSmall /> -->
+    <SpeakingStats />
     <SpeakerInfo />
 
-    <div class="mx-auto max-w-6xl space-y-8 px-4">
-        <h2 class="text-2xl font-bold">Past</h2>
-        <div>
-            <ul class="my-4 grid gap-8">
-                <!-- FIXME Make the highlighting go only over the text -->
-                {
-                    speakingData.map((event) => (
-                        <li>
-                            <div class="space-y-1">
-                                <a
-                                    href={event.link}
-                                    class=" underline  decoration-primary-200 decoration-2 hover:no-underline"
-                                >
-                                    <h3 class="md:bg text-2xl font-bold text-primary-500 transition hover:bg-primary-200">
-                                        {event.title}
-                                    </h3>
-                                </a>
-                                <div class="flex items-center space-x-1 text-gray-500 dark:text-gray-400">
-                                    <span>{event.location}</span>
-                                    {event.date ? <span>•</span> : ""}
-                                    {event.date ? (
-                                        <span>{event.date}</span>
-                                    ) : (
-                                        ""
-                                    )}
-                                </div>
+    <section class="container my-24">
+        <h2 class="h2 relative mb-12 text-center">
+            Speaking
+            <span class="relative whitespace-nowrap">
+                History
+                <span>
+                    <Icon
+                        name="freehand-zig-underline"
+                        class="absolute left-0 top-0 -z-10 h-full w-full translate-y-1/2 text-primary-500"
+                        aria-hidden="true"
+                    />
+                </span>
+            </span>
+        </h2>
+        <SpeakingTabs />
+    </section>
 
-                                <p>{event.description}</p>
-                            </div>
-                        </li>
-                    ))
-                }
-            </ul>
-        </div>
-    </div>
     <FeatureGalleryOneRow />
 </BaseLayout>

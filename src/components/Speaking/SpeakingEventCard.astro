@@ -1,0 +1,101 @@
+---
+/**
+ * * Card component for displaying a speaking event
+ */
+import { Icon } from "astro-icon";
+import { type SpeakingEvent } from "@config/speakingData.json";
+
+interface Props {
+  event: SpeakingEvent;
+}
+
+const { event } = Astro.props;
+
+// Format date as "Mon YYYY"
+const formatDate = (dateStr: string) => {
+  const date = new Date(dateStr);
+  return date.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+};
+
+// Type badge styles
+const typeStyles: Record<SpeakingEvent["type"], string> = {
+  talk: "bg-primary-100 text-primary-700",
+  workshop: "bg-secondary-200 text-secondary-700",
+  video: "bg-sky-100 text-sky-700",
+  podcast: "bg-amber-100 text-amber-700",
+  webinar: "bg-emerald-100 text-emerald-700",
+  meetup: "bg-rose-100 text-rose-700",
+};
+
+// Link text based on type
+const linkText: Record<SpeakingEvent["type"], string> = {
+  talk: "Watch",
+  workshop: "View",
+  video: "Watch",
+  podcast: "Listen",
+  webinar: "Watch",
+  meetup: "View",
+};
+---
+
+<article
+  class="group rounded-xl border border-base-200 bg-white p-6 shadow-sm transition-all hover:border-primary-200 hover:shadow-md"
+  data-type={event.type}
+>
+  <div class="flex flex-col gap-3">
+    <!-- Type badge and event name -->
+    <div class="flex flex-wrap items-center gap-2">
+      <span
+        class={`inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide ${typeStyles[event.type]}`}
+      >
+        {event.type}
+      </span>
+      {
+        event.event && (
+          <span class="text-sm font-medium text-base-500">{event.event}</span>
+        )
+      }
+    </div>
+
+    <!-- Title -->
+    <h3 class="text-lg font-semibold text-base-900 md:text-xl">
+      {event.title}
+    </h3>
+
+    <!-- Location and Date -->
+    <div class="flex flex-wrap items-center gap-4 text-sm text-base-500">
+      <span class="flex items-center gap-1">
+        <Icon name="tabler:map-pin" class="h-4 w-4" aria-hidden="true" />
+        {event.location}
+      </span>
+      <span class="flex items-center gap-1">
+        <Icon name="tabler:calendar" class="h-4 w-4" aria-hidden="true" />
+        {formatDate(event.date)}
+      </span>
+    </div>
+
+    <!-- Description -->
+    {
+      event.description && (
+        <p class="line-clamp-2 text-sm text-base-600">{event.description}</p>
+      )
+    }
+
+    <!-- Link -->
+    <div class="mt-2">
+      <a
+        href={event.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1 text-sm font-medium text-primary-600 transition-colors hover:text-primary-700"
+      >
+        {linkText[event.type]}
+        <Icon
+          name="tabler:arrow-right"
+          class="h-4 w-4 transition-transform group-hover:translate-x-1"
+          aria-hidden="true"
+        />
+      </a>
+    </div>
+  </div>
+</article>
