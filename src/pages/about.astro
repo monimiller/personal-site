@@ -24,14 +24,15 @@ import factData from "@config/factData.json";
     description="Get to know Monica Miller - data engineer turned product manager, continuous learner, and Trino community advocate."
 >
     <!-- Hero image -->
-    <Image
-        src={heroImage}
-        class="hidden h-full w-auto object-cover sm:block"
-        alt="Monica in an orange blazer in front of a reflection pool"
-        aria-hidden="true"
-        loading="eager"
-        height={2000}
-    />
+    <div class="container mx-auto mt-8 flex justify-center">
+        <Image
+            src={heroImage}
+            class="hidden max-h-[32rem] w-auto rounded-xl object-cover shadow-lg sm:block"
+            alt="Monica in an orange blazer in front of a reflection pool"
+            loading="eager"
+            height={600}
+        />
+    </div>
 
     <!-- Intro section -->
     <section class="container mx-auto pt-36 md:pt-44">
