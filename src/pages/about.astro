@@ -1,7 +1,7 @@
 ---
 /**
- * * About page with various sections including some text, team profiles, and CTA
- * Edit the team member information inside src/config/teamData.json.ts
+ * * About page with hero, bio, fast facts, and CTA
+ * Edit the facts inside src/config/factData.json.ts
  */
 import { Icon } from "astro-icon";
 import { Image } from "astro:assets";
@@ -21,21 +21,22 @@ import factData from "@config/factData.json";
 
 <BaseLayout
     title="About Me"
-    description="Get in touch! Contact information for Monica Miller."
+    description="Get to know Monica Miller - data engineer turned product manager, continuous learner, and Trino community advocate."
 >
+    <!-- Hero image -->
     <Image
         src={heroImage}
         class="hidden h-full w-auto object-cover sm:block"
-        alt="Woman in front of a reflection pool with a hand on her hip in an orange blazer"
+        alt="Monica in an orange blazer in front of a reflection pool"
         aria-hidden="true"
         loading="eager"
         height={2000}
     />
-    <!-- text section -->
+
+    <!-- Intro section -->
     <section class="container mx-auto pt-36 md:pt-44">
         <h1 class="h1 text-center">
             Hi, I'm
-
             <span class="relative whitespace-nowrap">
                 Monica!
                 <span>
@@ -47,36 +48,38 @@ import factData from "@config/factData.json";
                 </span>
             </span>
         </h1>
-        <p class="description mx-auto mt-10 max-w-2xl text-center md:mt-20">
-            After being inspired by many individuals I admire, I decided to
-            create my own website.
-            <!-- TODO Currently, I am using the platform Vercel with a Next.js Starter Blog template. -->
-        </p>
-        <p class="description mx-auto mt-10 max-w-2xl text-center md:mt-20">
-            Here's some basic information about me. I went to the University of
-            Texas at Dallas (UTD) for my undergraduate degree in Mechanical
-            Engineering, where I was introduced to programming through the use
-            of loops to create various shapes using the asterisk key. My junior
-            year I landed an internship at USAA, partially because of my love
-            for Sudoku, and was amazed by the job possibilities I didn't even
-            know existed in the software space. Ever since then, I have tried to
-            be a continuous learner, and soak up all the knowledge I can related
-            to all things tech. I started my career post-graduation (May 2019)
-            in the data world and still reside there today, mostly doing data
-            movement. In December of 2021, I achieved my Masters in Systems
-            Engineering and Management also from UTD. I currently work as a
-            product manager at Starburst, where I have the privilege of working
-            with the amazing Trino community.
-        </p>
 
-        <!-- <p class="description mx-auto mt-10 max-w-2xl text-center md:mt-20"> -->
-        <!--     Monica is a former data engineer turned developer advocate. As a -->
-        <!--     data engineer, she spent her time primarily developing and -->
-        <!--     supporting ETL pipelines for both near-real time analytics and batch -->
-        <!--     processing. Monica now works to improve the lives of other data -->
-        <!--     engineers by creating informational resources, speaking at -->
-        <!--     conferences, and writing about her experiences in the data space. -->
-        <!-- </p> -->
+        <p class="description mx-auto mt-10 max-w-2xl text-center md:mt-16">
+            I'm a former data engineer turned product manager at <a href="https://www.starburst.io/" class="text-primary-600 hover:underline">Starburst</a>, 
+            where I have the privilege of working with the amazing Trino community.
+        </p>
+    </section>
+
+    <!-- The Journey section -->
+    <section class="container mx-auto mt-16 md:mt-24">
+        <h2 class="h2 text-center">
+            The <span class="text-primary-600">Journey</span>
+        </h2>
+
+        <div class="mx-auto mt-8 max-w-3xl space-y-6 text-lg leading-relaxed">
+            <p>
+                I went to the University of Texas at Dallas for my undergraduate degree in Mechanical Engineering, 
+                where I was introduced to programming through the classic exercise of creating shapes with asterisks. 
+                My junior year, I landed an internship at USAA — partially because of my love for Sudoku — and was 
+                amazed by the job possibilities I didn't even know existed in the software space.
+            </p>
+
+            <p>
+                After graduating in May 2019, I started my career in the data world doing data movement and ETL pipelines. 
+                In December 2021, I completed my Master's in Systems Engineering and Management, also from UTD. 
+                I've spent my career being a continuous learner, soaking up knowledge about all things data and tech.
+            </p>
+
+            <p>
+                These days, I work as a product manager but my heart is still in the data engineering trenches. 
+                I love teaching, mentoring, speaking at conferences, and writing about my experiences in the data space.
+            </p>
+        </div>
     </section>
 
     <!-- Fast facts -->
@@ -88,5 +91,6 @@ import factData from "@config/factData.json";
             {factData.map((fact) => <Fact content={fact.content} />)}
         </div>
     </section>
+
     <CtaCardCenter />
 </BaseLayout>
