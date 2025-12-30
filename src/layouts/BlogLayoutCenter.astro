@@ -10,7 +10,7 @@ import Button from "@components/Button/Button.astro";
 
 // utils
 import { formatDate, humanize, slugify } from "@js/textUtils";
-import { getAllAuthorsData } from "@js/blogUtils";
+import { getAllAuthorsData, isDevMode } from "@js/blogUtils";
 
 interface Props {
     post: CollectionEntry<"blog">;
@@ -47,6 +47,9 @@ function getSourceName(url: string): string {
 }
 
 const authorsData = await getAllAuthorsData(authors);
+
+const isDraft = post.data.draft === true;
+const showDraftBanner = isDraft && isDevMode();
 ---
 
 <BaseLayout
@@ -57,7 +60,12 @@ const authorsData = await getAllAuthorsData(authors);
     authorsData={authorsData}
     postFrontmatter={post.data}
 >
-    <article class="container pt-36 md:pt-44">
+    {showDraftBanner && (
+        <div class="fixed left-0 right-0 top-0 z-50 bg-amber-400 px-4 py-2 text-center text-sm font-medium text-amber-900">
+            This is a draft post &mdash; only visible in development mode
+        </div>
+    )}
+    <article class={`container pt-36 md:pt-44 ${showDraftBanner ? 'mt-10' : ''}`}>
         <!-- Blog post info -->
         <div class="flex w-full flex-col items-center">
             <div class="mx-auto flex w-full max-w-[900px]">

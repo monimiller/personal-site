@@ -9,13 +9,22 @@ import { slugify } from "@js/textUtils";
 
 // --------------------------------------------------------
 /**
+ * * returns true if we're in dev mode and should show draft posts
+ */
+export function isDevMode(): boolean {
+  return import.meta.env.DEV;
+}
+
+// --------------------------------------------------------
+/**
  * * returns all blog posts, filtered for drafts, sorted by date, and future posts removed
+ * In dev mode, draft posts are included; in production, they are filtered out
  * use like `const posts = await getAllPosts();`
  */
 export async function getAllPosts(): Promise<CollectionEntry<"blog">[]> {
   const posts = await getCollection("blog", ({ data }) => {
-    // filter out draft posts
-    return data.draft !== true;
+    // In dev mode, show all posts; in production, filter out drafts
+    return isDevMode() || data.draft !== true;
   });
 
   // filter out future posts and sort by date
