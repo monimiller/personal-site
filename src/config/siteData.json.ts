@@ -50,9 +50,8 @@ const siteData: SiteDataProps = {
 
   // default image for meta tags if the page doesn't have an image already
   defaultImage: {
-    // TODO
-    src: "/images/cosmic-themes-logo.jpg",
-    alt: "Phoebe logo",
+    src: "/images/headshot.png",
+    alt: "Monica Miller headshot",
   },
 };
 
