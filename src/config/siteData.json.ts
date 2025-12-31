@@ -5,14 +5,9 @@ export interface SiteDataProps {
   useViewTransitions?: boolean;
   useAnimations?: boolean;
   contact: {
-    // used for contact page and footer
-    address1: string; // contact address (line 1)
-    address2: string; // contact address (line 2)
-    phone: string; // contact phone number
-    email: string; // contact email address
+    email: string;
   };
   author: {
-    // used for blog post purposes
     name: string;
     email: string;
     twitter: string; // used for twitter cards when sharing a blog post on twitter
@@ -33,11 +28,7 @@ const siteData: SiteDataProps = {
   useViewTransitions: true,
   useAnimations: true,
 
-  // used on contact page and footer
   contact: {
-    address1: "1234 Main Street",
-    address2: "New York, NY 10001",
-    phone: "(123) 456-7890",
     email: "hello@monimiller.com",
   },
 
