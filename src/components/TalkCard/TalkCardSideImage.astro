@@ -9,7 +9,6 @@ import { Icon } from "astro-icon";
 
 // components
 import Button from "@components/Button/Button.astro";
-// TODO import { YouTube } from "astro-embed";
 
 interface Props {
     title: string; // larger title
@@ -47,7 +46,6 @@ const { image, title, href, idx, description, imageSide } =
                 aria-hidden="true"
             />
         </div>
-        <!-- <YouTube id={href} /> -->
         <Image
             class="relative rounded-xl border border-transparent object-cover"
             src={image}
