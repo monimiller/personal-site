@@ -28,9 +28,8 @@ const siteData: SiteDataProps = {
   name: "Monica Miller",
   // Your website's title and description (meta fields)
   title: "Monica Miller - Data Girl in a Data World",
-  // TODO Add a description
   description:
-    "Create a fun website for your small business clients with our beautiful website theme designed using Astro and Tailwind CSS. Perfect for freelancers, developers, startups, and personal use.",
+    "Monica Miller is a Product Manager at Starburst, Trino community contributor, and former data engineer. She speaks about Data Lakehouses, Trino, and modern data engineering.",
   useViewTransitions: true,
   useAnimations: true,
 
