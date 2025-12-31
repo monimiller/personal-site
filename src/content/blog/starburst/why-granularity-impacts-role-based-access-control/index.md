@@ -1,12 +1,9 @@
 ---
-title: "FIXME"
-description: "IDK WHATs WRONG"
-# title: "Let's Get Granular: Why Granularity Impacts Role-Based Access Control"
-# description: "About a month into my first job I finished building my first data pipeline ever."
+title: "Let's Get Granular: Why Granularity Impacts Role-Based Access Control"
+description: "Understanding how data granularity impacts role-based access control in enterprise data platforms."
 pubDate: "2022-06-14"
 authors: ["monica-miller"]
-# TODO Data ArchitectData EngineerData Leader/CxOEducationHead of AnalyticsInfoSecsecurity
-categories: ["Starburst"]
+categories: ["Starburst", "Security"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
 canonicalUrl: "https://www.starburst.io/blog/why-granularity-impacts-role-based-access-control/"

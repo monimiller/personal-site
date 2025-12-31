@@ -4,7 +4,7 @@ description: >
   It’s happening! Starburst is excited to act as the lead sponsor for the 2022 Trino Summit.
 pubDate: "2022-08-05"
 authors: ["monica-miller"]
-categories: ["Starburst"] # TODO Data EngineerData LakeData LakehouseData ScientistDeveloperHow-To GuidesPartnersStarburst Galaxy
+categories: ["Starburst", "Data Lake", "How-To"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
 canonicalUrl: "https://www.starburst.io/blog/aws-dev-day-recap/"

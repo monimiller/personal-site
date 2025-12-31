@@ -4,14 +4,11 @@ description: >
   This is Part 1 of a 2-part blog about how Trino can support both interactive and batch use cases.  In Part 1, we will explore the case for why an organization needs both interactive and batch capabilities and why Starburst is the simplest way to run both using the same platform.  In Part 2, we will go through a detailed tutorial of how to set up a batch job using Trino and Starburst Galaxy.
 pubDate: "2023-05-05"
 authors: ["monica-miller"]
-categories: ["Starburst"] # Analytics EngineerData ArchitectData EngineerData PipelinesData ScientistHead of AnalyticsPlatform AdminSQL
-# TODO https://www.starburst.io/wp-content/uploads/2022/05/ETL-vs-Interactive-Queries-1024x900.png
+categories: ["Starburst", "Data Pipelines", "Analytics"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
 canonicalUrl: "https://www.starburst.io/blog/etl-vs-interactive-queries-the-case-for-both/"
 ---
-
-<!-- TODO Add a fancy callout -->
 
 TL/DR – Data engineers are wizards and witches. Creating [ETL pipelines](https://www.starburst.io/learn/data-fundamentals/etl-elt/#ETL) is a long and sometimes unnecessary process when answering business questions that can be solved in other ways. Interactive (or ad-hoc) queries are awesome, especially for specific self-service insights. Instead of fighting to pick between the two, as the American funk band, War, points out: “Why can’t we be friends?”
 

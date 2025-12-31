@@ -3,8 +3,7 @@ title: Introducing streaming ingest in Starburst Galaxy — Now in Private Previ
 description: "Kafka to Iceberg: Streaming data into Apache Iceberg tables"
 pubDate: "2023-11-28"
 authors: ["monica-miller", "brandy-love", "eric-hwang", "matt-fuller"]
-categories: ["Trino", "Starburst"]
-# TODO https://www.starburst.io/wp-content/uploads/2023/11/Streaming-ingest-in-Galaxy-1.png
+categories: ["Trino", "Starburst", "Kafka", "Iceberg"]
 heroImage: "../../orange-blobs-1.jpg"
 draft: true
 canonicalUrl: "https://www.starburst.io/blog/streaming-data-kafka-iceberg/"
