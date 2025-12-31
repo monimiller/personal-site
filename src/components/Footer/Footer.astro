@@ -1,10 +1,8 @@
 ---
 // components
-import FooterLink from "@components/Footer/FooterLink.astro";
 import SiteLogo from "@components/SiteLogo/SiteLogo.astro";
 import Button from "@components/Button/Button.astro";
 import SocialIcon from "@components/SocialIcon/SocialIcon.astro";
-import Search from "astro-pagefind/components/Search";
 
 // data
 import siteData from "@config/siteData.json";
@@ -27,12 +25,9 @@ const today = new Date();
                     {" "}{siteData.name}. All rights reserved.
                 </div>
             </div>
-
-            <!-- TODO <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} /> -->
         </div>
 
         <div class="flex items-center md:justify-end">
-            <!-- Socials -->
             <div class="flex flex-col">
                 <div class="flex gap-2">
                     <SocialIcon
@@ -50,12 +45,6 @@ const today = new Date();
                         icon="tabler-brand-github"
                         social="github"
                     />
-                    <!-- TODO -->
-                    <!-- <SocialIcon -->
-                    <!--     href="https://data-folks.masto.host/@monimiller" -->
-                    <!--     icon="tabler-brand-mastodon" -->
-                    <!--     social="mastodon" -->
-                    <!-- /> -->
                 </div>
             </div>
         </div>
