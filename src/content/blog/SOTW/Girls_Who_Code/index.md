@@ -5,6 +5,7 @@ pubDate: "2022-04-04"
 authors: ["monica-miller"]
 categories: ["Career Growth", "Women in Tech", "Spotlight of the Week"]
 draft: false
+# TODO: Add hero image
 heroImage: "./Gender_Gap_GWC.png"
 ---
 

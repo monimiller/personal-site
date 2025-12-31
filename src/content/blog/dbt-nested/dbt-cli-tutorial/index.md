@@ -6,6 +6,7 @@ categories:
   ["dbt", "data", "dbt Cloud", "dbt CLI", "dbt tutorials", "dbt setup"]
 draft: false
 authors: ["monica-miller"]
+# TODO: Add hero image
 heroImage: "../../orange-blobs-1.jpg"
 # images: ['/public/static/images/Phoebe.jpg']
 ---

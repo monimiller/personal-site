@@ -8,7 +8,9 @@ export interface talk {
   slides?: string;
 }
 
-// Placeholder image until real talk/event images are added
+// TODO: Replace placeholder with real talk/event images
+// TODO: Add missing events: WICT Philly TIO 2023, Data Day Texas 2023, Trino Live NYC, dbt Breakfast Beignet
+// TODO: Add missing videos: Data product infomercial, Data Contracts Mean Girls, DataNova DataMesh/witch, Data Rebel Awards
 import placeholder from "@images/Phoebe.jpg";
 
 export const talkData: talk[] = [

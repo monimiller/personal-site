@@ -5,6 +5,7 @@ pubDate: "2022-02-28"
 authors: ["monica-miller"]
 categories: ["Career Growth", "Women in Tech", "Spotlight of the Week"]
 draft: false
+# TODO: Add hero image
 heroImage: "../orange-blobs-2.jpg"
 ---
 

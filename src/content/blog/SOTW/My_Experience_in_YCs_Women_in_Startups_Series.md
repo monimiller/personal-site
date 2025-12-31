@@ -5,6 +5,7 @@ pubDate: "2022-03-05"
 authors: ["monica-miller"]
 categories: ["YC", "Startup Culture", "Women in Tech", "Spotlight of the Week"]
 draft: false
+# TODO: Add hero image
 heroImage: "./Y_Combinator_logo.svg"
 ---
 
