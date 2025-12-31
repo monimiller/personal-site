@@ -1,12 +1,6 @@
 ---
 // main layout
 import BaseLayout from "@layouts/BaseLayout.astro";
-
-// components
-import ContactForm from "@components/ContactForm/ContactForm.astro";
-
-// data
-import siteData from "@config/siteData.json";
 ---
 
 <BaseLayout
@@ -16,17 +10,13 @@ import siteData from "@config/siteData.json";
     <div class="container mx-auto pt-36 md:pt-44">
         <h1 class="h1 text-center">Contact Me!</h1>
         <p class="description mx-auto mt-6 max-w-2xl text-center">
-            When you fill out the form below, you'll set up a time. I look
-            forward to meeting you! You can also contact me at <a
+            Schedule a time below, or contact me at <a
                 href="mailto:hello@monimiller.com"
                 class="text-primary-600">hello@monimiller.com</a
             >!
         </p>
         <div class="mt-20 gap-8">
-            <!-- contact form -->
-            <!-- TODO -->
-            <!-- <ContactForm /> -->
-            <!-- Cal inline embed code begins -->
+            <!-- Cal.com inline embed -->
             <div
                 style="width:100%;height:100%;overflow:scroll"
                 id="my-cal-inline"
