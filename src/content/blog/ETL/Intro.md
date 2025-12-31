@@ -6,7 +6,6 @@ categories: ["data", "ETL", "data warehousing"]
 draft: false
 # heroImage: ['/public/static/images/Phoebe.jpg']
 authors: ["monica-miller"]
-# TODO: Add hero image
 heroImage: "../orange-blobs-3.jpg"
 ---
 

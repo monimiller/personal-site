@@ -5,7 +5,6 @@ draft: false
 description: A self-discovery into life, liberty, and the pursuit of data.
 categories: ["sql", "data-engineering"]
 authors: ["monica-miller"]
-# TODO: Add hero image
 heroImage: "./concerned_woman.png"
 ---
 

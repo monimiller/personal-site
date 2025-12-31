@@ -11,7 +11,6 @@ categories:
     "Non-Profit Organizations",
   ]
 draft: false
-# TODO: Add hero image
 heroImage: "../orange-blobs-2.jpg"
 ---
 

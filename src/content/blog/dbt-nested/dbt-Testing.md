@@ -5,7 +5,6 @@ pubDate: 2022-02-15
 categories: ["dbt", "data", "testing"]
 draft: false
 authors: ["monica-miller"]
-# TODO: Add hero image
 heroImage: "../orange-blobs-3.jpg"
 ---
 

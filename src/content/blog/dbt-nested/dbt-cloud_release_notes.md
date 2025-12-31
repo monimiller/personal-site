@@ -5,7 +5,6 @@ pubDate: 2022-03-01
 categories: ["dbt Cloud", "dbt", "release notes", "DAG", "data lineage", "IDE"]
 draft: false
 authors: ["monica-miller"]
-# TODO: Add hero image
 heroImage: "../orange-blobs-3.jpg"
 ---
 
