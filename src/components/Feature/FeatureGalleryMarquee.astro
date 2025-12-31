@@ -5,7 +5,6 @@
  */
 
 import { Image } from "astro:assets";
-import { Icon } from "astro-icon";
 
 // images
 import image1 from "@assets/images/starburst/anna-success.jpeg";
@@ -42,18 +41,7 @@ const marqueeBottom: MarqueeImages = {
 };
 ---
 
-<section id="faq2" class="mx-auto my-12 py-12">
-    <div class="flex justify-center">
-        <h2 class="h2 relative inline">
-            <!-- TODO -->
-            <!-- See the results -->
-            <Icon
-                name="freehand-arrow"
-                class="absolute right-0 top-0 h-auto w-10 translate-x-10 translate-y-7 rotate-45 text-primary-500"
-                aria-hidden="true"
-            />
-        </h2>
-    </div>
+<section id="gallery" class="mx-auto my-12 py-12">
 
     <div class="relative flex flex-col gap-6 overflow-hidden md:gap-10">
         <!-- marquee top row -->
