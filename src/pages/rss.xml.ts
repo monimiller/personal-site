@@ -11,7 +11,7 @@ const authors: CollectionEntry<"authors">[] = await getCollection("authors");
 export async function GET(context) {
   const posts = await getAllPosts();
 
-  // TODO: (maybe?) handle multiple authors instead of just putting the first author's data
+  // Note: RSS spec only supports one author per item, so we use the first author
   return rss({
     // ex. you can use a stylesheet from "public/rss/styles.xsl"
     // stylesheet: "/rss/styles.xsl",
