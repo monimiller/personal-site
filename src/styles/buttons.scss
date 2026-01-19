@@ -7,9 +7,9 @@
 }
 
 .button--primary {
-  @apply border border-primary-500 bg-primary-300;
-  @apply hover:bg-primary-400;
-  @apply focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2;
+  @apply border border-accent-warm bg-accent-warm text-white;
+  @apply hover:bg-accent-warm/80;
+  @apply focus-visible:ring-2 focus-visible:ring-accent-warm focus-visible:ring-offset-2;
 }
 
 // secondary and outline are the same in this case

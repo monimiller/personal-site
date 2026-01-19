@@ -5,7 +5,7 @@
 /* https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer */
 @layer base {
   html {
-    @apply text-base leading-[1.6rem] text-base-900;
+    @apply text-base leading-[1.6rem] text-accent-dark;
     scroll-behavior: smooth;
   }
 
