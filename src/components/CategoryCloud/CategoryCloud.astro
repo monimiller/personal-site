@@ -17,14 +17,24 @@ const { showCount = false } = Astro.props as Props;
 
 <div class="flex flex-wrap justify-center gap-3">
     {
-        processedCategories.map(([category, count]) => (
-            <a
-                href={`/categories/${category}/`}
-                class="button button--ghost px-4 py-2 text-sm transition-all hover:scale-105"
-            >
-                {humanize(category)}
-                {showCount && <span class="ml-1.5 text-xs opacity-60">({count})</span>}
-            </a>
-        ))
+        processedCategories.map(([category, count], index) => {
+            const accentColors = [
+                "hover:bg-accent-blush hover:border-accent-warm",
+                "hover:bg-accent-cool hover:border-accent-sage",
+                "hover:bg-primary-100 hover:border-accent-dark",
+                "hover:bg-accent-blush/50 hover:border-accent-blush",
+                "hover:bg-accent-cool/50 hover:border-accent-cool",
+            ];
+            const colorClass = accentColors[index % accentColors.length];
+            return (
+                <a
+                    href={`/categories/${category}/`}
+                    class={`button button--ghost px-4 py-2 text-sm transition-all hover:scale-105 ${colorClass}`}
+                >
+                    {humanize(category)}
+                    {showCount && <span class="ml-1.5 text-xs opacity-60">({count})</span>}
+                </a>
+            );
+        })
     }
 </div>

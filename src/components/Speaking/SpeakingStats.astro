@@ -25,18 +25,22 @@ const stats = [
   {
     value: `${yearsOfSpeaking}+`,
     label: "Years Speaking",
+    color: "text-accent-dark",
   },
   {
     value: talks.toString(),
     label: "Conference Talks",
+    color: "text-primary-600",
   },
   {
     value: workshops.toString(),
     label: "Workshops",
+    color: "text-accent-warm",
   },
   {
     value: `${videos + other}+`,
     label: "Videos & More",
+    color: "text-accent-dark",
   },
 ];
 ---
@@ -48,7 +52,7 @@ const stats = [
     {
       stats.map((stat) => (
         <div class="text-center">
-          <p class="text-3xl font-bold text-primary-600 md:text-4xl lg:text-5xl">
+          <p class={`text-3xl font-bold md:text-4xl lg:text-5xl ${stat.color}`}>
             {stat.value}
           </p>
           <p class="mt-1 text-sm text-base-600 md:text-base">{stat.label}</p>

@@ -30,10 +30,12 @@ module.exports = {
                     900: "#414539",
                     950: "#23251f",
                 },
-                // Accent colors from palette
+                // Accent colors from Evergreen Dreams palette
                 accent: {
                     warm: "#C7A491",
                     blush: "#EECFCA",
+                    // Primary accent colors (last 3 from palette)
+                    sage: "#919682",
                     cool: "#C7CDBF",
                     dark: "#595E48",
                 },
