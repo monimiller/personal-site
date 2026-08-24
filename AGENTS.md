@@ -38,3 +38,13 @@ bd sync               # Sync with git
 - NEVER say "ready to push when you are" - YOU must push
 - If push fails, resolve and retry until it succeeds
 
+## Cursor Cloud specific instructions
+
+This is an Astro static site (Monica Miller's personal site/blog) deployed via Cloudflare Wrangler.
+
+- **Package manager is Bun** (see `bun.lock` and `readme.md`), not npm, even though a `package-lock.json` and the devcontainer exist. Bun is installed at `~/.bun/bin`; if `bun` is not on your `PATH`, either use the full path `~/.bun/bin/bun` or run `export PATH="$HOME/.bun/bin:$PATH"`. Dependencies are refreshed automatically on VM startup via the update script (`bun install`).
+- **Dev server:** `bun run dev` serves at `http://127.0.0.1:4321` (the `dev` script pins `--host 127.0.0.1`). Changes hot-reload.
+- **Build:** `bun run build` outputs the static site to `./dist/`. `bun run preview` serves the build via `wrangler dev`.
+- **No automated test suite exists.** `bun run astro check` currently reports pre-existing type errors/warnings (not wired into CI, not a blocking gate). `bun run format` runs Prettier; some `.astro` files are currently unformatted in the repo.
+- **Draft blog posts** (e.g. posts with `draft: true` frontmatter) are only visible in the dev server, not in production builds.
+
