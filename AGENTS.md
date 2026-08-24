@@ -47,4 +47,7 @@ This is an Astro static site (Monica Miller's personal site/blog) deployed via C
 - **Build:** `bun run build` outputs the static site to `./dist/`. `bun run preview` serves the build via `wrangler dev`.
 - **No automated test suite exists.** `bun run astro check` currently reports pre-existing type errors/warnings (not wired into CI, not a blocking gate). `bun run format` runs Prettier; some `.astro` files are currently unformatted in the repo.
 - **Draft blog posts** (e.g. posts with `draft: true` frontmatter) are only visible in the dev server, not in production builds.
+- **Cursor hooks** are configured in `.cursor/hooks.json` (project-scoped, also run in cloud agents):
+  - `afterFileEdit` → `.cursor/hooks/format.sh` auto-formats agent-edited files with the project's Prettier (observational; never blocks).
+  - `beforeShellExecution` → `.cursor/hooks/guard-shell.sh` prompts for confirmation before production deploys (`wrangler deploy` / `run deploy`) and destructive git ops (force push, `reset --hard`, `clean -f`). Both scripts require `jq` and fail open.
 
