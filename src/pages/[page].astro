@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
+import { type CollectionEntry, getCollection, render } from "astro:content";
 import { type InferGetStaticPropsType } from "astro";
 
 // layout
@@ -17,7 +17,7 @@ export async function getStaticPaths() {
         },
     );
     return otherPages.map((page) => ({
-        params: { page: page.slug },
+        params: { page: page.id },
         props: page,
     }));
 }
@@ -26,7 +26,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 const page = Astro.props as Props;
 
 // convert markdown to html
-const { Content } = await page.render();
+const { Content } = await render(page);
 const { title, description } = page.data;
 ---
 

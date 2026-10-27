@@ -29,7 +29,7 @@ const showDraftBadge = isDraft && isDevMode();
 ---
 
 <a
-    href={`/blog/${post.slug}/`}
+    href={`/blog/${post.id}/`}
     class=`flex group flex-col ${className}`
     {...rest}
 >
@@ -43,6 +43,7 @@ const showDraftBadge = isDraft && isDevMode();
                 height={700}
                 quality="high"
                 class="h-auto max-h-96 w-full object-cover transition-all duration-500 group-hover:scale-[1.02]"
+                format={heroImage.format === "svg" ? "svg" : undefined}
             />
         </figure>
     </div>

@@ -51,7 +51,7 @@ if (type === "blog") {
 
     optimizedImage = await getImage({
         src: image,
-        format: "webp",
+        format: image.format === "svg" ? "svg" : "webp",
         quality: "high",
         width: 1200,
     });

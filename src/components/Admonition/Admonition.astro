@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 
 interface Props {
     variant: "tip" | "caution" | "danger" | "info";
@@ -18,6 +18,10 @@ const icon = (() => {
             return "tabler:flame";
         case "info":
             return "tabler:info-circle";
+        default: {
+            const _exhaustive: never = variant;
+            return _exhaustive;
+        }
     }
 })();
 ---

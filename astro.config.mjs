@@ -1,18 +1,18 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 import AutoImport from "astro-auto-import";
 import react from "@astrojs/react";
 import pagefind from "astro-pagefind";
 import playformCompress from "@playform/compress";
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
     site: "https://monimiller.com",
     markdown: {
         shikiConfig: {
-            // Shiki Themes: https://github.com/shikijs/shiki/blob/main/docs/themes.md
+            // Shiki Themes: https://shiki.style/themes
             theme: "rose-pine-dawn",
             wrap: true,
         },
@@ -29,10 +29,14 @@ export default defineConfig({
         }),
         mdx(),
         react(),
-        tailwind(),
         sitemap(),
         pagefind(),
         playformCompress(),
+        icon({
+            include: {
+                tabler: ["*"],
+            },
+        }),
     ],
     build: {
         format: "file",
