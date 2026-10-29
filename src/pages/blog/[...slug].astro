@@ -1,5 +1,6 @@
 ---
 import { type InferGetStaticPropsType } from "astro";
+import { render } from "astro:content";
 
 // layout
 import BlogLayout from "@layouts/BlogLayoutCenter.astro";
@@ -14,14 +15,14 @@ export async function getStaticPaths() {
     const posts = await getAllPosts();
 
     return posts.map((post) => ({
-        params: { slug: post.slug },
+        params: { slug: post.id },
         props: post,
     }));
 }
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
 
 const post = Astro.props as Props;
-const { Content } = await post.render();
+const { Content } = await render(post);
 ---
 
 <BlogLayout post={post}>

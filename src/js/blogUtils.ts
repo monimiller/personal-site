@@ -1,8 +1,4 @@
-import {
-  type CollectionEntry,
-  getCollection,
-  getEntryBySlug,
-} from "astro:content";
+import { type CollectionEntry, getCollection, getEntry } from "astro:content";
 
 // utils
 import { slugify } from "@js/textUtils";
@@ -102,7 +98,7 @@ export function arePostsRelated(
   postTwo: CollectionEntry<"blog">,
 ): boolean {
   // if titles are the same, then they are the same post. return false
-  if (postOne.slug === postTwo.slug) return false;
+  if (postOne.id === postTwo.id) return false;
 
   const postOneCategories = postOne.data.categories.map((category) =>
     slugify(category),
@@ -172,11 +168,11 @@ export async function getAllAuthorsData(
   authors: CollectionEntry<"blog">["data"]["authors"],
 ): Promise<CollectionEntry<"authors">[]> {
   const authorsData = authors.map(async (author) => {
-    const authorData = await getEntryBySlug("authors", author.slug);
+    const authorData = await getEntry(author);
 
     if (authorData === undefined) {
       throw new Error(
-        `Author "${author.slug}" not found in "authors" collection.`,
+        `Author "${author.id}" not found in "authors" collection.`,
       );
     }
 

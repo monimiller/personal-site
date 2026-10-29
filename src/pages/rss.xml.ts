@@ -34,8 +34,8 @@ export async function GET(context) {
       title: post.data.title,
       description: post.data.description,
       pubDate: post.data.pubDate,
-      author: `${getAuthorEmail(post.data.authors[0].slug)} (${getAuthorName(
-        post.data.authors[0].slug,
+      author: `${getAuthorEmail(post.data.authors[0].id)} (${getAuthorName(
+        post.data.authors[0].id,
       )})`,
 
       // custom data example, define in XML tags
@@ -50,7 +50,7 @@ export async function GET(context) {
 
       // Compute RSS link from post `slug`
       // This example assumes all posts are rendered as `/blog/[slug]` routes
-      link: `/blog/${post.slug}/`,
+      link: `/blog/${post.id}/`,
     })),
   });
 }
@@ -60,7 +60,7 @@ export async function GET(context) {
 const getAuthorName = (authorSlug: string) => {
   let authorName = "unk";
   authors.map((author) => {
-    if (author.slug === authorSlug) {
+    if (author.id === authorSlug) {
       authorName = author.data.name;
     }
   });
@@ -73,7 +73,7 @@ const getAuthorName = (authorSlug: string) => {
 const getAuthorEmail = (authorSlug: string) => {
   let authorEmail = "";
   authors.map((author) => {
-    if (author.slug === authorSlug) {
+    if (author.id === authorSlug) {
       authorEmail = author.data.email;
     }
   });

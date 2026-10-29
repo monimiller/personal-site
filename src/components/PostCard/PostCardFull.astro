@@ -28,11 +28,11 @@ const { title, description, categories, authors, pubDate, heroImage } =
 const authorsData = await getAllAuthorsData(authors);
 ---
 
-<article class=`group grid gap-6 md:grid-cols-[400px_1fr] md:gap-10 ${className}` {...rest}>
-    <a
-        href={`/blog/${post.slug}/`}
-        class="overflow-hidden rounded-xl"
-    >
+<article
+    class=`group grid gap-6 md:grid-cols-[400px_1fr] md:gap-10 ${className}`
+    {...rest}
+>
+    <a href={`/blog/${post.id}/`} class="overflow-hidden rounded-xl">
         <figure class="h-full overflow-hidden">
             <Image
                 src={heroImage}
@@ -40,6 +40,7 @@ const authorsData = await getAllAuthorsData(authors);
                 height={700}
                 quality="high"
                 class="h-full w-full rounded-xl object-cover transition-all duration-500 group-hover:scale-105"
+                format={heroImage.format === "svg" ? "svg" : undefined}
             />
         </figure>
     </a>
@@ -71,11 +72,10 @@ const authorsData = await getAllAuthorsData(authors);
 
         <!-- title -->
         <div>
-            <a
-                href={`/blog/${post.slug}/`}
-                class="group/title"
-            >
-                <h2 class="text-xl font-semibold leading-tight transition-colors group-hover/title:text-primary-600 md:text-2xl lg:text-3xl">
+            <a href={`/blog/${post.id}/`} class="group/title">
+                <h2
+                    class="text-xl font-semibold leading-tight transition-colors group-hover/title:text-primary-600 md:text-2xl lg:text-3xl"
+                >
                     {title}
                 </h2>
             </a>
