@@ -31,7 +31,7 @@
         "astro-embed": "^0.14.0",
         "astro-icon": "^1.2.0",
         "astro-pagefind": "^2.0.1",
-        "astro-seo": "^0.8.4",
+        "astro-seo": "^1.2.0",
         "autoprefixer": "^10.4.21",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
